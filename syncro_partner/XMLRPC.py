@@ -21,6 +21,7 @@
 
 import xmlrpclib
 
+# Launch import from 7.0
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/common' % (
         'localhost', 
@@ -35,10 +36,10 @@ uid = sock.login(
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/object' % (
         'localhost', 
-        18069,
+        8069,
         ), allow_none=True)
         
 sock.execute(
-    'Fiam8', uid, 'admin', 'syncro.partner', 'syncro_partner')
+    'Barcore', uid, 'admin', 'syncro.partner', 'syncro_partner')
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 
