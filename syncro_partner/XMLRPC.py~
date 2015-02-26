@@ -35,7 +35,7 @@ uid = sock.login(
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/object' % (
         'localhost', 
-        8069,
+        18069,
         ), allow_none=True)
         
 sock.execute(

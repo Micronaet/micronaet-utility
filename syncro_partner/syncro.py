@@ -77,7 +77,7 @@ class SyncroPartner(orm.Model):
                 
         uid_8 = sock.login(
             odoo.name, 
-            odoo.user, 
+            odoo.username, 
             odoo.password, )
             
         sock = xmlrpclib.ServerProxy(
@@ -149,7 +149,7 @@ class SyncroPartner(orm.Model):
         'name':fields.char('DB name', size=80, required=True),
         'hostname':fields.char('Hostname', size=80, required=True),
         'port':fields.integer('Port', required=True),
-        'user':fields.char('Username', size=80, required=True),
+        'username':fields.char('Username', size=80, required=True),
         'password':fields.char('Password', size=80, required=True),
         }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

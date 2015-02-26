@@ -30,7 +30,7 @@ sock = xmlrpclib.ServerProxy(
 uid = sock.login(
     'Barcore', 
     'admin', 
-    'Micronaet30983!', )
+    'admin', )
     
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/object' % (
