@@ -29,7 +29,7 @@ sock = xmlrpclib.ServerProxy(
         ), allow_none=True)
                 
 uid = sock.login(
-    'Barcore', 
+    'Database7', 
     'admin', 
     'admin', )
     
@@ -40,6 +40,6 @@ sock = xmlrpclib.ServerProxy(
         ), allow_none=True)
         
 sock.execute(
-    'Barcore', uid, 'admin', 'syncro.partner', 'syncro_partner')
+    'Database7', uid, 'syncro.partner', 'syncro_partner')
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 

@@ -61,8 +61,6 @@ class SyncroPartner(orm.Model):
     def syncro_partner(self, cr, uid, context=None):
         ''' Module for syncro partner from one DB to another
         '''
-        f = open('id.csv', 'w')
-
         item_ids = self.search(cr, uid, [], context=context)
         if not item_ids:
            return False
@@ -134,10 +132,6 @@ class SyncroPartner(orm.Model):
                     partner_pool.write(cr, uid, partner.id, {
                         'sync_id': partner_id, 
                         }, context=context)
-                    f.write("%s;%s\n" % (
-                        partner.id,   # V.7
-                        partner_id,   # V.8
-                        ))
                     print "#INFO Partner create:", partner.name            
                         
             except:
