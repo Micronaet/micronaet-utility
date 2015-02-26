@@ -134,7 +134,7 @@ class SyncroPartner(orm.Model):
                     partner_pool.write(cr, uid, partner.id, {
                         'sync_id': partner_id, 
                         }, context=context)
-                    f.write("%s;%s" % (
+                    f.write("%s;%s\n" % (
                         partner.id,   # V.7
                         partner_id,   # V.8
                         ))
