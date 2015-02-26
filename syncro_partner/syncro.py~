@@ -29,7 +29,7 @@ import xmlrpclib
 from openerp.osv import fields, osv, expression, orm
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
-from openerp import SUPERUSER_ID, api
+from openerp import SUPERUSER_ID
 from openerp import tools
 from openerp.tools.translate import _
 from openerp.tools.float_utils import float_round as round
@@ -88,53 +88,60 @@ class SyncroPartner(orm.Model):
                 
         partner_pool = self.pool.get('res.partner')      
         partner_ids = partner_pool.search(cr, uid, [], context=context)
-                  
+
         for partner in partner_pool.browse(
                 cr, uid, partner_ids, context=context):                    
-            data = { # TODO complete
-                'name': partner.name,                
-                'comment': partner.comment,
-                'ean13': partner.ean13,
-                'street': partner.street,
-                'city': partner.city,
-                'supplier': partner.supplier,
-                'ref': partner.ref,
-                'email': partner.email,
-                'website': partner.website,
-                'customer': partner.customer,
-                'fax': partner.fax,
-                'street2': partner.street2,
-                'active': partner.active,
-                'phone': partner.phone,
-                'mobile': partner.mobile,
-                #type
-                'birthdate': partner.birthdate,
-                'vat': partner.vat,
-                #'notify_email': partner.nofify_email,
-                #'opt_out': partner.opt_out,
-                #'is_address': partner.is_address,                
-                }
-                
-            if partner.sync_id:
-                sock.execute(
-                    odoo.name, uid_8, odoo.password, 'res.partner', 'write', 
-                    partner.sync_id, data)
-                bom_id = bom_id[0]
-               
-            else: # create
-                partner_id = sock.execute(
-                    odoo.name, uid_8, odoo.password, 
-                    'res.partner', 'create', 
-                    data, )
+            try:    
+                data = { # TODO complete
+                    'name': partner.name,                
+                    'comment': partner.comment,
+                    'ean13': partner.ean13,
+                    'street': partner.street,
+                    'city': partner.city,
+                    'supplier': partner.supplier,
+                    'ref': partner.ref,
+                    'email': partner.email,
+                    'website': partner.website,
+                    'customer': partner.customer,
+                    'is_company': partner.is_company,
+                    'fax': partner.fax,
+                    'street2': partner.street2,
+                    'active': partner.active,
+                    'phone': partner.phone,
+                    'mobile': partner.mobile,
+                    #type
+                    'birthdate': partner.birthdate,
+                    'vat': partner.vat,
+                    #'notify_email': partner.nofify_email,
+                    #'opt_out': partner.opt_out,
+                    #'is_address': partner.is_address,                
+                    }
                     
-                # Save ID in V.7                     
-                partner_pool.write(cr, uid, partner.id, {
-                    'sync_id': partner_id, 
-                    }, context=context)
-                f.write("%s;%s" % (
-                    partner.id,   # V.7
-                    partner_id,   # V.8
-                    ))
+                if partner.sync_id:
+                    sock.execute(
+                        odoo.name, uid_8, odoo.password, 'res.partner', 'write', 
+                        partner.sync_id, data)
+                    bom_id = bom_id[0]
+                    print "#INFO Partner update:", partner.name            
+                   
+                else: # create
+                    partner_id = sock.execute(
+                        odoo.name, uid_8, odoo.password, 
+                        'res.partner', 'create', 
+                        data, )
+                        
+                    # Save ID in V.7                     
+                    partner_pool.write(cr, uid, partner.id, {
+                        'sync_id': partner_id, 
+                        }, context=context)
+                    f.write("%s;%s" % (
+                        partner.id,   # V.7
+                        partner_id,   # V.8
+                        ))
+                    print "#INFO Partner create:", partner.name            
+                        
+            except:
+                print "#ERR Partner jumped:", partner.name            
         return True
             
     # No table object

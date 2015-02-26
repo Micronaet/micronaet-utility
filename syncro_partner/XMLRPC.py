@@ -28,14 +28,14 @@ sock = xmlrpclib.ServerProxy(
         ), allow_none=True)
                 
 uid = sock.login(
-    'Fiam8', 
+    'Barcore', 
     'admin', 
-    'admin', )
+    'Micronaet30983!', )
     
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/object' % (
         'localhost', 
-        8069,
+        18069,
         ), allow_none=True)
         
 sock.execute(

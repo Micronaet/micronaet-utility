@@ -21,7 +21,6 @@
 
 import xmlrpclib
 
-import pdb; pdb.set_trace()
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/common' % (
         'localhost', 
@@ -29,9 +28,9 @@ sock = xmlrpclib.ServerProxy(
         ), allow_none=True)
                 
 uid = sock.login(
-    'Fiam8', 
+    'Barcore', 
     'admin', 
-    'admin', )
+    'Micronaet30983!', )
     
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/object' % (
@@ -40,6 +39,6 @@ sock = xmlrpclib.ServerProxy(
         ), allow_none=True)
         
 sock.execute(
-    'Fiam8', uid, 'admin', 'syncro.partner', 'sycro_partner')
+    'Fiam8', uid, 'admin', 'syncro.partner', 'syncro_partner')
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 
