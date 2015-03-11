@@ -86,7 +86,9 @@ class SyncroPartner(orm.Model):
                 
         partner_pool = self.pool.get('res.partner')      
         partner_ids = partner_pool.search(cr, uid, [], context=context)
-
+        
+        partner_transcode = {} # key = ID 7 : value = ID 8
+        contact_code = {} # Key = ID contact 8: value = ID 7 partner_id
         for partner in partner_pool.browse(
                 cr, uid, partner_ids, context=context):                    
             try:    
@@ -107,22 +109,25 @@ class SyncroPartner(orm.Model):
                     'active': partner.active,
                     'phone': partner.phone,
                     'mobile': partner.mobile,
+                    'fiscalcode': partner.fiscalcode,
                     #type
                     'birthdate': partner.birthdate,
                     'vat': partner.vat,
                     #'notify_email': partner.nofify_email,
                     #'opt_out': partner.opt_out,
-                    #'is_address': partner.is_address,                
+                    'is_address': partner.is_address,                
                     }
                     
-                if partner.sync_id:
+                if partner.sync_id: # Modify
+                    partner_id = partner.sync_id
                     sock.execute(
-                        odoo.name, uid_8, odoo.password, 'res.partner', 'write', 
+                        odoo.name, uid_8, odoo.password, 
+                        'res.partner', 'write', 
                         partner.sync_id, data)
                     bom_id = bom_id[0]
                     print "#INFO Partner update:", partner.name            
                    
-                else: # create
+                else: # Create
                     partner_id = sock.execute(
                         odoo.name, uid_8, odoo.password, 
                         'res.partner', 'create', 
@@ -133,9 +138,24 @@ class SyncroPartner(orm.Model):
                         'sync_id': partner_id, 
                         }, context=context)
                     print "#INFO Partner create:", partner.name            
-                        
+                    
+                # Save info for next write of partner_id    
+                if partner.is_address or not partner.is_company: # Add. Cont.
+                    # ID v.8 = parent_id v.7
+                    contact_code[partner_id] = partner.parent_id.id
+                else: # Partner (save transoce for id 7 > 8                                        
+                    # Current ID (v.7)            = Other ID (v.8)    
+                    partner_transcode[partner.id] = partner_id
+                
             except:
                 print "#ERR Partner jumped:", partner.name            
+            for contact in contact_code:
+                sock.execute(
+                    odoo.name, uid_8, odoo.password, 
+                    'res.partner', 'write', 
+                    contact, {
+                        'parent_id': partner_transcode[contact_code[contact]]
+                        })
         return True
             
     # No table object
