@@ -61,7 +61,6 @@ class SyncroPartner(orm.Model):
     def syncro_partner(self, cr, uid, context=None):
         ''' Module for syncro partner from one DB to another
         '''
-        import pdb; pdb.set_trace()
         item_ids = self.search(cr, uid, [], context=context)
         if not item_ids:
            return False
@@ -152,11 +151,14 @@ class SyncroPartner(orm.Model):
                 
         import pdb; pdb.set_trace()
         for contact in contact_code:
-            sock.execute(
-                odoo.name, uid_8, odoo.password, 
-                'res.partner', 'write', contact, {
-                    'parent_id': partner_transcode[contact_code[contact]]
-                    })
+            if contact_code[contact]:
+                sock.execute(
+                    odoo.name, uid_8, odoo.password, 
+                    'res.partner', 'write', contact, {
+                        'parent_id': partner_transcode[contact_code[contact]]
+                        })
+            else:
+                print "Contact without parent_id"            
         return True
             
     # No table object
