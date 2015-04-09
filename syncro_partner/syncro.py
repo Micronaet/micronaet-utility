@@ -149,6 +149,8 @@ class SyncroPartner(orm.Model):
                 
             except:
                 print "#ERR Partner jumped:", partner.name            
+                
+            import pdb; pdb.set_trace()
             for contact in contact_code:
                 sock.execute(
                     odoo.name, uid_8, odoo.password, 
