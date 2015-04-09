@@ -117,7 +117,7 @@ class SyncroPartner(orm.Model):
                     'vat': partner.vat,
                     #'notify_email': partner.nofify_email,
                     #'opt_out': partner.opt_out,
-                    'is_address': partner.is_address,                
+                    ####'is_address': partner.is_address, # TODO not present!
                     }
                     
                 if partner.sync_id: # Modify

@@ -44,6 +44,6 @@ sock = xmlrpclib.ServerProxy(
         ), allow_none=True)
         
 sock.execute(
-    db, uid, 'syncro.partner', 'syncro_partner')
+    db, uid, password, 'syncro.partner', 'syncro_partner')
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 
