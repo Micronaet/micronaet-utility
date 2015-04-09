@@ -150,13 +150,13 @@ class SyncroPartner(orm.Model):
             except:
                 print "#ERR Partner jumped:", partner.name            
                 
-            import pdb; pdb.set_trace()
-            for contact in contact_code:
-                sock.execute(
-                    odoo.name, uid_8, odoo.password, 
-                    'res.partner', 'write', contact, {
-                        'parent_id': partner_transcode[contact_code[contact]]
-                        })
+        import pdb; pdb.set_trace()
+        for contact in contact_code:
+            sock.execute(
+                odoo.name, uid_8, odoo.password, 
+                'res.partner', 'write', contact, {
+                    'parent_id': partner_transcode[contact_code[contact]]
+                    })
         return True
             
     # No table object
