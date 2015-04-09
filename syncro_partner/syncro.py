@@ -126,36 +126,33 @@ class SyncroPartner(orm.Model):
                         odoo.name, uid_8, odoo.password, 
                         'res.partner', 'write', 
                         partner.sync_id, data)
-                    bom_id = bom_id[0]
                     print "#INFO Partner update:", partner.name            
                    
                 else: # Create
                     partner_id = sock.execute(
                         odoo.name, uid_8, odoo.password, 
-                        'res.partner', 'create', 
-                        data, )
+                        'res.partner', 'create', data)
                         
                     # Save ID in V.7                     
                     partner_pool.write(cr, uid, partner.id, {
-                        'sync_id': partner_id, 
-                        }, context=context)
+                        'sync_id': partner_id, }, context=context)
                     print "#INFO Partner create:", partner.name            
                     
                 # Save info for next write of partner_id    
-                if partner.is_address or not partner.is_company: # Add. Cont.
+                if not partner.is_company: # Add. Cont.
+                #if partner.is_address or not partner.is_company: # Add. Cont.
                     # ID v.8 = parent_id v.7
                     contact_code[partner_id] = partner.parent_id.id
-                else: # Partner (save transoce for id 7 > 8                                        
-                    # Current ID (v.7)            = Other ID (v.8)    
-                    partner_transcode[partner.id] = partner_id
+                #else: # Partner (save transoce for id 7 > 8                                        
+                #    # Current ID (v.7)            = Other ID (v.8)    
+                partner_transcode[partner.id] = partner_id
                 
             except:
                 print "#ERR Partner jumped:", partner.name            
             for contact in contact_code:
                 sock.execute(
                     odoo.name, uid_8, odoo.password, 
-                    'res.partner', 'write', 
-                    contact, {
+                    'res.partner', 'write', contact, {
                         'parent_id': partner_transcode[contact_code[contact]]
                         })
         return True
