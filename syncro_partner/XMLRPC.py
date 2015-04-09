@@ -22,24 +22,28 @@
 import xmlrpclib
 
 # Launch import from 7.0
+db = 'Barcore'
+server = 'localhost'
+user = 'admin'
+password = 'admin'
+port = 8069
+
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/common' % (
-        'localhost', 
-        8069, 
+        server, 
+        port, 
         ), allow_none=True)
                 
 uid = sock.login(
-    'Database7', 
-    'admin', 
-    'admin', )
+    db, user, password, )
     
 sock = xmlrpclib.ServerProxy(
     'http://%s:%s/xmlrpc/object' % (
-        'localhost', 
-        8069,
+        server, 
+        port,
         ), allow_none=True)
         
 sock.execute(
-    'Database7', uid, 'syncro.partner', 'syncro_partner')
+    db, uid, 'syncro.partner', 'syncro_partner')
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 

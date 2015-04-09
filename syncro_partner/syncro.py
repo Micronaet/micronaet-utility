@@ -61,6 +61,7 @@ class SyncroPartner(orm.Model):
     def syncro_partner(self, cr, uid, context=None):
         ''' Module for syncro partner from one DB to another
         '''
+        import pdb; pdb.set_trace()
         item_ids = self.search(cr, uid, [], context=context)
         if not item_ids:
            return False
@@ -89,6 +90,7 @@ class SyncroPartner(orm.Model):
         
         partner_transcode = {} # key = ID 7 : value = ID 8
         contact_code = {} # Key = ID contact 8: value = ID 7 partner_id
+
         for partner in partner_pool.browse(
                 cr, uid, partner_ids, context=context):                    
             try:    
