@@ -149,7 +149,6 @@ class SyncroPartner(orm.Model):
             except:
                 print "#ERR Partner jumped:", partner.name            
                 
-        import pdb; pdb.set_trace()
         for contact in contact_code:
             if contact_code[contact]:
                 sock.execute(
