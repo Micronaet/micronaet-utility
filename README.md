@@ -1,2 +1,4 @@
 # micronaet-utility
-Odoo module and utility
+===================
+
+OpenERP / Odoo module and utility V. 7.0

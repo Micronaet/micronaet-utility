@@ -20,23 +20,6 @@
 #
 ##############################################################################
 
-{
-    'name': 'Syncro module for partner 7.0 > 8.0',
-    'version': '0.0.1',
-    'category': 'Syncro',
-    'description': """
-        Simple report for fast migrate partner from one installation v.7
-        to new installation v.8
-        """,
-    'author': 'Micronaet s.r.l.',
-    'website': 'http://www.micronaet.it',
-    'depends': [
-        'base',
-        ],
-    'init_xml': [], 
-    'data': [
-        ],
-    'demo_xml': [],
-    'active': False, 
-    'installable': True, 
-    }
+import backup_scheduler
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
