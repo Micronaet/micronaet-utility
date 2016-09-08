@@ -68,6 +68,6 @@ class ResCompany(orm.Model):
     }
     
     _defaults = {
-       'name': lambda *a: '~/csv',
+       'base_local_folder': lambda *a: '~/csv',
         }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
