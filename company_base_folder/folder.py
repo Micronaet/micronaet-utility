@@ -40,10 +40,29 @@ _logger = logging.getLogger(__name__)
 
 class ResCompany(orm.Model):
     """ Model name: ResCompany
-    """
-    
+    """    
     _inherit = 'res.company'
     
+    # Utility:
+    def get_base_local_folder(self, cr, uid, subfolder=None, context=None):
+        ''' Get base folder and append subfolder element returning path
+        '''
+        company_ids = self.search(cr, uid, [], context=None)
+        company_proxy = self.browse(cr, uid, company_ids, context=context)[0]
+        base_local_folder = company_proxy.base_local_folder
+        if subfolder:
+            base_local_folder = os.path.join(base_local_folder, subfolder)
+      
+        # Create path (all elements)  
+        try:
+            os.system('mkdir -p %s' % base_local_folder)
+        except:
+            raise osv.except_osv(
+                _('Error'), 
+                _('Cannot create base fodler: %s') % base_local_folder,
+                )
+        return base_local_folder
+        
     _columns = {
         'base_local_folder': fields.char('Base folder', size=180),
     }
