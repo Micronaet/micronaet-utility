@@ -1,7 +1,20 @@
 <?xml version="1.0"?>
 <openerp>
     <data>
-
+        <record model="ir.ui.view" id="view_res_comapany_base_folder_form">
+            <field name="name">res.company.base.folderform</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[2]" position="after"> 
+                    <page string="Base local folder">
+                        <group colspan="4" col="2">
+                            <field name="base_local_folder" />
+                        </group>
+                    </page>
+                </xapth>
+            </field>
+        </record>
     </data>
 </openerp>
 

@@ -38,4 +38,17 @@ from openerp.tools import (DEFAULT_SERVER_DATE_FORMAT,
 
 _logger = logging.getLogger(__name__)
 
+class ResCompany(orm.Model):
+    """ Model name: ResCompany
+    """
+    
+    _inherit = 'res.company'
+    
+    _columns = {
+        'base_local_folder': fields.char('Base folder', size=180),
+    }
+    
+    _defaults = {
+       'name': lambda *a: '~/csv',
+        }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
