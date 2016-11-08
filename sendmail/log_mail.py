@@ -29,11 +29,12 @@ cfg_file = os.path.expanduser('~/etl/openerp.cfg')
 
 config = ConfigParser.ConfigParser()
 config.read([cfg_file])
+
 smtp_host = config.get('smtp', 'host')
 smtp_port = eval(config.get('smtp', 'port'))
 smtp_user = config.get('smtp', 'user')
 smtp_password = config.get('smtp', 'password')
-smtp_from = config.get('smtp', 'form')
+smtp_from = config.get('smtp', 'from')
 smtp_to = config.get('smtp', 'to')
 subject = config.get('smtp', 'subject')
 
