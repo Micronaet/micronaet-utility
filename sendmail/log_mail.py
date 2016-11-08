@@ -19,17 +19,25 @@
 ###############################################################################
 import os
 import sys
+import ConfigParser
 from smtplib import SMTP
 from datetime import datetime
 
+#folder = sys.argv[1]
+
+path = os.path.expanduser('~/etl/openerp.cfg')
+
+config = ConfigParser.ConfigParser()
+config.read([cfg_file])
+smtp_host = config.get('smtp', 'host')
+smtp_port = eval(config.get('smtp', 'port'))
+smtp_user = config.get('smtp', 'user')
+smtp_password = config.get('smtp', 'password')
+smtp_from = config.get('smtp', 'form')
+smtp_to = config.get('smtp', 'to')
+subject = config.get('smtp', 'subject')
+
 # Parameter:
-smtp_host = 'smtp.qboxmail.com'
-smtp_port = 465
-smtp_user = 'account@example.it''
-smtp_password = 'password'
-from_address = 'from@example.it' 
-to_address = 'dest@example.it'
-subject = 'Subject'
 body = 'body'
 
 # Send mail:
@@ -47,8 +55,7 @@ smtp.sendmail(
         subject,
         date,
         body,
-        ),
-    )
+        ))
 smtp.quit()
             
 
