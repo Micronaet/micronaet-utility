@@ -25,7 +25,7 @@ from datetime import datetime
 
 #folder = sys.argv[1]
 
-path = os.path.expanduser('~/etl/openerp.cfg')
+cfg_file = os.path.expanduser('~/etl/openerp.cfg')
 
 config = ConfigParser.ConfigParser()
 config.read([cfg_file])
