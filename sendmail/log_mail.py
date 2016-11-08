@@ -20,7 +20,7 @@
 import os
 import sys
 import ConfigParser
-from smtplib import SMTP
+from smtplib import SMTP_SSL
 from datetime import datetime
 
 #folder = sys.argv[1]
@@ -42,17 +42,17 @@ subject = config.get('smtp', 'subject')
 body = 'body'
 
 # Send mail:
-smtp = SMTP()
+smtp = SMTP_SSL()
 smtp.set_debuglevel(0)
 smtp.connect(smtp_host, smtp_port)
 smtp.login(smtp_user, smtp_password)
 
-date = datetime.now().strftime('%Y-%m-%s %H:%M')
+date = datetime.now().strftime('%m/%d/%Y %H:%M')
 smtp.sendmail(
-    from_addr, to_addr,
+    smtp_from, smtp_to,
     'From: %s\nTo: %s\nSubject: %s\nDate: %s\n\n%s' % (
-        from_addr,
-        to_addr,
+        smtp_from,
+        smtp_to,
         subject,
         date,
         body,
