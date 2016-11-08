@@ -23,7 +23,7 @@ import ConfigParser
 from smtplib import SMTP_SSL
 from datetime import datetime
 
-#folder = sys.argv[1]
+body = sys.argv[1] or '???'
 
 cfg_file = os.path.expanduser('~/etl/openerp.cfg')
 
@@ -37,9 +37,6 @@ smtp_password = config.get('smtp', 'password')
 smtp_from = config.get('smtp', 'from')
 smtp_to = config.get('smtp', 'to')
 subject = config.get('smtp', 'subject')
-
-# Parameter:
-body = 'body'
 
 # Send mail:
 smtp = SMTP_SSL()
