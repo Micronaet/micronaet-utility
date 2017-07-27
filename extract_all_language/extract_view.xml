@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="wizard_lang_export_all" model="ir.ui.view">
+            <field name="name">Export all translations</field>
+            <field name="model">base.language.export</field>
+            <field name="inherit_id" ref="base.wizard_lang_export"/>
+            <field name="arch" type="xml">
+                <button name="act_getfile" position="before"> 
+                    <button name="act_save_all_file" string="Extract po files" type="object" />
+                </button>    
+            </field>
+        </record>
+    </data>
+</openerp>
+
