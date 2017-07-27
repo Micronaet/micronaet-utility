@@ -42,8 +42,14 @@ _logger = logging.getLogger(__name__)
 
 
 class base_language_export(osv.osv_memory):
-    _inherit = "base.language.export"
+    _inherit = 'base.language.export'
 
+    # Utility:
+    def clean_folder_name(value):
+        value = '%s' % (value, )
+        for c in ['[', ','. '.', ']', '(', ')', '-']:
+            value = value.replace(c, '')
+        return value
     def act_save_all_file(self, cr, uid, ids, context=None):
         ''' Get po file and save in folder for installed module
         '''
@@ -52,6 +58,7 @@ class base_language_export(osv.osv_memory):
         
         path = '~/etl/translate'
         path = os.path.expanduser(path)
+        os.system('mkdir -p \'%s\'' % path)
         
         lang = 'it_IT' 
         module_ids = module_pool.search(cr, uid, [
@@ -59,16 +66,27 @@ class base_language_export(osv.osv_memory):
             ], context=context)
 
         for module in module_pool.browse(cr, uid, module_ids, context=context):
-            mods = [module.name]
+            name = module.name
+            author = clean_folder_name(module.author)
+            mods = [name]
+            
             with contextlib.closing(cStringIO.StringIO()) as buf:
                 tools.trans_export(lang, mods, buf, 'po', cr)
                 out_buf = buf.getvalue()
-                #out = base64.encodestring(out_buf)
-            filename = '%s.it.po' % module.name            
-            filename = os.path.join(path, filename)
+
+            if author:
+                path_in = os.path.join(path, author)
+                os.system('mkdir -p \'%s\'' % path_in)
+            else:
+                path_in = path
+                    
+            filename = '%s.it.po' % name
+            filename = os.path.join(path_in, filename)
+
             _logger.info('Generate: %s' % filename)
             f = open(filename, 'w')
             f.write(out_buf)
             f.close()
+        _logger.info('End export po files!')
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
