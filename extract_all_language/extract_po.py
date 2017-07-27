@@ -45,11 +45,16 @@ class base_language_export(osv.osv_memory):
     _inherit = 'base.language.export'
 
     # Utility:
-    def clean_folder_name(value):
+    def clean_folder_name(self, value):
         value = '%s' % (value, )
-        for c in ['[', ','. '.', ']', '(', ')', '-']:
+        for c in ['[', ',', '.', ']', '(', ')', '-', '\'', ' ']:
             value = value.replace(c, '')
-        return value
+        res = ''
+        for c in value:
+            if ord(c) < 127:
+                res += c    
+        return res
+        
     def act_save_all_file(self, cr, uid, ids, context=None):
         ''' Get po file and save in folder for installed module
         '''
@@ -67,7 +72,7 @@ class base_language_export(osv.osv_memory):
 
         for module in module_pool.browse(cr, uid, module_ids, context=context):
             name = module.name
-            author = clean_folder_name(module.author)
+            author = self.clean_folder_name(module.author)
             mods = [name]
             
             with contextlib.closing(cStringIO.StringIO()) as buf:
