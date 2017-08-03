@@ -79,7 +79,7 @@ product_pool = odoo.model('product.product')
 WB = xlsxwriter.Workbook(file_out)
 WS = WB.add_worksheet('Prodotti')
 
-columns = product_pool.fields.keys()
+columns = product_pool.fields().keys()
 xls_write_row(WS, 0, columns)
 
 import pdb; pdb.set_trace()
