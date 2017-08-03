@@ -88,16 +88,23 @@ columns = product_pool.fields().keys()
 template_columns = template_pool.fields().keys()
 xls_write_row(WS, 0, columns)
 
-translate = [
-    name for name in product_pool.fields() if \
-        product_pool.fields()[name].get('translate', False)]
-        
 import pdb; pdb.set_trace()
 description = [
     product_pool.fields()[item]['string'] for item in product_pool.fields()]
     
 # Description
 xls_write_row(WS, 1, description)
+
+# Translate
+translate_fields = [
+    name for name in product_pool.fields() if \
+        product_pool.fields()[name].get('translate', False)]
+
+translate = [
+    ('X' for name in translate_fields else '') \
+        for name in product_pool.fields()]
+xls_write_row(WS, 2, translate)
+            
 
 # Read newsletter category and put in database:
 product_ids = product_pool.search([
