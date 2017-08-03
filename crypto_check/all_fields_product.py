@@ -114,3 +114,4 @@ for product in product_pool.browse(product_ids):
                 res.append('')
                             
     xls_write_row(WS, i, res)
+WB.close()
