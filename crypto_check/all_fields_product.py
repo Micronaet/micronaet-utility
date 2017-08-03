@@ -54,10 +54,13 @@ def xls_write_row(WS, row, row_data, format_cell=None):
     '''
     col = 0
     for item in row_data:
-        if format_cell:
-            WS.write(row, col, item, format_cell)
-        else:            
-            WS.write(row, col, item)
+        try:
+            if format_cell:
+                WS.write(row, col, item, format_cell)
+            else:            
+                WS.write(row, col, item)
+        except:
+            WS.write(row, col, '#ERR')
         col += 1
     return True
 
