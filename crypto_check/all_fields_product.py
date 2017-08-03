@@ -110,5 +110,4 @@ for product in product_pool.browse(product_ids):
             except:
                 res.append('')
                             
-    import pdb; pdb.set_trace()
     xls_write_row(WS, 0, res)
