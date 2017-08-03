@@ -82,7 +82,6 @@ WS = WB.add_worksheet('Prodotti')
 columns = product_pool.fields().keys()
 xls_write_row(WS, 0, columns)
 
-import pdb; pdb.set_trace()
 # Read newsletter category and put in database:
 product_ids = product_pool.search([
     ('default_code', '!=', False),
@@ -109,4 +108,5 @@ for product in product_pool.browse(product_ids):
             except:
                 res.append('')
                             
+    import pdb; pdb.set_trace()
     xls_write_row(WS, 0, res)
