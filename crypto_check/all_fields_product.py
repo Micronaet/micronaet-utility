@@ -88,9 +88,11 @@ columns = product_pool.fields().keys()
 template_columns = template_pool.fields().keys()
 xls_write_row(WS, 0, columns)
 import pdb; pdb.set_trace()
+
+description = [
+    product_pool.fields[item].name for item in product_pool.fields()]
 # Description
-xls_write_row(WS, 1, [
-    product_pool.fields[item].name for item in product_pool.fields()])
+xls_write_row(WS, 1, description)
 
 
 # Read newsletter category and put in database:
