@@ -88,7 +88,6 @@ columns = product_pool.fields().keys()
 template_columns = template_pool.fields().keys()
 xls_write_row(WS, 0, columns)
 
-import pdb; pdb.set_trace()
 description = [
     product_pool.fields()[item]['string'] for item in product_pool.fields()]
     
