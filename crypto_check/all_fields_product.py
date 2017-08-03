@@ -93,5 +93,5 @@ product_ids = product_pool.search([
 for product in product_pool.browse(product_ids):
     res = []
     for col in columns:
-        res.append(col.__getattribute__(col))
+        res.append(product.__getattribute__(col))
     xls_write_row(WS, 0, res)
