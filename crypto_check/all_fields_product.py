@@ -79,10 +79,10 @@ product_pool = odoo.model('product.product')
 WB = xlsxwriter.Workbook(file_out)
 WS = WB.add_worksheet('Prodotti')
 
-import pdb; pdb.set_trace()
-columns = product_pool._columns.keys()
+columns = product_pool.fields.keys()
 xls_write_row(WS, 0, columns)
 
+import pdb; pdb.set_trace()
 # Read newsletter category and put in database:
 product_ids = product_pool.search([
     ('default_code', '!=', False),
