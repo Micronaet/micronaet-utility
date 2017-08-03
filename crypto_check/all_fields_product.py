@@ -75,6 +75,10 @@ odoo = erppeek.Client(
     user=user,
     password=pwd,
     )
+    
+# Set Italian:
+odoo.context = dict(odoo.context, lang='it_IT')
+
 product_pool = odoo.model('product.product')
 template_pool = odoo.model('product.template')
 
