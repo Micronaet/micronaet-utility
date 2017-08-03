@@ -32,7 +32,9 @@ from datetime import datetime
 #                                Parameters
 # -----------------------------------------------------------------------------
 # Extract config file name from current name
-fullname = './micronaet.cfg' # same folder
+fullname = '~/micronaet.cfg' # home folder
+fullname = os.path.expanduser(fullname)
+
 file_check = [
     r'c:\\micronaet.doc', 
     r'c:\\windows\micronaet.doc', 
