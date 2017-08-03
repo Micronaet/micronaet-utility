@@ -120,9 +120,6 @@ for product in product_pool.browse(product_ids):
                 value = eval('product.%s' % col)
             except:
                 res.append('#ERR')
-        if value:
-           res.append(value)
-        else:
                             
     xls_write_row(WS, i, res)
 WB.close()
