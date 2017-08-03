@@ -101,7 +101,7 @@ for product in product_pool.browse(product_ids):
             res.append(product.__getattribute__(col))
         except:
             try: 
-                res.append(product.product_tmpl_id.__getattribute__(col)))
+                res.append(product.product_tmpl_id.__getattribute__(col))
             except:
                 res.append('?')
                             
