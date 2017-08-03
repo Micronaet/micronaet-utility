@@ -98,11 +98,15 @@ for product in product_pool.browse(product_ids):
     res = []
     for col in columns:
         try:
-            res.append(product.__getattribute__(col))
+            value = eval('product.%s' % col)
         except:
+            value = False
+        if value:
+           res.append(value)
+        else:
             try: 
-                res.append(product.product_tmpl_id.__getattribute__(col))
+                res.append(eval('product.product_tmpl_id.%s' % col))
             except:
-                res.append('?')
+                res.append('')
                             
     xls_write_row(WS, 0, res)
