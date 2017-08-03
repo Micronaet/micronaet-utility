@@ -42,7 +42,8 @@ port = config.get('dbaccess', 'port')   # verify if it's necessary: getint
 
 # Excel:
 row_start = 1
-file_out = 'all_product.xlsx'
+file_out = '~/all_product.xlsx'
+file_out = os.path.expanduser(file_out)
 
 # -----------------------------------------------------------------------------
 # Utility:
@@ -95,6 +96,8 @@ product_ids = product_pool.search([
 i = 0
 for product in product_pool.browse(product_ids):
     i += 1
+    if i == 10:
+        break
     print 'Write line: %s' % i
     res = []
     for col in columns:
@@ -110,4 +113,4 @@ for product in product_pool.browse(product_ids):
             except:
                 res.append('')
                             
-    xls_write_row(WS, 0, res)
+    xls_write_row(WS, i, res)
