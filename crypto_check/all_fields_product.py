@@ -76,6 +76,7 @@ odoo = erppeek.Client(
     password=pwd,
     )
 product_pool = odoo.model('product.product')
+template_pool = odoo.model('product.template')
 
 # -----------------------------------------------------------------------------
 # Read database used:
@@ -84,7 +85,13 @@ WB = xlsxwriter.Workbook(file_out)
 WS = WB.add_worksheet('Prodotti')
 
 columns = product_pool.fields().keys()
+template_columns = template_pool.fields().keys()
 xls_write_row(WS, 0, columns)
+import pdb; pdb.set_trace()
+# Description
+xls_write_row(WS, 1, [
+    product_pool.fields[item].name for item in product_pool.fields()])
+
 
 # Read newsletter category and put in database:
 product_ids = product_pool.search([
@@ -93,7 +100,7 @@ product_ids = product_pool.search([
         ('C01', 'I01', 'I02', 'I03', 'I04', 'I05', 'I06')),
     ])
 
-i = 0
+i = 1
 for product in product_pool.browse(product_ids):
     i += 1
     if i == 4:
@@ -101,17 +108,19 @@ for product in product_pool.browse(product_ids):
     print 'Write line: %s' % i
     res = []
     for col in columns:
-        try:
-            value = eval('product.%s' % col)
-        except:
-            value = False
+        if col in template_columns:
+            try:
+                res.append(eval('product.product_tmpl_id.%s' % col))
+            except:
+                res.append('#ERR')
+        else:        
+            try:
+                value = eval('product.%s' % col)
+            except:
+                res.append('#ERR')
         if value:
            res.append(value)
         else:
-            try: 
-                res.append(eval('product.product_tmpl_id.%s' % col))
-            except:
-                res.append('')
                             
     xls_write_row(WS, i, res)
 WB.close()
