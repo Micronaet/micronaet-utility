@@ -95,8 +95,7 @@ product_ids = product_pool.search([
 i = 0
 for product in product_pool.browse(product_ids):
     i += 1
-    if i == 10:
-        break
+    print 'Write line: %s' % i
     res = []
     for col in columns:
         try:
