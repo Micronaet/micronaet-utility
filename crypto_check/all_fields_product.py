@@ -91,7 +91,7 @@ import pdb; pdb.set_trace()
 
 translate = [
     name for name in product_pool.fields() if \
-        product_pool.fields()[name]['translate']]
+        product_pool.fields()[name].get('translate', False)]
         
 description = [
     product_pool.fields()[item]['string'] for item in product_pool.fields()]
