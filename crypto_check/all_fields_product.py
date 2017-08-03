@@ -90,8 +90,19 @@ product_ids = product_pool.search([
         ('C01', 'I01', 'I02', 'I03', 'I04', 'I05', 'I06')),
     ])
 
+i = 0
 for product in product_pool.browse(product_ids):
+    i += 1
+    if i == 10:
+        break
     res = []
     for col in columns:
-        res.append(product.__getattribute__(col))
+        try:
+            res.append(product.__getattribute__(col))
+        except:
+            try: 
+                res.append(product.product_tmpl_id.__getattribute__(col)))
+            except:
+                res.append('?')
+                            
     xls_write_row(WS, 0, res)
