@@ -1,0 +1,45 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* company_base_folder
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-27 16:24+0000\n"
+"PO-Revision-Date: 2017-08-04 15:16+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: it\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#. module: company_base_folder
+#: field:res.company,base_local_folder:0
+msgid "Base folder"
+msgstr "Cartella base"
+
+#. module: company_base_folder
+#: view:res.company:company_base_folder.view_res_comapany_base_folder_form
+msgid "Base local folder"
+msgstr "Cartella base locale"
+
+#. module: company_base_folder
+#: code:addons/company_base_folder/folder.py:62
+#, python-format
+msgid "Cannot create base fodler: %s"
+msgstr "Non posso creare la cartella base: %s"
+
+#. module: company_base_folder
+#: model:ir.model,name:company_base_folder.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: company_base_folder
+#: code:addons/company_base_folder/folder.py:61
+#, python-format
+msgid "Error"
+msgstr "Errore"
