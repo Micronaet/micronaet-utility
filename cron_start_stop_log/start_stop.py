@@ -42,7 +42,53 @@ class IrCron(orm.Model):
     """ Model name: IrCron
     """    
     _inherit = 'ir.cron'
-    
+
+    # TODO override lauch event:
+    '''def _callback(self, cr, uid, model_name, method_name, args, job_id):
+        """ Run the method associated to a given job
+
+        It takes care of logging and exception handling.
+
+        :param model_name: model name on which the job method is located.
+        :param method_name: name of the method to call when this job is 
+        :processed.
+        :param args: arguments of the method (without the usual self, cr, uid).
+        :param job_id: job id.
+        """
+        try:
+            args = str2tuple(args)
+            openerp.modules.registry.RegistryManager.check_registry_signaling(
+                cr.dbname)
+            registry = openerp.registry(cr.dbname)
+            if model_name in registry:
+                model = registry[model_name]
+                if hasattr(model, method_name):
+                    log_depth = (None if _logger.isEnabledFor(
+                        logging.DEBUG) else 1)
+                    netsvc.log(_logger, logging.DEBUG, 'cron.object.execute', (
+                        cr.dbname, uid, '*', model_name, 
+                        method_name)+tuple(args), 
+                        depth=log_depth)
+                    if _logger.isEnabledFor(logging.DEBUG):
+                        start_time = time.time()
+                    getattr(model, method_name)(cr, uid, *args)
+                    if _logger.isEnabledFor(logging.DEBUG):
+                        end_time = time.time()
+                        _logger.debug('%.3fs (%s, %s)' % (
+                            end_time - start_time, model_name, method_name))
+                    openerp.modules.registry.RegistryManager.signal_caches_change(
+                        cr.dbname)
+                else:
+                    msg = "Method `%s.%s` does not exist." % (
+                        model_name, method_name)
+                    _logger.warning(msg)
+            else:
+                msg = "Model `%s` does not exist." % model_name
+                _logger.warning(msg)
+        except Exception, e:
+            self._handle_callback_exception(
+                cr, uid, model_name, method_name, args, job_id, e)
+    '''    
     def log_start_event(self, cr, uid, ids, context=None):
         ''' Save Start time when end
         '''
