@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* cron_start_stop_log
+# 	* activity_start_stop_log
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-14 15:08+0000\n"
-"PO-Revision-Date: 2017-12-14 16:08+0100\n"
+"POT-Creation-Date: 2017-12-29 09:07+0000\n"
+"PO-Revision-Date: 2017-12-29 10:10+0100\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,12 +17,130 @@ msgstr ""
 "Language: it\n"
 "X-Generator: Poedit 1.6.10\n"
 
-#. module: cron_start_stop_log
-#: field:ir.cron,log_start:0
-msgid "Correct start"
-msgstr "Partenza corretta"
+#. module: activity_start_stop_log
+#: field:ir.activity.log.event,activity_id:0
+msgid "Activity"
+msgstr "Attività"
 
-#. module: cron_start_stop_log
-#: field:ir.cron,log_stop:0
-msgid "Correct stop"
-msgstr "Fine corretta"
+#. module: activity_start_stop_log
+#: view:ir.activity.log:activity_start_stop_log.view_ir_activity_log_form
+#: view:ir.activity.log:activity_start_stop_log.view_ir_activity_log_tree
+#: view:ir.activity.log.event:activity_start_stop_log.view_ir_activity_log_event_form
+#: model:ir.model,name:activity_start_stop_log.model_ir_activity_log
+#: model:ir.ui.menu,name:activity_start_stop_log.menu_action_activity_log_root
+msgid "Activity log"
+msgstr "Log attività"
+
+#. module: activity_start_stop_log
+#: view:ir.activity.log.event:activity_start_stop_log.view_ir_activity_log_event_tree
+#: model:ir.model,name:activity_start_stop_log.model_ir_activity_log_event
+msgid "Activity log event"
+msgstr "Evento log attività"
+
+#. module: activity_start_stop_log
+#: model:ir.actions.act_window,name:activity_start_stop_log.action_ir_activity_log
+#: model:ir.ui.menu,name:activity_start_stop_log.menu_ir_activity_log
+msgid "Activity logged"
+msgstr "Attività loggate"
+
+#. module: activity_start_stop_log
+#: model:ir.actions.act_window,name:activity_start_stop_log.action_ir_activity_log_event
+#: model:ir.ui.menu,name:activity_start_stop_log.menu_ir_activity_log_event
+msgid "Activity logged event"
+msgstr "Eventi loggati"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,code:0
+msgid "Code"
+msgstr "Codice"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,create_uid:0 field:ir.activity.log.event,create_uid:0
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,create_date:0
+#: field:ir.activity.log.event,create_date:0
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: activity_start_stop_log
+#: selection:ir.activity.log,type:0
+msgid "Cron event"
+msgstr "Evento Cron"
+
+#. module: activity_start_stop_log
+#: view:ir.activity.log.event:activity_start_stop_log.view_ir_activity_log_event_form
+#: field:ir.activity.log.event,error:0 selection:ir.activity.log.event,esit:0
+msgid "Error"
+msgstr "Errore"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log.event,esit:0
+msgid "Esit"
+msgstr "Esito"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,id:0 field:ir.activity.log.event,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: activity_start_stop_log
+#: view:ir.activity.log.event:activity_start_stop_log.view_ir_activity_log_event_form
+#: field:ir.activity.log.event,info:0
+msgid "Info"
+msgstr "Info"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,write_uid:0 field:ir.activity.log.event,write_uid:0
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,write_date:0 field:ir.activity.log.event,write_date:0
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,name:0
+msgid "Name"
+msgstr "Nome"
+
+#. module: activity_start_stop_log
+#: view:ir.activity.log:activity_start_stop_log.view_ir_activity_log_form
+#: field:ir.activity.log,note:0
+msgid "Note"
+msgstr "Note"
+
+#. module: activity_start_stop_log
+#: selection:ir.activity.log.event,esit:0
+msgid "OK"
+msgstr "OK"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,days:0
+msgid "Repeat every day"
+msgstr "Ripeti ogni giorno"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log.event,log_start:0
+msgid "Start"
+msgstr "Partenza"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log.event,log_stop:0
+msgid "Stop"
+msgstr "Fine"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log,type:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: activity_start_stop_log
+#: view:ir.activity.log.event:activity_start_stop_log.view_ir_activity_log_event_form
+#: selection:ir.activity.log.event,esit:0
+#: field:ir.activity.log.event,warning:0
+msgid "Warning"
+msgstr "Warning"
