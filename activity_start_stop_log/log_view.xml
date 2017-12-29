@@ -46,15 +46,11 @@
             <field name="name">ir.activity.log.event.tree</field>
             <field name="model">ir.activity.log.event</field>
             <field name="arch" type="xml">
-                <tree string="Activity log event" colors="red:error!=False;orange:warning!=False"> 
+                <tree string="Activity log event" colors="red:esit=='error';orange:esit=='warning'"> 
                     <field name="activity_id" />
                     <field name="esit" />
                     <field name="log_start" />
                     <field name="log_stop" />
-                    
-                    <field name="info" invisibile="1" />
-                    <field name="warning" invisibile="1" />
-                    <field name="error" invisibile="1" />
                 </tree>
             </field>
         </record>
