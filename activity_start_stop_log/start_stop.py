@@ -76,6 +76,8 @@ class IrActivityLogEvent(orm.Model):
         '''        
         _logger.info(event)
         if append:
+            if mode not in data:
+                data[mode] = ''
             data[mode] += event
             data[mode] += '\n'
         return True
