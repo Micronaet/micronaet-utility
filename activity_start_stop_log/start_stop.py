@@ -113,9 +113,10 @@ class IrActivityLogEvent(orm.Model):
             data = {}
         _logger.info('End log activity ID: %s' % event_id)
         
+        # Read previous start:
         current_proxy = self.browse(cr, uid, event_id, context=context)
         start_dt = datetime.strptime(
-            current_proxy.start, DEFAULT_SERVER_DATETIME_FORMAT)
+            current_proxy.log_start, DEFAULT_SERVER_DATETIME_FORMAT)
         end_dt = datetime.now()
         
         data['log_stop'] = end_dt.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
