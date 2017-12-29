@@ -18,11 +18,11 @@
 ###############################################################################
 
 {
-    'name': 'Cron exec status',
+    'name': 'Exec status activity',
     'version': '0.1',
     'category': 'Base',
     'description': '''        
-        Add 2 fields for manage start stop event that work correctly
+        Manage a log status list for every start stop activity
         ''',
     'author': 'Micronaet S.r.l. - Nicola Riolini',
     'website': 'http://www.micronaet.it',
@@ -33,6 +33,7 @@
     'init_xml': [],
     'demo': [],
     'data': [
+        'security/ir.model.access.csv',
         'log_view.xml',
         ],
     'active': False,

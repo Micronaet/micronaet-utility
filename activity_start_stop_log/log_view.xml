@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!--ir.activity.log-->
+        <record model="ir.ui.view" id="view_ir_activity_log_tree">
+            <field name="name">ir.activity.log.tree</field>
+            <field name="model">ir.activity.log</field>
+            <field name="arch" type="xml">
+                <tree string="Activity log" editable="bottom">        
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="days" />
+                    <field name="note" />
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_ir_activity_log_form">
+            <field name="name">ir.activity.log.form</field>
+            <field name="model">ir.activity.log</field>
+            <field name="arch" type="xml">
+                <form string="Activity log">   
+                    <group colspan="4" col="4">     
+                        <field name="name" />
+                        <field name="code" />
+                        <field name="days" />
+                        <separator string="Note" colspan="4"/>
+                        <field name="note" nolabel="1" colspan="4"/>
+                    </group>     
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_ir_activity_log">
+            <field name="name">Activity logged</field>
+            <field name="res_model">ir.activity.log</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_ir_activity_log_tree"/>
+            <field name="context">{}</field>
+            <field name="domain">[]</field>
+        </record>
+
+        <!--ir.activity.log.event-->
+        <record model="ir.ui.view" id="view_ir_activity_log_event_tree">
+            <field name="name">ir.activity.log.event.tree</field>
+            <field name="model">ir.activity.log.event</field>
+            <field name="arch" type="xml">
+                <tree string="Activity log event" editable="bottom">        
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_ir_activity_log_event_form">
+            <field name="name">ir.activity.log.event.form</field>
+            <field name="model">ir.activity.log.event</field>
+            <field name="arch" type="xml">
+                <form string="Activity log">   
+                    <group colspan="4" col="4">     
+                    </group>     
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_ir_activity_log_event">
+            <field name="name">Activity logged event</field>
+            <field name="res_model">ir.activity.log.event</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_ir_activity_log_event_tree"/>
+            <field name="context">{}</field>
+            <field name="domain">[]</field>
+        </record>
+        
+        <menuitem 
+            parent="base.menu_custom" 
+            id="menu_action_activity_log_root" 
+            sequence="50"
+            name="Activity log"
+            />
+            <menuitem 
+                parent="menu_action_activity_log_root" 
+                id="menu_ir_activity_log" 
+                action="action_ir_activity_log"
+                sequence="10"
+                />
+            <menuitem 
+                parent="menu_action_activity_log_root" 
+                id="menu_ir_activity_log_event" 
+                action="action_ir_activity_log_event"
+                sequence="20"
+                />
+            
+        
+    </data>
+</openerp>
+
