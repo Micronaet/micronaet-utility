@@ -119,7 +119,7 @@ class IrActivityLogEvent(orm.Model):
         end_dt = datetime.now()
         
         data['log_stop'] = end_dt.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
-        data['duration'] = (end_dt - start_dt).total_seconds() / 60.0 # minutes
+        data['duration'] = (end_dt - start_dt).total_seconds() / 3660.0 # hours
             
         if data.get('error', False):
             data['esit'] = 'error'
