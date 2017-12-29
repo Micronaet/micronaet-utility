@@ -72,17 +72,17 @@
                             <notebook colspan="4">
                                 <page string="Info" attrs="{'invisible': [('info', '=', False)]}">
                                     <group colspan="4" col="4">     
-                                        <field name="info" />
+                                        <field name="info" colspan="4" nolabel="1" />
                                     </group>    
                                 </page>
                                 <page string="Warning" attrs="{'invisible': [('warning', '=', False)]}">
                                     <group colspan="4" col="4">     
-                                        <field name="warning" />
+                                        <field name="warning" colspan="4" nolabel="1"/>
                                     </group>    
                                 </page>
                                 <page string="Error" attrs="{'invisible': [('error', '=', False)]}">
                                     <group colspan="4" col="4">     
-                                        <field name="error" />
+                                        <field name="error" colspan="4" nolabel="1" />
                                     </group>    
                                 </page>
                             </notebook>

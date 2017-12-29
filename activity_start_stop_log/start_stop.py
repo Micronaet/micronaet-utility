@@ -78,8 +78,7 @@ class IrActivityLogEvent(orm.Model):
         if append:
             if mode not in data:
                 data[mode] = ''
-            data[mode] += event
-            data[mode] += '\n'
+            data[mode] += '%s: %s\n' % (datetime.now(), event)
         return True
 
     def log_start_event(self, cr, uid, code, context=None):
