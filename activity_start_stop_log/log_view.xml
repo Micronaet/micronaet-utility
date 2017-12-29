@@ -51,6 +51,7 @@
                     <field name="esit" />
                     <field name="log_start" />
                     <field name="log_stop" />
+                    <field name="duration" />
                 </tree>
             </field>
         </record>
@@ -65,6 +66,7 @@
                             <field name="esit" />
                             <field name="log_start" />
                             <field name="log_stop" />
+                            <field name="duration" />
                             <notebook colspan="4">
                                 <page string="Info" attrs="{'invisible': [('info', '=', False)]}">
                                     <group colspan="4" col="4">     

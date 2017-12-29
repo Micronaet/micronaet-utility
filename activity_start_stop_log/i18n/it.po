@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-29 09:07+0000\n"
-"PO-Revision-Date: 2017-12-29 10:10+0100\n"
+"POT-Creation-Date: 2017-12-29 09:28+0000\n"
+"PO-Revision-Date: 2017-12-29 10:28+0100\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -69,6 +69,11 @@ msgstr "Creato il"
 #: selection:ir.activity.log,type:0
 msgid "Cron event"
 msgstr "Evento Cron"
+
+#. module: activity_start_stop_log
+#: field:ir.activity.log.event,duration:0
+msgid "Duration"
+msgstr "Durata"
 
 #. module: activity_start_stop_log
 #: view:ir.activity.log.event:activity_start_stop_log.view_ir_activity_log_event_form
