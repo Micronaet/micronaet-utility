@@ -69,9 +69,22 @@ class IrActivityLogEvent(orm.Model):
     _rec_name = 'activity_id'
     _order = 'log_start'
     
+    def log_data(self, event, data, append=True, mode='info'):
+        ''' Log event in ODOO log queue
+            Add in data extra dict (record) the event if append is True
+            mode: info, warning, error
+        '''        
+        _logger.info(event)
+        if append:
+            data[mode] += event
+            data[mode] += '\n'
+        return True
+
     def log_start_event(self, cr, uid, code, context=None):
         ''' Save Start time when for activity code passed
+            
         '''
+        _logger.info('Start log activity code: %s' % code)
         activity_pool = self.pool.get('ir.activity.log')        
         activity_ids = activity_pool.search(cr, uid, [
             ('code', '=', code),
@@ -81,27 +94,47 @@ class IrActivityLogEvent(orm.Model):
         else:
             activity_id = activity_pool.create(cr, uid, {
                 'code': code,
-                'name': name,                
+                'name': code,                
                 }, context=context)
 
-        return self.create(cr, uid, ids, {
+        return self.create(cr, uid, {
             'activity_id': activity_id,
             'log_start': datetime.now().strftime(
                 DEFAULT_SERVER_DATETIME_FORMAT),
             }, context=context) 
 
-    def log_stop_event(self, cr, uid, event_id, context=None):
+    def log_stop_event(self, cr, uid, event_id, data=None, context=None):
         ''' Save Start time when end
+            event_id: ID to update
+            data: insert extra data in record (ex. error, warning, info fields)
         '''
-        return self.write(cr, uid, event_id, {
-            'log_stop': datetime.now().strftime(
-                DEFAULT_SERVER_DATETIME_FORMAT),
-            }, context=context) 
+        if data is None:
+            data = {}
+        _logger.info('End log activity ID: %s' % event_id)
+        data['log_stop'] = datetime.now().strftime(
+            DEFAULT_SERVER_DATETIME_FORMAT)
+            
+        if data.get('error', False):
+            data['esit'] = 'error'
+        elif data.get('warning', False):
+            data['esit'] = 'warning'
+        else:
+            data['esit'] = 'info'
+            
+        return self.write(cr, uid, event_id, data, context=context) 
     
     _columns = {
         'activity_id': fields.many2one('ir.activity.log', 'Activity'),
-        'log_start': fields.date('Correct start'),
-        'log_stop': fields.date('Correct stop'),
+        'log_start': fields.datetime('Start'),
+        'log_stop': fields.datetime('Stop'),
+        'error': fields.text('Error'),
+        'warning': fields.text('Warning'),
+        'info': fields.text('Info'),
+        'esit': fields.selection([
+            ('info', 'OK'),
+            ('warning', 'Warning'),
+            ('error', 'Error'),
+            ], 'Esit')
         }
        
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

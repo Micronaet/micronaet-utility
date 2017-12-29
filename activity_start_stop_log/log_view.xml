@@ -6,7 +6,7 @@
             <field name="name">ir.activity.log.tree</field>
             <field name="model">ir.activity.log</field>
             <field name="arch" type="xml">
-                <tree string="Activity log" editable="bottom">        
+                <tree string="Activity log">
                     <field name="name" />
                     <field name="code" />
                     <field name="days" />
@@ -44,7 +44,15 @@
             <field name="name">ir.activity.log.event.tree</field>
             <field name="model">ir.activity.log.event</field>
             <field name="arch" type="xml">
-                <tree string="Activity log event" editable="bottom">        
+                <tree string="Activity log event" colors="red:error!=False;orange:warning!=False"> 
+                    <field name="activity_id" />
+                    <field name="log_start" />
+                    <field name="log_stop" />
+                    <field name="esit" />
+                    
+                    <field name="info" invisibile="1" />
+                    <field name="warning" invisibile="1" />
+                    <field name="error" invisibile="1" />
                 </tree>
             </field>
         </record>
@@ -54,6 +62,27 @@
             <field name="arch" type="xml">
                 <form string="Activity log">   
                     <group colspan="4" col="4">     
+                        <field name="activity_id" />
+                        <field name="log_start" />
+                        <field name="log_stop" />
+                        <field name="esit" />
+                        <notebook colspan="4">
+                            <page string="Info" attrs="{'invisible': [('info', '=', False)]}">
+                                <group colspan="4" col="4">     
+                                    <field name="info" />
+                                </group>    
+                            </page>
+                            <page string="Warning" attrs="{'invisible': [('warning', '=', False)]}">
+                                <group colspan="4" col="4">     
+                                    <field name="warning" />
+                                </group>    
+                            </page>
+                            <page string="Error" attrs="{'invisible': [('error', '=', False)]}">
+                                <group colspan="4" col="4">     
+                                    <field name="error" />
+                                </group>    
+                            </page>
+                        </notebook>
                     </group>     
                 </form>
             </field>
