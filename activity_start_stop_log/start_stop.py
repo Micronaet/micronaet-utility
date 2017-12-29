@@ -112,8 +112,14 @@ class IrActivityLogEvent(orm.Model):
         if data is None:
             data = {}
         _logger.info('End log activity ID: %s' % event_id)
-        data['log_stop'] = datetime.now().strftime(
-            DEFAULT_SERVER_DATETIME_FORMAT)
+        
+        current_proxy = self.browse(cr, uid, event_id, context=context)
+        start_dt = datetime.strptime(
+            current_proxy.start, DEFAULT_SERVER_DATETIME_FORMAT)
+        end_dt = datetime.now()
+        
+        data['log_stop'] = end_dt.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        data['duration'] = (end_dt - start_dt).total_seconds() / 60.0 # minutes
             
         if data.get('error', False):
             data['esit'] = 'error'
@@ -128,6 +134,7 @@ class IrActivityLogEvent(orm.Model):
         'activity_id': fields.many2one('ir.activity.log', 'Activity'),
         'log_start': fields.datetime('Start'),
         'log_stop': fields.datetime('Stop'),
+        'duration': fields.float('Duration', digits=(16, 4)),
         'error': fields.text('Error'),
         'warning': fields.text('Warning'),
         'info': fields.text('Info'),
