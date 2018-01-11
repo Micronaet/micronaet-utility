@@ -21,6 +21,7 @@ import os
 import sys
 import logging
 import openerp
+import xlsxwriter
 import openerp.netsvc as netsvc
 import openerp.addons.decimal_precision as dp
 from openerp.osv import fields, osv, expression, orm
@@ -47,9 +48,38 @@ class ExcelWriter(orm.Model):
     # -------------------------------------------------------------------------
     # UTILITY:
     # -------------------------------------------------------------------------
-    def return_filename(self, filename, name, name_of_file, context=None):
+    def _create_workbook(self):
+        ''' Create workbook in a temp file
+        '''
+        now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
+        filename = '/tmp/wb_%s.xlsx' % now
+             
+        _logger.info('Start create file %s' % filename)
+        self._WB = xlsxwriter.Workbook(filename)
+        self._WS = {}
+        self._filename = filename
+
+    def _close_workbook(self, ):
+        ''' Close workbook
+        '''
+        try:
+            self._WB.close()
+        except:
+            _logger.error('Error closign WB')    
+
+    def create_worksheet(self, name=False):
+        ''' Create database for WS in this module
+        '''
+        try:
+            _logger.info('Using WB: %s' % self._WB)
+        except:
+            self._create_workbook()                
+            
+        self._WS[name] = self._WB.add_worksheet(name)
+        
+    def return_attachment(self, cr, uid, name, name_of_file, context=None):
         ''' Return attachment passed
-            filename: Path of filename
             name: Name for the attachment
             name_of_file: file name downloaded
             context: context passed
@@ -61,7 +91,8 @@ class ExcelWriter(orm.Model):
 
         # Pool used:                
         attachment_pool = self.pool.get('ir.attachment')
-        b64 = open(filename, 'rb').read().encode('base64')
+        self._close_workbook() # if not closed maually
+        b64 = open(self._filename, 'rb').read().encode('base64')
         attachment_id = attachment_pool.create(cr, uid, {
             'name': name,
             'datas_fname': name_of_file,
@@ -72,7 +103,7 @@ class ExcelWriter(orm.Model):
             'res_id': 1,
             }, context=context)
 
-        _logger.info('Return XLSX file: %s' % filename)
+        _logger.info('Return XLSX file: %s' % self._filename)
         return {
             'type' : 'ir.actions.act_url',
             'url': '/web/binary/saveas?model=ir.attachment&field=datas&'
@@ -80,16 +111,19 @@ class ExcelWriter(orm.Model):
             'target': 'self',
             }
         
-    def merge_cell(self, WS, rectangle, default_format=''):
+    def merge_cell(self, WS_name, rectangle, default_format=''):
         ''' Merge cell procedure:
             WS: Worksheet where work
             rectangle: list for 2 corners xy data: [0, 0, 10, 5]
             default_format: setup format for cells
         '''
-        WS.merge_range(*rectangle, default_format)
+        if default_format:
+            rectangle.append(default_format)
+            
+        self._WS[WS_name].merge_range(*rectangle)
         return 
              
-    def write_xls_line(self, WS, row, line, default_format=False):
+    def write_xls_line(self, WS_name, row, line, default_format=False):
         ''' Write line in excel file:
             WS: Worksheet where find
             row: position where write
@@ -100,27 +134,33 @@ class ExcelWriter(orm.Model):
         '''
         col = 0
         for record in line:
-            if len(record) == 2: # Normal text, format
-                WS.write(row, col, *record)
+            if type(record) == bool:
+                record = ''
+            if type(record) not in (list, tuple):
+                self._WS[WS_name].write(row, col, record)                
+            elif len(record) == 2: # Normal text, format
+                self._WS[WS_name].write(row, col, *record)
             else: # Rich format
-                WS.write_rich_string(row, col, *record)
+                self._WS[WS_name].write_rich_string(row, col, *record)
             col += 1
         return True
         
-    def column_witdh(self, WS, columns_w):
+    def column_width(self, WS_name, columns_w):
         ''' WS: Worksheet passed
             columns_w: list of dimension for the columns
         '''
         col = 0
         for w in columns_w:
-            WS.set_column(col, col, w)
+            self._WS[WS_name].set_column(col, col, w)
+            col += 1
         return True
         
-    def get_format(self, WB, key):  
+    def get_format(self, key):  
         ''' Database for format cells
-            WB: Workbook where add formats
             key: mode of format
         '''
+        WB = self._WB # Create with start method
+        
         # Save database in self:
         if not self._wb_format:
             self._wb_format = {
