@@ -63,15 +63,19 @@ class ExcelWriter(orm.Model):
     def _close_workbook(self, ):
         ''' Close workbook
         '''
+        self._WS = {}
         try:
-            self._WB.close()
-        except:
+            self._WB.close()            
+        except:            
             _logger.error('Error closign WB')    
+        self._WB = False # remove object in instance
 
     def create_worksheet(self, name=False):
         ''' Create database for WS in this module
         '''
         try:
+            if not self._WB:
+                self._create_workbook()                 
             _logger.info('Using WB: %s' % self._WB)
         except:
             self._create_workbook()                
