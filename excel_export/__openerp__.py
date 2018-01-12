@@ -18,10 +18,11 @@
 ###############################################################################
 
 {
-    'name': '',
+    'name': 'Export XLSX files',
     'version': '0.1',
-    'category': '',
-    'description': '''        
+    'category': 'Utility',
+    'description': '''  
+        Utility for manage external XLSX files      
         ''',
     'author': 'Micronaet S.r.l. - Nicola Riolini',
     'website': 'http://www.micronaet.it',
@@ -31,10 +32,7 @@
         ],
     'init_xml': [],
     'demo': [],
-    'data': [
-        #'security/ir.model.access.csv',    
-        #'_view.xml',
-        ],
+    'data': [],
     'active': False,
     'installable': True,
     'auto_install': False,
