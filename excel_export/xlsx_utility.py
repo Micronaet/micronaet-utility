@@ -82,6 +82,48 @@ class ExcelWriter(orm.Model):
             
         self._WS[name] = self._WB.add_worksheet(name)
         
+    def send_mail_to_group(self, cr, uid, 
+            group_name,
+            subject, body, filename, # Mail data
+            context=None):
+        ''' Send mail of current workbook to all partner present in group 
+            passed
+            group_name: use format module_name.group_id
+            subject: mail subject
+            body: mail body
+            filename: name of xlsx attached file
+        '''
+        # Send mail with attachment:
+        
+        # Pool used
+        group_pool = self.pool.get('res.groups')
+        model_pool = self.pool.get('ir.model.data')
+        thread_pool = self.pool.get('mail.thread')
+
+        self._close_workbook() # Close before read file
+        attachments = [(
+            filename, 
+            open(self._filename, 'rb').read(), # Raw data
+            )]
+
+        group = grop_name.split('.')
+        group_id = model_pool.get_object_reference(
+            cr, uid, group[0], group[1])[1]    
+        partner_ids = []
+        for user in group_pool.browse(
+                cr, uid, group_id, context=context).users:
+            partner_ids.append(user.partner_id.id)
+            
+        thread_pool = self.pool.get('mail.thread')
+        thread_pool.message_post(cr, uid, False, 
+            type='email', 
+            body=body, 
+            subject=subject,
+            partner_ids=[(6, 0, partner_ids)],
+            attachments=attachments, 
+            context=context,
+            )
+        
     def return_attachment(self, cr, uid, name, name_of_file, context=None):
         ''' Return attachment passed
             name: Name for the attachment
