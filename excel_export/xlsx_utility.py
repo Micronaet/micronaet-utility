@@ -153,7 +153,7 @@ class ExcelWriter(orm.Model):
         _logger.info('Return XLSX file: %s' % self._filename)
         
         
-        if version='8.0':        
+        if version=='8.0':        
             return {
                 'type' : 'ir.actions.act_url',
                 'url': '/web/binary/saveas?model=ir.attachment&field=datas&'
