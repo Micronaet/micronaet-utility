@@ -59,6 +59,7 @@ class ExcelWriter(orm.Model):
         self._WB = xlsxwriter.Workbook(filename)
         self._WS = {}
         self._filename = filename
+        self.set_format() # setup default format for text used
 
     def _close_workbook(self, ):
         ''' Close workbook
@@ -231,11 +232,37 @@ class ExcelWriter(orm.Model):
             col += 1
         return True
         
+    def set_format(
+            self, 
+            # Title:
+            title_font='Courier 10 pitch', title_size=11, title_fg='black', 
+            # Header:
+            header_font='Courier 10 pitch', header_size=9, header_fg='black',
+            # Text:
+            text_font='Courier 10 pitch', text_size=9, text_fg='black',
+            # Number:
+            number_format='#.##0,#0',
+            # Layout:
+            border=1,
+            ):
+        ''' Setup 4 element used in normal reporting 
+            Every time replace format setup with new database           
+        '''
+        self._default_format = {
+            'title': (title_font, title_size, title_fg),
+            'header': (header_font, header_size, header_fg),
+            'text': (text_font, text_size, text_fg),
+            'number': number_format,
+            'border': border,
+            }
+        return
+    
     def get_format(self, key):  
         ''' Database for format cells
             key: mode of format
         '''
         WB = self._WB # Create with start method
+        F = self._default_format # readability
         
         # Save database in self:
         if not self._wb_format:
@@ -243,10 +270,10 @@ class ExcelWriter(orm.Model):
                 # -------------------------------------------------------------
                 # Used when key not present:
                 # -------------------------------------------------------------
-                'default' : WB.add_format({
-                    'font_color': 'black',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                'default' : WB.add_format({ # Usually text format
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'align': 'left',
                     }),
 
@@ -255,34 +282,35 @@ class ExcelWriter(orm.Model):
                 # -------------------------------------------------------------
                 'title' : WB.add_format({
                     'bold': True, 
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 11,
+                    'font_name': F['title'][0],
+                    'font_size': F['title'][1],
+                    'font_color': F['title'][2],
                     'align': 'left',
                     }),
                 'header': WB.add_format({
                     'bold': True, 
-                    'font_color': 'black',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['header'][0],
+                    'font_size': F['header'][1],
+                    'font_color': F['header'][2],
                     'align': 'center',
                     'valign': 'vcenter',
                     'bg_color': '#cfcfcf', # grey
-                    'border': 1,
+                    'border': F['border'],
                     #'text_wrap': True,
                     }),
                 'text': WB.add_format({
-                    'font_color': 'black',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     }),
                 'text_center': WB.add_format({
-                    'font_color': 'black',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'align': 'center',
-                    'border': 1,
+                    'border': F['border'],
                     }),
                     
                 # -------------------------------------------------------------
@@ -290,125 +318,131 @@ class ExcelWriter(orm.Model):
                 # -------------------------------------------------------------
                 'bg_red': WB.add_format({
                     'bold': True, 
-                    'font_color': 'black',
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'bg_color': '#ff420e',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     }),
                 'bg_green': WB.add_format({
                     'bold': True, 
-                    'font_color': 'black',
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'bg_color': '#99cc66',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     }),
+                'bg_yellow': WB.add_format({
+                    'bold': True, 
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': 'black',
+                    'bg_color': '#ffff99',
+                    'align': 'left',
+                    'border': F['border'],
+                    }),                
+
+                # TODO remove?
                 'bg_order': WB.add_format({
                     'bold': True, 
-                    'font_color': 'black',
                     'bg_color': '#cc9900',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'align': 'right',
-                    'border': 1,
-                    'num_format': num_format,
+                    'border': F['border'],
+                    'num_format': F['number'],
                     }),
 
                 # -------------------------------------------------------------
                 # With text color:
                 # -------------------------------------------------------------
                 'text_black': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'font_color': 'black',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     'text_wrap': True
                     }),
                 'text_blue': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'font_color': 'blue',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     'text_wrap': True
                     }),
                 'text_red': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'font_color': '#ff420e',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     'text_wrap': True
                     }),
                 'text_green': WB.add_format({
                     'font_color': '#328238', ##99cc66
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     'text_wrap': True
                     }),
                 'text_grey': WB.add_format({
                     'font_color': '#eeeeee',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     }),                
                 'text_wrap': WB.add_format({
                     'font_color': 'black',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'align': 'left',
-                    'border': 1,
+                    'border': F['border'],
                     'text_wrap': True,
                     }),
-                'text_bg_yellow': WB.add_format({
-                    'bold': True, 
-                    'font_color': 'black',
-                    'bg_color': '#ffff99',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
-                    'align': 'left',
-                    'border': 1,
-                    }),                
+
                 'number': WB.add_format({
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'align': 'right',
-                    'border': 1,
-                    'num_format': num_format,
+                    'border': F['border'],
+                    'num_format': F['number'],
                     }),
                 'number_blue': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
                     'font_color': 'blue',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
                     'align': 'right',
-                    'border': 1,
-                    'num_format': num_format,
+                    'border': F['border'],
+                    'num_format': F['number'],
                     }),
+
                 'text_total': WB.add_format({
                     'bold': True, 
                     'font_color': 'black',
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'align': 'left',
                     'bg_color': '#DDDDDD',
-                    'border': 1,
+                    'border': F['border'],
                     #'text_wrap': True,
                     }),
                 'number_total': WB.add_format({
                     'bold': True, 
-                    'font_name': 'Courier 10 pitch',
-                    'font_size': 9,
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
                     'align': 'right',
                     'bg_color': '#DDDDDD',
-                    'border': 1,
-                    'num_format': num_format,
+                    'border': F['border'],
+                    'num_format': F['number'],
                     }),
                 }
         
