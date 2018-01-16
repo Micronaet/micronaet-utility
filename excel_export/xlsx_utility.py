@@ -124,7 +124,8 @@ class ExcelWriter(orm.Model):
             context=context,
             )
         
-    def return_attachment(self, cr, uid, name, name_of_file, context=None):
+    def return_attachment(self, cr, uid, name, name_of_file, version='8.0', 
+            context=None):
         ''' Return attachment passed
             name: Name for the attachment
             name_of_file: file name downloaded
@@ -150,12 +151,30 @@ class ExcelWriter(orm.Model):
             }, context=context)
 
         _logger.info('Return XLSX file: %s' % self._filename)
-        return {
-            'type' : 'ir.actions.act_url',
-            'url': '/web/binary/saveas?model=ir.attachment&field=datas&'
-                'filename_field=datas_fname&id=%s' % attachment_id,
-            'target': 'self',
-            }
+        
+        
+        if version='8.0':        
+            return {
+                'type' : 'ir.actions.act_url',
+                'url': '/web/binary/saveas?model=ir.attachment&field=datas&'
+                    'filename_field=datas_fname&id=%s' % attachment_id,
+                'target': 'self',
+                }
+        else: # version '7.0'                  
+            return {
+                'type': 'ir.actions.act_window',
+                'name': name,
+                'type': 'ir.actions.act_window',
+                'view_type': 'form',
+                'view_mode': 'form',
+                'res_id': attachment_id,
+                'res_model': 'ir.attachment',
+                'views': [(False, 'form')],
+                'context': context,
+                'target': 'current',
+                'nodestroy': False,
+                }       
+                
         
     def merge_cell(self, WS_name, rectangle, default_format=''):
         ''' Merge cell procedure:
