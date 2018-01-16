@@ -190,6 +190,17 @@ class ExcelWriter(orm.Model):
                 self._WS[WS_name].write_rich_string(row, col, *record)
             col += 1
         return True
+
+    def write_xls_data(self, WS_name, row, col, data, default_format=False):
+        ''' Write data in row col position with default_format
+            
+            @return: nothing
+        '''
+        if default_format:
+            self._WS[WS_name].write(row, col, data, default_format)
+        else:    
+            self._WS[WS_name].write(row, col, data, default_format)
+        return True
         
     def column_width(self, WS_name, columns_w):
         ''' WS: Worksheet passed
