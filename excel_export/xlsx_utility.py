@@ -351,8 +351,8 @@ class ExcelWriter(orm.Model):
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
-                    'align': 'right',
                     'border': F['border'],
+                    'align': 'right',
                     'num_format': F['number'],
                     }),
 
@@ -363,75 +363,75 @@ class ExcelWriter(orm.Model):
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': 'black',
-                    'align': 'left',
                     'border': F['border'],
+                    'align': 'left',
                     'text_wrap': True
                     }),
                 'text_blue': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': 'blue',
-                    'align': 'left',
                     'border': F['border'],
+                    'align': 'left',
                     'text_wrap': True
                     }),
                 'text_red': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': '#ff420e',
-                    'align': 'left',
                     'border': F['border'],
+                    'align': 'left',
                     'text_wrap': True
                     }),
                 'text_green': WB.add_format({
                     'font_color': '#328238', ##99cc66
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
-                    'align': 'left',
                     'border': F['border'],
+                    'align': 'left',
                     'text_wrap': True
                     }),
                 'text_grey': WB.add_format({
                     'font_color': '#eeeeee',
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
-                    'align': 'left',
                     'border': F['border'],
+                    'align': 'left',
+                    'text_wrap': True
                     }),                
                 'text_wrap': WB.add_format({
                     'font_color': 'black',
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
-                    'align': 'left',
                     'border': F['border'],
+                    'align': 'left',
                     'text_wrap': True,
                     }),
 
                 'number': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
-                    'align': 'right',
                     'border': F['border'],
                     'num_format': F['number'],
+                    'align': 'right',
                     }),
                 'number_blue': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
+                    'border': F['border'],
                     'font_color': 'blue',
                     'align': 'right',
-                    'border': F['border'],
                     'num_format': F['number'],
                     }),
 
                 'text_total': WB.add_format({
                     'bold': True, 
-                    'font_color': 'black',
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
+                    'border': F['border'],
                     'align': 'left',
                     'bg_color': '#DDDDDD',
-                    'border': F['border'],
                     #'text_wrap': True,
                     }),
                 'number_total': WB.add_format({
@@ -439,9 +439,9 @@ class ExcelWriter(orm.Model):
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
+                    'border': F['border'],
                     'align': 'right',
                     'bg_color': '#DDDDDD',
-                    'border': F['border'],
                     'num_format': F['number'],
                     }),
                 }
