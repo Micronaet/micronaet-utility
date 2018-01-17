@@ -288,7 +288,9 @@ class ExcelWriter(orm.Model):
         F = self._default_format # readability
         
         # Save database in self:
-        if not self._wb_format:
+        try:
+            text = self._wb_format # raise error if not present
+        except:    
             self._wb_format = {
                 # -------------------------------------------------------------
                 # Used when key not present:
