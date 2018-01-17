@@ -137,8 +137,8 @@ class ExcelWriter(orm.Model):
         f.close()
         return filaname
         
-    def return_attachment(self, cr, uid, name, name_of_file, version='8.0', 
-            context=None):
+    def return_attachment(self, cr, uid, name, name_of_file=False, 
+            version='8.0', context=None):
         ''' Return attachment passed
             name: Name for the attachment
             name_of_file: file name downloaded
@@ -148,9 +148,16 @@ class ExcelWriter(orm.Model):
             context = {
                 'lang': 'it_IT',
                 }
-
-        # Pool used:                
+                
+        if not name_of_file:
+            now = datetime.now()
+            now = now.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+            now = now.replace('-', '_').replace(':', '_') 
+            name_of_file = '/tmp/report_%s.xlsx' % now
+    
+        # Pool used:         
         attachment_pool = self.pool.get('ir.attachment')
+        
         self._close_workbook() # if not closed maually
         b64 = open(self._filename, 'rb').read().encode('base64')
         attachment_id = attachment_pool.create(cr, uid, {
