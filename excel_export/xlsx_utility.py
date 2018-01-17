@@ -312,7 +312,7 @@ class ExcelWriter(orm.Model):
                     'font_color': F['text'][2],
                     'border': F['border'],
                     'align': 'left',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),                    
                 'text_center': WB.add_format({
                     'font_name': F['text'][0],
@@ -320,7 +320,7 @@ class ExcelWriter(orm.Model):
                     'font_color': F['text'][2],
                     'border': F['border'],
                     'align': 'center',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),
                 'text_right': WB.add_format({
                     'font_name': F['text'][0],
@@ -328,7 +328,7 @@ class ExcelWriter(orm.Model):
                     'font_color': F['text'][2],
                     'border': F['border'],
                     'align': 'right',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),
                     
                 'text_total': WB.add_format({
@@ -343,9 +343,9 @@ class ExcelWriter(orm.Model):
                     #'text_wrap': True,
                     }),
 
-                # ----------------
+                # --------------
                 # Text BG color:
-                # ----------------
+                # --------------
                 'bg_red': WB.add_format({
                     'bold': True, 
                     'font_name': F['text'][0],
@@ -354,27 +354,27 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'bg_color': '#ff420e',
                     'align': 'left',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),
                 'bg_green': WB.add_format({
                     'bold': True, 
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
+                    'border': F['border'],
                     'bg_color': '#99cc66',
                     'align': 'left',
-                    'valign': 'vcenter',
-                    'border': F['border'],
+                    #'valign': 'vcenter',
                     }),
                 'bg_yellow': WB.add_format({
                     'bold': True, 
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
+                    'border': F['border'],
                     'font_color': 'black',
                     'bg_color': '#ffff99',
                     'align': 'left',
-                    'valign': 'vcenter',
-                    'border': F['border'],
+                    #'valign': 'vcenter',
                     }),                
 
                 # TODO remove?
@@ -385,9 +385,9 @@ class ExcelWriter(orm.Model):
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
                     'border': F['border'],
-                    'align': 'right',
-                    'valign': 'vcenter',
                     'num_format': F['number'],
+                    'align': 'right',
+                    #'valign': 'vcenter',
                     }),
 
                 # --------------
@@ -400,7 +400,7 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'align': 'left',
                     'valign': 'vcenter',
-                    'text_wrap': True
+                    #'text_wrap': True
                     }),
                 'text_blue': WB.add_format({
                     'font_name': F['text'][0],
@@ -409,7 +409,7 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'align': 'left',
                     'valign': 'vcenter',
-                    'text_wrap': True
+                    #'text_wrap': True
                     }),
                 'text_red': WB.add_format({
                     'font_name': F['text'][0],
@@ -418,7 +418,7 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'align': 'left',
                     'valign': 'vcenter',
-                    'text_wrap': True
+                    #'text_wrap': True
                     }),
                 'text_green': WB.add_format({
                     'font_color': '#328238', ##99cc66
@@ -427,7 +427,7 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'align': 'left',
                     'valign': 'vcenter',
-                    'text_wrap': True
+                    #'text_wrap': True
                     }),
                 'text_grey': WB.add_format({
                     'font_color': '#eeeeee',
@@ -436,7 +436,7 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'align': 'left',
                     'valign': 'vcenter',
-                    'text_wrap': True
+                    #'text_wrap': True
                     }),                
                 'text_wrap': WB.add_format({
                     'font_color': 'black',
@@ -445,7 +445,7 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'align': 'left',
                     'valign': 'vcenter',
-                    'text_wrap': True,
+                    #'text_wrap': True,
                     }),
 
                 # -------------------------------------------------------------
@@ -457,8 +457,12 @@ class ExcelWriter(orm.Model):
                     'border': F['border'],
                     'num_format': F['number'],
                     'align': 'right',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),
+
+                # ----------------
+                # Number FG color:
+                # ----------------
                 'number_blue': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
@@ -466,7 +470,7 @@ class ExcelWriter(orm.Model):
                     'num_format': F['number'],
                     'font_color': 'blue',
                     'align': 'right',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),
                 'number_red': WB.add_format({
                     'font_name': F['text'][0],
@@ -475,7 +479,7 @@ class ExcelWriter(orm.Model):
                     'num_format': F['number'],
                     'font_color': 'red',
                     'align': 'right',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),
 
                 'number_total': WB.add_format({
@@ -487,7 +491,7 @@ class ExcelWriter(orm.Model):
                     'num_format': F['number'],
                     'bg_color': '#DDDDDD',
                     'align': 'right',
-                    'valign': 'vcenter',
+                    #'valign': 'vcenter',
                     }),
                 }
         
