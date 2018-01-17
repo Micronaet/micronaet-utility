@@ -59,7 +59,9 @@ class ExcelWriter(orm.Model):
         self._WB = xlsxwriter.Workbook(filename)
         self._WS = {}
         self._filename = filename
+        
         self.set_format() # setup default format for text used
+        self.get_format() # Load database of formats
 
     def _close_workbook(self, ):
         ''' Close workbook
@@ -68,7 +70,7 @@ class ExcelWriter(orm.Model):
         try:
             self._WB.close()            
         except:            
-            _logger.error('Error closign WB')    
+            _logger.error('Error closing WB')    
         self._WB = False # remove object in instance
 
     def create_worksheet(self, name=False):
@@ -280,9 +282,10 @@ class ExcelWriter(orm.Model):
             }
         return
     
-    def get_format(self, key):  
+    def get_format(self, key=False):  
         ''' Database for format cells
             key: mode of format
+            if not passed load database only
         '''
         WB = self._WB # Create with start method
         F = self._default_format # readability
@@ -521,9 +524,12 @@ class ExcelWriter(orm.Model):
                 }
         
         # Return format or default one's
-        return self._wb_format.get(
-            key, 
-            self._wb_format.get('default'),
-            )
+        if key:
+            return self._wb_format.get(
+                key, 
+                self._wb_format.get('default'),
+                )
+        else:
+            return True        
     
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
