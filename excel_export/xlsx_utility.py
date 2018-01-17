@@ -222,10 +222,16 @@ class ExcelWriter(orm.Model):
             if type(record) == bool:
                 record = ''
             if type(record) not in (list, tuple):
-                self._WS[WS_name].write(row, col, record)                
+                if default_format:                    
+                    self._WS[WS_name].write(row, col, record, 
+                        self._wb_format.get(default_format, False))
+                else:    
+                    self._WS[WS_name].write(row, col, record)                
             elif len(record) == 2: # Normal text, format
-                self._WS[WS_name].write(row, col, *record)
-            else: # Rich format
+                self._WS[WS_name].write(row, col, 
+                    record[0], self._wb_format.get(record[1], False))
+            else: # Rich format TODO
+                
                 self._WS[WS_name].write_rich_string(row, col, *record)
             col += 1
         return True
