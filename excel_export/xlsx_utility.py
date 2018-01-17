@@ -124,6 +124,18 @@ class ExcelWriter(orm.Model):
             attachments=attachments, 
             context=context,
             )
+
+    def save_binary_xlsx(self, binary):
+        ''' Save binary data passed as file temp (returned)
+        '''
+        b64_file = base64.decodestring(binary)
+        now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        filename = \
+            '/tmp/file_%s.xlsx' % now.replace(':', '_').replace('-', '_')
+        f = open(filename, 'wb')
+        f.write(b64_file)
+        f.close()
+        return filaname
         
     def return_attachment(self, cr, uid, name, name_of_file, version='8.0', 
             context=None):
