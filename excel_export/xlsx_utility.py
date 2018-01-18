@@ -374,6 +374,17 @@ class ExcelWriter(orm.Model):
                 # --------------
                 # Text BG color:
                 # --------------
+                #
+                'bg_blue': WB.add_format({
+                    'bold': True, 
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'bg_color': '#c4daff',
+                    'align': 'left',
+                    #'valign': 'vcenter',
+                    }),
                 'bg_red': WB.add_format({
                     'bold': True, 
                     'font_name': F['text'][0],
