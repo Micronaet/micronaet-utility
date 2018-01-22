@@ -484,6 +484,26 @@ class ExcelWriter(orm.Model):
                     'align': 'right',
                     #'valign': 'vcenter',
                     }),                
+                'bg_white_number': WB.add_format({
+                    'bold': True, 
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'font_color': 'black',
+                    #'bg_color': '#fffec1',##ffff99',
+                    'align': 'right',
+                    #'valign': 'vcenter',
+                    }),                
+                'bg_blue_number': WB.add_format({
+                    'bold': True, 
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'font_color': 'black',
+                    'bg_color': '#c4daff',##ffff99',
+                    'align': 'right',
+                    #'valign': 'vcenter',
+                    }),                
 
                 # TODO remove?
                 'bg_order': WB.add_format({
