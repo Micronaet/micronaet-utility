@@ -60,7 +60,7 @@ class ExcelWriter(orm.Model):
             value[:4],
             )
 
-    def format_hour(self, value, hhmm_format=True):
+    def format_hour(self, value, hhmm_format=True, approx = 0.001):
         ''' Format hour HH:MM
         '''
         if not hhmm_format:
@@ -69,9 +69,10 @@ class ExcelWriter(orm.Model):
         if not value:
             return '00:00'
             
+        value += approx    
         hour = int(value)
         minute = int((value - hour) * 60)
-        return '%02d:%02d' % (hour, minute) 
+        return '%d:%02d' % (hour, minute) 
     
     # Excel utility:
     def _create_workbook(self):
