@@ -49,7 +49,7 @@ class ExcelWriter(orm.Model):
     # UTILITY:
     # -------------------------------------------------------------------------
     # Format utility:
-    def format_date(value):
+    def format_date(self, value):
         ''' Format hour DD:MM:YYYY
         '''
         if not value:
@@ -60,7 +60,7 @@ class ExcelWriter(orm.Model):
             value[:4],
             )
 
-    def format_hour(value, hhmm_format=True):
+    def format_hour(self, value, hhmm_format=True):
         ''' Format hour HH:MM
         '''
         if not hhmm_format:
