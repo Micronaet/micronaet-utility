@@ -94,6 +94,8 @@ class ExcelWriter(orm.Model):
         ''' Close workbook
         '''
         self._WS = {}
+        self._wb_format = False
+        
         try:
             self._WB.close()            
         except:            
@@ -323,9 +325,13 @@ class ExcelWriter(orm.Model):
         F = self._default_format # readability
         
         # Save database in self:
+        create = False
         try:
-            text = self._wb_format # raise error if not present
+            if not self._wb_format: # raise error if not present
+                create = True            
         except:    
+            create = True
+        if create:    
             self._wb_format = {
                 # -------------------------------------------------------------
                 # Used when key not present:
