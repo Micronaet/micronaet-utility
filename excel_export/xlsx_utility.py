@@ -46,7 +46,7 @@ class ExcelWriter(orm.Model):
     _description = 'Excel writer'
     
     # -------------------------------------------------------------------------
-    # UTILITY:
+    #                                   UTILITY:
     # -------------------------------------------------------------------------
     # Format utility:
     def format_date(self, value):
@@ -85,6 +85,7 @@ class ExcelWriter(orm.Model):
         self._WB = xlsxwriter.Workbook(filename)
         self._WS = {}
         self._filename = filename
+        _logger.warning('Created WB and file: %s' % filename)
         
         self.set_format() # setup default format for text used
         self.get_format() # Load database of formats
@@ -283,7 +284,7 @@ class ExcelWriter(orm.Model):
             col += 1
         return True
         
-    def set_format(
+    def set_format(    
             self, 
             # Title:
             title_font='Courier 10 pitch', title_size=11, title_fg='black', 
@@ -299,6 +300,7 @@ class ExcelWriter(orm.Model):
         ''' Setup 4 element used in normal reporting 
             Every time replace format setup with new database           
         '''
+        _logger.warning('Set format variables')
         self._default_format = {
             'title': (title_font, title_size, title_fg),
             'header': (header_font, header_size, header_fg),
@@ -313,7 +315,11 @@ class ExcelWriter(orm.Model):
             key: mode of format
             if not passed load database only
         '''
+        #try:
+        _logger.warning('Set format WB type')
         WB = self._WB # Create with start method
+        #except:
+            
         F = self._default_format # readability
         
         # Save database in self:
