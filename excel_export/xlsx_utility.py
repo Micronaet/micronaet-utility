@@ -67,7 +67,7 @@ class ExcelWriter(orm.Model):
             return value
             
         if not value:
-            return '00:00'
+            return '0:00'
             
         value += approx    
         hour = int(value)
