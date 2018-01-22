@@ -48,6 +48,32 @@ class ExcelWriter(orm.Model):
     # -------------------------------------------------------------------------
     # UTILITY:
     # -------------------------------------------------------------------------
+    # Format utility:
+    def format_date(value):
+        ''' Format hour DD:MM:YYYY
+        '''
+        if not value:
+            return ''
+        return '%s/%s/%s' % (
+            value[8:10],
+            value[5:7],
+            value[:4],
+            )
+
+    def format_hour(value, hhmm_format=True):
+        ''' Format hour HH:MM
+        '''
+        if not hhmm_format:
+            return value
+            
+        if not value:
+            return '00:00'
+            
+        hour = int(value)
+        minute = int((value - hour) * 60)
+        return '%02d:%02d' % (hour, minute) 
+    
+    # Excel utility:
     def _create_workbook(self):
         ''' Create workbook in a temp file
         '''
