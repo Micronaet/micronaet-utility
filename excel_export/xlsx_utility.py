@@ -225,10 +225,9 @@ class ExcelWriter(orm.Model):
                 'context': context,
                 'target': 'current',
                 'nodestroy': False,
-                }       
-                
+                }                
         
-    def merge_cell(self, WS_name, rectangle, default_format=''):
+    def merge_cell(self, WS_name, rectangle, default_format=False):
         ''' Merge cell procedure:
             WS: Worksheet where work
             rectangle: list for 2 corners xy data: [0, 0, 10, 5]
