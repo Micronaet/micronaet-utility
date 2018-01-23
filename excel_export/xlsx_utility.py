@@ -60,14 +60,15 @@ class ExcelWriter(orm.Model):
             value[:4],
             )
 
-    def format_hour(self, value, hhmm_format=True, approx = 0.001):
+    def format_hour(self, value, hhmm_format=True, approx = 0.001, 
+            zero_value='0:00'):
         ''' Format hour HH:MM
         '''
         if not hhmm_format:
             return value
             
         if not value:
-            return '0:00'
+            return zero_value
             
         value += approx    
         hour = int(value)
