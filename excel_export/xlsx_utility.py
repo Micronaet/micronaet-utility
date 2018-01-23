@@ -236,7 +236,6 @@ class ExcelWriter(orm.Model):
         rectangle.append(data)        
         if default_format:
             rectangle.append(default_format)            
-        import pdb; pdb.set_trace()    
         self._WS[WS_name].merge_range(*rectangle)
         return 
              
