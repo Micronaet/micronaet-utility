@@ -227,15 +227,16 @@ class ExcelWriter(orm.Model):
                 'nodestroy': False,
                 }                
         
-    def merge_cell(self, WS_name, rectangle, default_format=False):
+    def merge_cell(self, WS_name, rectangle, default_format=False, data=''):
         ''' Merge cell procedure:
             WS: Worksheet where work
             rectangle: list for 2 corners xy data: [0, 0, 10, 5]
             default_format: setup format for cells
         '''
+        rectangle.append(data)        
         if default_format:
-            rectangle.append(default_format)
-            
+            rectangle.append(default_format)            
+        import pdb; pdb.set_trace()    
         self._WS[WS_name].merge_range(*rectangle)
         return 
              
