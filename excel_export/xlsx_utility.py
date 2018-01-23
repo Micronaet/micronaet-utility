@@ -240,7 +240,7 @@ class ExcelWriter(orm.Model):
         self._WS[WS_name].merge_range(*rectangle)
         return 
              
-    def write_xls_line(self, WS_name, row, line, default_format=False):
+    def write_xls_line(self, WS_name, row, line, default_format=False, col=0):
         ''' Write line in excel file:
             WS: Worksheet where find
             row: position where write
@@ -249,7 +249,6 @@ class ExcelWriter(orm.Model):
             
             @return: nothing
         '''
-        col = 0
         for record in line:
             if type(record) == bool:
                 record = ''
@@ -277,11 +276,10 @@ class ExcelWriter(orm.Model):
             self._WS[WS_name].write(row, col, data, default_format)
         return True
         
-    def column_width(self, WS_name, columns_w):
+    def column_width(self, WS_name, columns_w, col=0):
         ''' WS: Worksheet passed
             columns_w: list of dimension for the columns
         '''
-        col = 0
         for w in columns_w:
             self._WS[WS_name].set_column(col, col, w)
             col += 1
