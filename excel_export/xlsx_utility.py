@@ -175,7 +175,7 @@ class ExcelWriter(orm.Model):
         ''' Return attachment passed
             name: Name for the attachment
             name_of_file: file name downloaded
-            php: paremeter if activate save_as module for 7.0
+            php: paremeter if activate save_as module for 7.0 (passed base srv)
             context: context passed
         '''
         if context is None: 
@@ -228,13 +228,12 @@ class ExcelWriter(orm.Model):
             #config_proxy = config_pool.browse(
             #    cr, uid, config_ids, context=context)[0]
             #base_address = config_proxy.value
-            base_address = 'localhost'
-            _logger.info('URL parameter: %s' % base_address)
+            _logger.info('URL parameter: %s' % php)
 
             return {
                 'type': 'ir.actions.act_url',
                 'url': '%s/save_as.php?filename=%s&name=%s' % (
-                    base_address,
+                    php,
                     name_of_file, 
                     name,
                     ),
