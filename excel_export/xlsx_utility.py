@@ -228,6 +228,7 @@ class ExcelWriter(orm.Model):
             #config_proxy = config_pool.browse(
             #    cr, uid, config_ids, context=context)[0]
             #base_address = config_proxy.value
+            import pdb; pdb.set_trace()
             _logger.info('URL parameter: %s' % php)
             #shutil.copyfile(origin, name_of_file)
             return {
