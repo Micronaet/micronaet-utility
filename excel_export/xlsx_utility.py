@@ -229,14 +229,15 @@ class ExcelWriter(orm.Model):
                 cr, uid, config_ids, context=context)[0]
             base_address = config_proxy.value
             
-            _logger.info('URL parameter: %s' % base_address)
+            url_call = '%s/save_as.php?filename=%s&name=%s' % (
+                base_address,
+                origin, 
+                os.path.basename(origin),
+                )
+            _logger.info('URL parameter: %s' % url_call)
             return {
                 'type': 'ir.actions.act_url',
-                'url': '%s/save_as.php?filename=%s&name=%s' % (
-                    base_address,
-                    origin, 
-                    os.path.basename(origin),
-                    ),
+                'url': url_call,
                 #'target': 'new',
                 }            
         else: # version '7.0' (return as attachment to be opened)
