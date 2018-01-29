@@ -215,28 +215,27 @@ class ExcelWriter(orm.Model):
                 'target': 'self',
                 }
         elif php: 
-            #config_pool = self.pool.get('ir.config_parameter')
-            #key = 'web.base.url.docnaet'
-            #config_ids = config_pool.search(cr, uid, [
-            #    ('key', '=', key)], context=context)
-            #if not config_ids:
-            #    raise osv.except_osv(
-            #        _('Errore'), 
-            #        _('Avvisare amministratore: configurare parametro: %s' % (
-            #        key),
-            #        )
-            #config_proxy = config_pool.browse(
-            #    cr, uid, config_ids, context=context)[0]
-            #base_address = config_proxy.value
-            import pdb; pdb.set_trace()
-            _logger.info('URL parameter: %s' % php)
-            #shutil.copyfile(origin, name_of_file)
+            config_pool = self.pool.get('ir.config_parameter')
+            key = 'web.base.url.excel'
+            config_ids = config_pool.search(cr, uid, [
+                ('key', '=', key)], context=context)
+            if not config_ids:
+                raise osv.except_osv(
+                    _('Errore'), 
+                    _('Avvisare amministratore: configurare parametro: %s' % (
+                        key)),
+                    )
+            config_proxy = config_pool.browse(
+                cr, uid, config_ids, context=context)[0]
+            base_address = config_proxy.value
+            
+            _logger.info('URL parameter: %s' % base_address)
             return {
                 'type': 'ir.actions.act_url',
                 'url': '%s/save_as.php?filename=%s&name=%s' % (
-                    php,
+                    base_address,
                     origin, 
-                    name,
+                    os.path.basename(origin),
                     ),
                 #'target': 'new',
                 }            
