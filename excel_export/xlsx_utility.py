@@ -21,6 +21,7 @@ import os
 import sys
 import logging
 import openerp
+import shutil
 import xlsxwriter
 import openerp.netsvc as netsvc
 import openerp.addons.decimal_precision as dp
@@ -193,7 +194,8 @@ class ExcelWriter(orm.Model):
         attachment_pool = self.pool.get('ir.attachment')
         
         self._close_workbook() # if not closed maually
-        b64 = open(self._filename, 'rb').read().encode('base64')
+        origin = self._filename
+        b64 = open(origin, 'rb').read().encode('base64')
         attachment_id = attachment_pool.create(cr, uid, {
             'name': name,
             'datas_fname': name_of_file,
@@ -203,9 +205,7 @@ class ExcelWriter(orm.Model):
             'res_model': 'res.partner',
             'res_id': 1,
             }, context=context)
-
         _logger.info('Return XLSX file: %s' % self._filename)
-        
         
         if version=='8.0':        
             return {
@@ -229,7 +229,7 @@ class ExcelWriter(orm.Model):
             #    cr, uid, config_ids, context=context)[0]
             #base_address = config_proxy.value
             _logger.info('URL parameter: %s' % php)
-
+            shutil.copyfile(origin, name_of_file)
             return {
                 'type': 'ir.actions.act_url',
                 'url': '%s/save_as.php?filename=%s&name=%s' % (
