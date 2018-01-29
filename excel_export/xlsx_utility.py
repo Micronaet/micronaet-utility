@@ -171,10 +171,11 @@ class ExcelWriter(orm.Model):
         return filaname
         
     def return_attachment(self, cr, uid, name, name_of_file=False, 
-            version='8.0', context=None):
+            version='8.0', php=False, context=None):
         ''' Return attachment passed
             name: Name for the attachment
             name_of_file: file name downloaded
+            php: paremeter if activate save_as module for 7.0
             context: context passed
         '''
         if context is None: 
@@ -213,7 +214,33 @@ class ExcelWriter(orm.Model):
                     'filename_field=datas_fname&id=%s' % attachment_id,
                 'target': 'self',
                 }
-        else: # version '7.0'                  
+        elif php: 
+            #config_pool = self.pool.get('ir.config_parameter')
+            #key = 'web.base.url.docnaet'
+            #config_ids = config_pool.search(cr, uid, [
+            #    ('key', '=', key)], context=context)
+            #if not config_ids:
+            #    raise osv.except_osv(
+            #        _('Errore'), 
+            #        _('Avvisare amministratore: configurare parametro: %s' % (
+            #        key),
+            #        )
+            #config_proxy = config_pool.browse(
+            #    cr, uid, config_ids, context=context)[0]
+            #base_address = config_proxy.value
+            base_address = 'localhost'
+            _logger.info('URL parameter: %s' % base_address)
+
+            return {
+                'type': 'ir.actions.act_url',
+                'url': '%s/save_as.php?filename=%s&name=%s' % (
+                    base_address,
+                    name_of_file, 
+                    name,
+                    ),
+                #'target': 'new',
+                }            
+        else: # version '7.0' (return as attachment to be opened)
             return {
                 'type': 'ir.actions.act_window',
                 'name': name,
