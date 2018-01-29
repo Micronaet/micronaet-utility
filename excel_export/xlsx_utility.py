@@ -21,7 +21,7 @@ import os
 import sys
 import logging
 import openerp
-import shutil
+#import shutil
 import xlsxwriter
 import openerp.netsvc as netsvc
 import openerp.addons.decimal_precision as dp
@@ -229,12 +229,12 @@ class ExcelWriter(orm.Model):
             #    cr, uid, config_ids, context=context)[0]
             #base_address = config_proxy.value
             _logger.info('URL parameter: %s' % php)
-            shutil.copyfile(origin, name_of_file)
+            #shutil.copyfile(origin, name_of_file)
             return {
                 'type': 'ir.actions.act_url',
                 'url': '%s/save_as.php?filename=%s&name=%s' % (
                     php,
-                    name_of_file, 
+                    origin, 
                     name,
                     ),
                 #'target': 'new',
