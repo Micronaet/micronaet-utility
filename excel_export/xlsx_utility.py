@@ -164,10 +164,9 @@ class ExcelWriter(orm.Model):
         ''' Close workbook and save in another place (passed)
         '''
         _logger.warning('Save file as: %s' % destination)
-        import pdb; pdb.set_trace()
         origin = self._filename
         self._close_workbook() # if not closed maually
-        shutil(origin, '%s.xlsx' % destination)
+        shutil.copy(origin, u'%s.xlsx' % destination)
         return True
 
     def save_binary_xlsx(self, binary):
