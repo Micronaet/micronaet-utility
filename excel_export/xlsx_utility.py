@@ -50,6 +50,14 @@ class ExcelWriter(orm.Model):
     # -------------------------------------------------------------------------
     #                                   UTILITY:
     # -------------------------------------------------------------------------
+    def clean_filename(self, destination):
+        ''' Clean char that generate error
+        '''
+        destination = destination.replace('/', '_').replace(':', '_')
+        if not destination.endswith('xlsx'):
+            destination = '%s.xlsx' % destination
+        return destination    
+        
     # Format utility:
     def format_date(self, value):
         ''' Format hour DD:MM:YYYY
@@ -163,10 +171,12 @@ class ExcelWriter(orm.Model):
     def save_file_as(self, destination):
         ''' Close workbook and save in another place (passed)
         '''
+        destination = self.clean_filename(destination)
         _logger.warning('Save file as: %s' % destination)
+        
         origin = self._filename
         self._close_workbook() # if not closed maually
-        shutil.copy(origin, u'%s.xlsx' % destination)
+        shutil.copy(origin, destination)
         return True
 
     def save_binary_xlsx(self, binary):
