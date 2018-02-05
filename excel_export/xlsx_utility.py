@@ -23,6 +23,7 @@ import logging
 import openerp
 #import shutil
 import xlsxwriter
+import shutil
 import openerp.netsvc as netsvc
 import openerp.addons.decimal_precision as dp
 from openerp.osv import fields, osv, expression, orm
@@ -159,6 +160,14 @@ class ExcelWriter(orm.Model):
             context=context,
             )
 
+    def save_file_as(self, destination):
+        ''' Close workbook and save in another place (passed)
+        '''
+        self._close_workbook() # if not closed maually
+        origin = self._filename
+        shutil(origin, destination)
+        return True
+
     def save_binary_xlsx(self, binary):
         ''' Save binary data passed as file temp (returned)
         '''
@@ -169,7 +178,7 @@ class ExcelWriter(orm.Model):
         f = open(filename, 'wb')
         f.write(b64_file)
         f.close()
-        return filaname
+        return filename
         
     def return_attachment(self, cr, uid, name, name_of_file=False, 
             version='8.0', php=False, context=None):
