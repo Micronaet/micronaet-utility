@@ -171,9 +171,7 @@ class ExcelWriter(orm.Model):
     def save_file_as(self, destination):
         ''' Close workbook and save in another place (passed)
         '''
-        destination = self.clean_filename(destination)
-        _logger.warning('Save file as: %s' % destination)
-        
+        _logger.warning('Save file as: %s' % destination)        
         origin = self._filename
         self._close_workbook() # if not closed maually
         shutil.copy(origin, destination)
