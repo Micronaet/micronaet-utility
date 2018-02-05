@@ -163,8 +163,8 @@ class ExcelWriter(orm.Model):
     def save_file_as(self, destination):
         ''' Close workbook and save in another place (passed)
         '''
-        self._close_workbook() # if not closed maually
         origin = self._filename
+        self._close_workbook() # if not closed maually
         shutil(origin, destination)
         return True
 
