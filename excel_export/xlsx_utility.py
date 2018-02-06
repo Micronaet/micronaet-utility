@@ -114,6 +114,11 @@ class ExcelWriter(orm.Model):
             _logger.error('Error closing WB')    
         self._WB = False # remove object in instance
 
+    def close_workbook(self, ):
+        ''' Close workbook
+        '''
+        return self._close_workbook()
+
     def create_worksheet(self, name=False):
         ''' Create database for WS in this module
         '''
@@ -150,7 +155,7 @@ class ExcelWriter(orm.Model):
             open(self._filename, 'rb').read(), # Raw data
             )]
 
-        group = grop_name.split('.')
+        group = group_name.split('.')
         group_id = model_pool.get_object_reference(
             cr, uid, group[0], group[1])[1]    
         partner_ids = []
@@ -167,6 +172,7 @@ class ExcelWriter(orm.Model):
             attachments=attachments, 
             context=context,
             )
+        self._close_workbook() # if not closed maually        
 
     def save_file_as(self, destination):
         ''' Close workbook and save in another place (passed)
