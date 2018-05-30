@@ -352,7 +352,6 @@ class ExcelWriter(orm.Model):
         ''' Setup 4 element used in normal reporting 
             Every time replace format setup with new database           
         '''
-        _logger.warning('Set format variables')
         self._default_format = {
             'title': (title_font, title_size, title_fg),
             'header': (header_font, header_size, header_fg),
@@ -360,6 +359,7 @@ class ExcelWriter(orm.Model):
             'number': number_format,
             'border': border,
             }
+        _logger.warning('Set format variables: %s' % self._default_format)            
         return
     
     def get_format(self, key=False):  
@@ -381,6 +381,7 @@ class ExcelWriter(orm.Model):
                 create = True            
         except:    
             create = True
+
         if create:    
             self._wb_format = {
                 # -------------------------------------------------------------
@@ -670,6 +671,15 @@ class ExcelWriter(orm.Model):
                 # ----------------
                 # Number FG color:
                 # ----------------
+                'number_black': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'num_format': F['number'],
+                    'font_color': 'black',
+                    'align': 'right',
+                    #'valign': 'vcenter',
+                    }),
                 'number_blue': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
@@ -679,12 +689,30 @@ class ExcelWriter(orm.Model):
                     'align': 'right',
                     #'valign': 'vcenter',
                     }),
+                'number_grey': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'num_format': F['number'],
+                    'font_color': 'grey',
+                    'align': 'right',
+                    #'valign': 'vcenter',
+                    }),
                 'number_red': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
                     'num_format': F['number'],
                     'font_color': 'red',
+                    'align': 'right',
+                    #'valign': 'vcenter',
+                    }),
+                'number_green': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'num_format': F['number'],
+                    'font_color': 'green',
                     'align': 'right',
                     #'valign': 'vcenter',
                     }),
