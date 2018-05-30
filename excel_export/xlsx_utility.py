@@ -54,7 +54,7 @@ class ExcelWriter(orm.Model):
         ''' Clean char that generate error
         '''
         destination = destination.replace('/', '_').replace(':', '_')
-        if not destination.endswith('xlsx'):
+        if not(destination.endswith('xlsx') or destination.endswith('xls')):
             destination = '%s.xlsx' % destination
         return destination    
         
@@ -86,12 +86,12 @@ class ExcelWriter(orm.Model):
         return '%d:%02d' % (hour, minute) 
     
     # Excel utility:
-    def _create_workbook(self):
+    def _create_workbook(self, extension='xlsx'):
         ''' Create workbook in a temp file
         '''
         now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
         now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
-        filename = '/tmp/wb_%s.xlsx' % now
+        filename = '/tmp/wb_%s.%s' % (now, extension)
              
         _logger.info('Start create file %s' % filename)
         self._WB = xlsxwriter.Workbook(filename)
@@ -119,15 +119,15 @@ class ExcelWriter(orm.Model):
         '''
         return self._close_workbook()
 
-    def create_worksheet(self, name=False):
+    def create_worksheet(self, name=False, extension='xlsx'):
         ''' Create database for WS in this module
         '''
         try:
             if not self._WB:
-                self._create_workbook()                 
+                self._create_workbook(extension=extension)
             _logger.info('Using WB: %s' % self._WB)
         except:
-            self._create_workbook()                
+            self._create_workbook(extension=extension)
             
         self._WS[name] = self._WB.add_worksheet(name)
         
