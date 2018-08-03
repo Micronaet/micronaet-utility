@@ -335,6 +335,17 @@ class ExcelWriter(orm.Model):
             self._WS[WS_name].set_column(col, col, w)
             col += 1
         return True
+
+    def row_height(self, WS_name, row_list, height=10):
+        ''' WS: Worksheet passed
+            columns_w: list of dimension for the columns
+        '''
+        if type(row_list) in (list, tuple):            
+            for row in row_list:
+                self._WS[WS_name].set_row(row, height)
+        else:        
+            self._WS[WS_name].set_row(row_list, height)                
+        return True
         
     def set_format(    
             self, 
