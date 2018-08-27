@@ -20,28 +20,17 @@
 import os
 import sys
 import logging
-import openerp
-#import shutil
+
 import xlsxwriter
 import shutil
-import openerp.netsvc as netsvc
-import openerp.addons.decimal_precision as dp
-from openerp.osv import fields, osv, expression, orm
-from datetime import datetime, timedelta
-from dateutil.relativedelta import relativedelta
-from openerp import SUPERUSER_ID#, api
-from openerp import tools
-from openerp.tools.translate import _
-from openerp.tools.float_utils import float_round as round
-from openerp.tools import (DEFAULT_SERVER_DATE_FORMAT, 
-    DEFAULT_SERVER_DATETIME_FORMAT, 
-    DATETIME_FORMATS_MAP, 
-    float_compare)
+
+from odoo import import models, fields, api
+from odoo.tools.translate import _
 
 
 _logger = logging.getLogger(__name__)
 
-class ExcelWriter(orm.Model):
+class ExcelWriter(models.Model):
     """ Model name: ExcelWriter
     """    
     _name = 'excel.writer'
@@ -50,6 +39,7 @@ class ExcelWriter(orm.Model):
     # -------------------------------------------------------------------------
     #                                   UTILITY:
     # -------------------------------------------------------------------------
+    @api.model
     def clean_filename(self, destination):
         ''' Clean char that generate error
         '''
@@ -59,6 +49,7 @@ class ExcelWriter(orm.Model):
         return destination    
         
     # Format utility:
+    @api.model
     def format_date(self, value):
         ''' Format hour DD:MM:YYYY
         '''
@@ -70,7 +61,8 @@ class ExcelWriter(orm.Model):
             value[:4],
             )
 
-    def format_hour(self, value, hhmm_format=True, approx = 0.001, 
+    @api.model
+    def format_hour(self, value, hhmm_format=True, approx=0.001, 
             zero_value='0:00'):
         ''' Format hour HH:MM
         '''
@@ -86,10 +78,12 @@ class ExcelWriter(orm.Model):
         return '%d:%02d' % (hour, minute) 
     
     # Excel utility:
+    @api.model
     def _create_workbook(self, extension='xlsx'):
         ''' Create workbook in a temp file
         '''
-        now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        now = fields.Datetime.from_string(fields.Datetime.now())
+        #now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
         now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
         filename = '/tmp/wb_%s.%s' % (now, extension)
              
@@ -102,6 +96,7 @@ class ExcelWriter(orm.Model):
         self.set_format() # setup default format for text used
         self.get_format() # Load database of formats
 
+    @api.model
     def _close_workbook(self, ):
         ''' Close workbook
         '''
@@ -114,11 +109,13 @@ class ExcelWriter(orm.Model):
             _logger.error('Error closing WB')    
         self._WB = False # remove object in instance
 
+    @api.model
     def close_workbook(self, ):
         ''' Close workbook
         '''
         return self._close_workbook()
 
+    @api.model
     def create_worksheet(self, name=False, extension='xlsx'):
         ''' Create database for WS in this module
         '''
@@ -131,6 +128,7 @@ class ExcelWriter(orm.Model):
             
         self._WS[name] = self._WB.add_worksheet(name)
         
+    @api.model
     def send_mail_to_group(self, cr, uid, 
             group_name,
             subject, body, filename, # Mail data
@@ -145,9 +143,9 @@ class ExcelWriter(orm.Model):
         # Send mail with attachment:
         
         # Pool used
-        group_pool = self.pool.get('res.groups')
-        model_pool = self.pool.get('ir.model.data')
-        thread_pool = self.pool.get('mail.thread')
+        group_pool = self.env['res.groups']
+        model_pool = self.env['ir.model.data']
+        thread_pool = self.env['mail.thread']
 
         self._close_workbook() # Close before read file
         attachments = [(
@@ -163,7 +161,7 @@ class ExcelWriter(orm.Model):
                 cr, uid, group_id, context=context).users:
             partner_ids.append(user.partner_id.id)
             
-        thread_pool = self.pool.get('mail.thread')
+        thread_pool = self.env['mail.thread']
         thread_pool.message_post(cr, uid, False, 
             type='email', 
             body=body, 
@@ -174,6 +172,7 @@ class ExcelWriter(orm.Model):
             )
         self._close_workbook() # if not closed maually        
 
+    @api.model
     def save_file_as(self, destination):
         ''' Close workbook and save in another place (passed)
         '''
@@ -183,11 +182,13 @@ class ExcelWriter(orm.Model):
         shutil.copy(origin, destination)
         return True
 
+    @api.model
     def save_binary_xlsx(self, binary):
         ''' Save binary data passed as file temp (returned)
         '''
         b64_file = base64.decodestring(binary)
-        now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        now = fields.Datetime.from_string(fields.Datetime.now())
+        #now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
         filename = \
             '/tmp/file_%s.xlsx' % now.replace(':', '_').replace('-', '_')
         f = open(filename, 'wb')
@@ -195,6 +196,7 @@ class ExcelWriter(orm.Model):
         f.close()
         return filename
         
+    @api.model
     def return_attachment(self, cr, uid, name, name_of_file=False, 
             version='8.0', php=False, context=None):
         ''' Return attachment passed
@@ -209,13 +211,15 @@ class ExcelWriter(orm.Model):
                 }
                 
         if not name_of_file:
-            now = datetime.now()
-            now = now.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+            now = fields.Datetime.from_string(fields.Datetime.now())
+            #now = datetime.now()
+            #now = now.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+
             now = now.replace('-', '_').replace(':', '_') 
             name_of_file = '/tmp/report_%s.xlsx' % now
     
         # Pool used:         
-        attachment_pool = self.pool.get('ir.attachment')
+        attachment_pool = self.env['ir.attachment']
         
         self._close_workbook() # if not closed maually
         origin = self._filename
@@ -238,8 +242,9 @@ class ExcelWriter(orm.Model):
                     'filename_field=datas_fname&id=%s' % attachment_id,
                 'target': 'self',
                 }
+        # TODO remove PHP part not used in 9.0        
         elif php: 
-            config_pool = self.pool.get('ir.config_parameter')
+            config_pool = self.env['ir.config_parameter']
             key = 'web.base.url.excel'
             config_ids = config_pool.search(cr, uid, [
                 ('key', '=', key)], context=context)
@@ -279,6 +284,7 @@ class ExcelWriter(orm.Model):
                 'nodestroy': False,
                 }                
         
+    @api.model
     def merge_cell(self, WS_name, rectangle, default_format=False, data=''):
         ''' Merge cell procedure:
             WS: Worksheet where work
@@ -291,6 +297,7 @@ class ExcelWriter(orm.Model):
         self._WS[WS_name].merge_range(*rectangle)
         return 
              
+    @api.model
     def write_xls_line(self, WS_name, row, line, default_format=False, col=0):
         ''' Write line in excel file:
             WS: Worksheet where find
@@ -316,6 +323,7 @@ class ExcelWriter(orm.Model):
             col += 1
         return True
 
+    @api.model
     def write_xls_data(self, WS_name, row, col, data, default_format=False):
         ''' Write data in row col position with default_format
             
@@ -327,6 +335,7 @@ class ExcelWriter(orm.Model):
             self._WS[WS_name].write(row, col, data, default_format)
         return True
         
+    @api.model
     def column_width(self, WS_name, columns_w, col=0):
         ''' WS: Worksheet passed
             columns_w: list of dimension for the columns
@@ -336,6 +345,7 @@ class ExcelWriter(orm.Model):
             col += 1
         return True
 
+    @api.model
     def row_height(self, WS_name, row_list, height=10):
         ''' WS: Worksheet passed
             columns_w: list of dimension for the columns
@@ -347,6 +357,7 @@ class ExcelWriter(orm.Model):
             self._WS[WS_name].set_row(row_list, height)                
         return True
         
+    @api.model
     def set_format(    
             self, 
             # Title:
@@ -373,6 +384,7 @@ class ExcelWriter(orm.Model):
         _logger.warning('Set format variables: %s' % self._default_format)            
         return
     
+    @api.model
     def get_format(self, key=False):  
         ''' Database for format cells
             key: mode of format
@@ -748,6 +760,5 @@ class ExcelWriter(orm.Model):
                 self._wb_format.get('default'),
                 )
         else:
-            return True        
-    
+            return True    
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
