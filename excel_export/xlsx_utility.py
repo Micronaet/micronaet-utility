@@ -24,7 +24,7 @@ import logging
 import xlsxwriter
 import shutil
 
-from odoo import import models, fields, api
+from odoo import models, fields, api
 from odoo.tools.translate import _
 
 
