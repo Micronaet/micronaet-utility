@@ -202,12 +202,11 @@ class ExcelWriter(orm.Model):
             name_of_file: file name downloaded
             php: paremeter if activate save_as module for 7.0 (passed base srv)
             context: context passed
-        '''
+        '''        
         if context is None: 
             context = {
                 'lang': 'it_IT',
                 }
-                
         if not name_of_file:
             now = datetime.now()
             now = now.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
@@ -217,8 +216,8 @@ class ExcelWriter(orm.Model):
         # Pool used:         
         attachment_pool = self.pool.get('ir.attachment')
         
-        self._close_workbook() # if not closed maually
         origin = self._filename
+        self._close_workbook() # if not closed maually
         b64 = open(origin, 'rb').read().encode('base64')
         attachment_id = attachment_pool.create(cr, uid, {
             'name': name,
