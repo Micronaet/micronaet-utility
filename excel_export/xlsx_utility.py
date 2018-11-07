@@ -430,6 +430,19 @@ class ExcelWriter(orm.Model):
                     #'text_wrap': True,
                     }),
 
+                'header90': WB.add_format({
+                    'bold': True, 
+                    'font_name': F['header'][0],
+                    'font_size': F['header'][1],
+                    'font_color': F['header'][2],
+                    'align': 'center',
+                    'valign': 'vcenter',
+                    'bg_color': '#cfcfcf', # grey
+                    'border': F['border'],
+                    'rotation': 90,
+                    'valign': 'vbottom',
+                    }),
+
                 # -------------------------------------------------------------
                 #                       TEXT:
                 # -------------------------------------------------------------
