@@ -289,7 +289,34 @@ class ExcelWriter(orm.Model):
             rectangle.append(default_format)            
         self._WS[WS_name].merge_range(*rectangle)
         return 
-             
+    
+    def write_image(self, WS_name, row, col, 
+            x_offset=0, y_offset=0, x_scale=1, y_scale=1, positioning=2,
+            filename=False, data=False, 
+            tip='Product image',
+            #url=False, 
+            ):
+        ''' Insert image in cell with extra paramter
+            positioning: 1 move + size, 2 move, 3 nothing
+        '''
+        parameters = {            
+            #'url': url,
+            'tip': tip,
+            'x_scale': x_scale,
+            'y_scale': y_scale,
+            'x_offset': x_offset,
+            'y_offset': y_offset,
+            'positioning': positioning,            
+            }
+            
+        if data:
+            if not filename:
+                filename = 'image1.png' # neeeded if data present
+            prameters['image_data'] = data
+        
+        self._WS[WS_name].insert_image(row, col, filename, parameters) 
+        return True
+        
     def write_xls_line(self, WS_name, row, line, default_format=False, col=0):
         ''' Write line in excel file:
             WS: Worksheet where find
