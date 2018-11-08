@@ -414,6 +414,13 @@ class ExcelWriter(orm.Model):
                     'font_color': F['title'][2],
                     'align': 'left',
                     }),
+                'title_center' : WB.add_format({
+                    'bold': True, 
+                    'font_name': F['title'][0],
+                    'font_size': F['title'][1],
+                    'font_color': F['title'][2],
+                    'align': 'center',
+                    }),
                     
                 # -------------------------------------------------------------
                 #                       HEADER:
@@ -697,6 +704,14 @@ class ExcelWriter(orm.Model):
                     'num_format': F['number'],
                     'align': 'right',
                     #'valign': 'vcenter',
+                    }),
+                'number_center': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'num_format': F['number'],
+                    'align': 'right',
+                    'valign': 'vcenter',
                     }),
 
                 # ----------------
