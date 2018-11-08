@@ -18,7 +18,9 @@
 #
 ###############################################################################
 import os
+import io
 import sys
+import base64
 import logging
 import openerp
 #import shutil
@@ -59,6 +61,11 @@ class ExcelWriter(orm.Model):
         return destination    
         
     # Format utility:
+    def clean_odoo_binary(self, odoo_binary_field):
+        ''' Prepare image data from odoo binary field:
+        '''
+        return io.BytesIO(base64.decodestring(odoo_binary_field))
+    
     def format_date(self, value):
         ''' Format hour DD:MM:YYYY
         '''
@@ -312,7 +319,7 @@ class ExcelWriter(orm.Model):
         if data:
             if not filename:
                 filename = 'image1.png' # neeeded if data present
-            prameters['image_data'] = data
+            parameters['image_data'] = data
         
         self._WS[WS_name].insert_image(row, col, filename, parameters) 
         return True
