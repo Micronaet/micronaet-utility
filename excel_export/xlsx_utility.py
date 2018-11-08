@@ -462,6 +462,14 @@ class ExcelWriter(orm.Model):
                     'align': 'center',
                     #'valign': 'vcenter',
                     }),
+                'text_center_all': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'align': 'center',
+                    'valign': 'vcenter',
+                    }),
                 'text_right': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
