@@ -186,8 +186,8 @@ class ExcelWriter(orm.Model):
         '''
         _logger.warning('Save file as: %s' % destination)        
         origin = self._filename
-        self._close_workbook() # if not closed maually
-        shutil.copy(origin, destination)
+        self._close_workbook() # if not closed manually
+        shutil.move(origin, destination)
         return True
 
     def save_binary_xlsx(self, binary):
