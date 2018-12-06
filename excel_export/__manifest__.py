@@ -24,6 +24,7 @@
     'description': '''  
         Utility for manage external XLSX files      
         ''',
+    'summary': 'Excel, utility, report',
     'author': 'Micronaet S.r.l. - Nicola Riolini',
     'website': 'http://www.micronaet.it',
     'license': 'AGPL-3',

@@ -20,6 +20,7 @@
 import os
 import sys
 import logging
+import base64
 
 import xlsxwriter
 import shutil
@@ -82,8 +83,8 @@ class ExcelWriter(models.Model):
     def _create_workbook(self, extension='xlsx'):
         ''' Create workbook in a temp file
         '''
-        now = fields.Datetime.from_string(fields.Datetime.now())
-        #now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        import pdb; pdb.set_trace()
+        now = fields.Datetime.now()
         now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
         filename = '/tmp/wb_%s.%s' % (now, extension)
              
@@ -129,10 +130,10 @@ class ExcelWriter(models.Model):
         self._WS[name] = self._WB.add_worksheet(name)
         
     @api.model
-    def send_mail_to_group(self, cr, uid, 
+    def send_mail_to_group(self,
             group_name,
             subject, body, filename, # Mail data
-            context=None):
+            ):
         ''' Send mail of current workbook to all partner present in group 
             passed
             group_name: use format module_name.group_id
@@ -154,21 +155,19 @@ class ExcelWriter(models.Model):
             )]
 
         group = group_name.split('.')
-        group_id = model_pool.get_object_reference(
+        groups_id = model_pool.get_object_reference(
             cr, uid, group[0], group[1])[1]    
         partner_ids = []
-        for user in group_pool.browse(
-                cr, uid, group_id, context=context).users:
+        for user in group_pool.browse(group_id).users:
             partner_ids.append(user.partner_id.id)
             
         thread_pool = self.env['mail.thread']
-        thread_pool.message_post(cr, uid, False, 
+        thread_pool.message_post(False, 
             type='email', 
             body=body, 
             subject=subject,
             partner_ids=[(6, 0, partner_ids)],
             attachments=attachments, 
-            context=context,
             )
         self._close_workbook() # if not closed maually        
 
@@ -187,8 +186,7 @@ class ExcelWriter(models.Model):
         ''' Save binary data passed as file temp (returned)
         '''
         b64_file = base64.decodestring(binary)
-        now = fields.Datetime.from_string(fields.Datetime.now())
-        #now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        fields.Datetime.now()
         filename = \
             '/tmp/file_%s.xlsx' % now.replace(':', '_').replace('-', '_')
         f = open(filename, 'wb')
@@ -197,24 +195,15 @@ class ExcelWriter(models.Model):
         return filename
         
     @api.model
-    def return_attachment(self, cr, uid, name, name_of_file=False, 
-            version='8.0', php=False, context=None):
+    def return_attachment(self, name, name_of_file=False):
         ''' Return attachment passed
             name: Name for the attachment
             name_of_file: file name downloaded
             php: paremeter if activate save_as module for 7.0 (passed base srv)
             context: context passed
         '''
-        if context is None: 
-            context = {
-                'lang': 'it_IT',
-                }
-                
         if not name_of_file:
-            now = fields.Datetime.from_string(fields.Datetime.now())
-            #now = datetime.now()
-            #now = now.strftime(DEFAULT_SERVER_DATETIME_FORMAT)
-
+            now = fields.Datetime.now()
             now = now.replace('-', '_').replace(':', '_') 
             name_of_file = '/tmp/report_%s.xlsx' % now
     
@@ -223,8 +212,9 @@ class ExcelWriter(models.Model):
         
         self._close_workbook() # if not closed maually
         origin = self._filename
-        b64 = open(origin, 'rb').read().encode('base64')
-        attachment_id = attachment_pool.create(cr, uid, {
+        #b64 = open(origin, 'rb').read().encode('base64')
+        b64 = base64.b64encode(open(origin, 'rb').read())
+        attachment_id = attachment_pool.create({
             'name': name,
             'datas_fname': name_of_file,
             'type': 'binary',
@@ -232,58 +222,16 @@ class ExcelWriter(models.Model):
             'partner_id': 1,
             'res_model': 'res.partner',
             'res_id': 1,
-            }, context=context)
+            })
         _logger.info('Return XLSX file: %s' % self._filename)
         
-        if version=='8.0':        
-            return {
-                'type' : 'ir.actions.act_url',
-                'url': '/web/binary/saveas?model=ir.attachment&field=datas&'
-                    'filename_field=datas_fname&id=%s' % attachment_id,
-                'target': 'self',
-                }
-        # TODO remove PHP part not used in 9.0        
-        elif php: 
-            config_pool = self.env['ir.config_parameter']
-            key = 'web.base.url.excel'
-            config_ids = config_pool.search(cr, uid, [
-                ('key', '=', key)], context=context)
-            if not config_ids:
-                raise osv.except_osv(
-                    _('Errore'), 
-                    _('Avvisare amministratore: configurare parametro: %s' % (
-                        key)),
-                    )
-            config_proxy = config_pool.browse(
-                cr, uid, config_ids, context=context)[0]
-            base_address = config_proxy.value
-            
-            url_call = '%s/save_as.php?filename=%s&name=%s' % (
-                base_address,
-                origin, 
-                os.path.basename(origin),
-                )
-            _logger.info('URL parameter: %s' % url_call)
-            return {
-                'type': 'ir.actions.act_url',
-                'url': url_call,
-                #'target': 'new',
-                }            
-        else: # version '7.0' (return as attachment to be opened)
-            return {
-                'type': 'ir.actions.act_window',
-                'name': name,
-                'type': 'ir.actions.act_window',
-                'view_type': 'form',
-                'view_mode': 'form',
-                'res_id': attachment_id,
-                'res_model': 'ir.attachment',
-                'views': [(False, 'form')],
-                'context': context,
-                'target': 'current',
-                'nodestroy': False,
-                }                
-        
+        return {
+            'type' : 'ir.actions.act_url',
+            'url': '/web/binary/saveas?model=ir.attachment&field=datas&'
+                'filename_field=datas_fname&id=%s' % attachment_id,
+            'target': 'self',
+            }
+
     @api.model
     def merge_cell(self, WS_name, rectangle, default_format=False, data=''):
         ''' Merge cell procedure:
