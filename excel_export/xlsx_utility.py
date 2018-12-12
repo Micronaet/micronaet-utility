@@ -337,10 +337,7 @@ class ExcelWriter(orm.Model):
             if type(record) == bool:
                 record = ''
             elif type(record) in (unicode, str): # == 2: # Normal text, format
-                try:
-                    self._WS[WS_name].write(row, col, record)
-                except:
-                    import pdb; pdb.set_trace()    
+                self._WS[WS_name].write(row, col, record)
             elif type(record) not in (list, tuple):
                 if default_format:                    
                     self._WS[WS_name].write(row, col, record, default_format)
