@@ -333,20 +333,23 @@ class ExcelWriter(orm.Model):
             
             @return: nothing
         '''
-        for record in line:
-            if type(record) == bool:
-                record = ''
-            if type(record) not in (list, tuple):
-                if default_format:                    
-                    self._WS[WS_name].write(row, col, record, default_format)
-                else:    
-                    self._WS[WS_name].write(row, col, record)                
-            elif len(record) == 2: # Normal text, format
-                self._WS[WS_name].write(row, col, *record)
-            else: # Rich format TODO
-                
-                self._WS[WS_name].write_rich_string(row, col, *record)
-            col += 1
+        try:
+            for record in line:
+                if type(record) == bool:
+                    record = ''
+                if type(record) not in (list, tuple):
+                    if default_format:                    
+                        self._WS[WS_name].write(row, col, record, default_format)
+                    else:    
+                        self._WS[WS_name].write(row, col, record)                
+                elif len(record) == 2: # Normal text, format
+                    self._WS[WS_name].write(row, col, *record)
+                else: # Rich format TODO
+                    
+                    self._WS[WS_name].write_rich_string(row, col, *record)
+                col += 1
+        except:
+            import pdb; pdb.set_trace()        
         return True
 
     def write_xls_data(self, WS_name, row, col, data, default_format=False):
