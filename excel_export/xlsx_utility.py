@@ -83,7 +83,6 @@ class ExcelWriter(models.Model):
     def _create_workbook(self, extension='xlsx'):
         ''' Create workbook in a temp file
         '''
-        import pdb; pdb.set_trace()
         now = fields.Datetime.now()
         now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
         filename = '/tmp/wb_%s.%s' % (now, extension)
