@@ -336,15 +336,17 @@ class ExcelWriter(orm.Model):
         for record in line:
             if type(record) == bool:
                 record = ''
-            elif type(record) in (unicode, str): # == 2: # Normal text, format
-                self._WS[WS_name].write(row, col, record)
+            elif type(record) in (unicode, str, float, int): # Normal text
+                self._WS[WS_name].write(row, col, record, default_format)
+            elif type(record) in (list, tuple):
+                if len(record) == 2:
+                    self._WS[WS_name].write(row, col, record[0], record[1])
+                else:
+                    self._WS[WS_name].write(
+                        row, col, record[0], default_format)
             elif type(record) not in (list, tuple):
-                if default_format:                    
-                    self._WS[WS_name].write(row, col, record, default_format)
-                else:    
-                    self._WS[WS_name].write(row, col, record)                
+                self._WS[WS_name].write(row, col, record, default_format)
             else: # Rich format TODO
-                
                 self._WS[WS_name].write_rich_string(row, col, *record)
             col += 1
         return True
@@ -411,10 +413,13 @@ class ExcelWriter(orm.Model):
             key: mode of format
             if not passed load database only
         '''
-        #try:
-        _logger.warning('Set format WB type')
-        WB = self._WB # Create with start method
-        #except:
+        try: # Used when load format before WS creation?!?!
+            _logger.warning('Set format WB type')
+            WB = self._WB # Create with start method
+        except:
+            _logger.warning('Load / Re-Load WB')
+            self._create_workbook('xlsx')
+            WB = self._WB # Create with start method
             
         F = self._default_format # readability
         
@@ -424,7 +429,7 @@ class ExcelWriter(orm.Model):
             if not self._wb_format: # raise error if not present
                 create = True            
         except:    
-            create = True
+            create = True # XXX ???
 
         if create:    
             self._wb_format = {
