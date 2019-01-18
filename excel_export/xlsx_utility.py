@@ -335,19 +335,16 @@ class ExcelWriter(orm.Model):
         '''
         for record in line:
             if type(record) == bool:
-                record = ''
-            elif type(record) in (unicode, str, float, int): # Normal text
-                self._WS[WS_name].write(row, col, record, default_format)
+                self._WS[WS_name].write(
+                    row, col, 'X' if record else '', default_format)
             elif type(record) in (list, tuple):
-                if len(record) == 2:
-                    self._WS[WS_name].write(row, col, record[0], record[1])
-                else:
+                if len(record) == 1:
                     self._WS[WS_name].write(
                         row, col, record[0], default_format)
-            elif type(record) not in (list, tuple):
+                else: # (value, format) case or rich text format
+                    self._WS[WS_name].write(row, col, *record)
+            else:# type(record) in (unicode, str, float, int): # Normal text
                 self._WS[WS_name].write(row, col, record, default_format)
-            else: # Rich format TODO
-                self._WS[WS_name].write_rich_string(row, col, *record)
             col += 1
         return True
 
