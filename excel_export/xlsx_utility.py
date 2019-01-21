@@ -228,11 +228,10 @@ class ExcelWriter(models.Model):
         self._close_workbook() # if not closed maually
         _logger.info('Return XLSX file: %s' % self._filename)
         
-        temp = self.create({
+        # TODO is necessary?
+        temp_id = self.create({
             'fullname': self._filename,
-            })
-        b64 = temp.b64_file
-        temp_id = temp.id
+            }).id
         
         return {
             'type' : 'ir.actions.act_url',
