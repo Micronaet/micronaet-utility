@@ -36,6 +36,24 @@ class ExcelWriter(models.Model):
     """    
     _name = 'excel.writer'
     _description = 'Excel writer'
+
+    # -------------------------------------------------------------------------
+    # Computed fields:
+    # -------------------------------------------------------------------------
+    @api.one
+    def _get_template(self):
+        ''' Computed fields: B64 file from file content
+        '''
+        try:
+            origin = self._filename
+            self.b64_file = base64.b64encode(open(origin, 'rb').read())
+        except:
+            slef.b64_file = False    
+
+    # -------------------------------------------------------------------------
+    #                                   COLUMNS:
+    # -------------------------------------------------------------------------
+    b64_file = fields.Binary('B64 file', compute='_get_template')
     
     # -------------------------------------------------------------------------
     #                                   UTILITY:
@@ -192,7 +210,7 @@ class ExcelWriter(models.Model):
         f.write(b64_file)
         f.close()
         return filename
-        
+
     @api.model
     def return_attachment(self, name, name_of_file=False):
         ''' Return attachment passed
@@ -205,30 +223,16 @@ class ExcelWriter(models.Model):
             now = fields.Datetime.now()
             now = now.replace('-', '_').replace(':', '_') 
             name_of_file = '/tmp/report_%s.xlsx' % now
-    
-        # Pool used:         
-        attachment_pool = self.env['ir.attachment']
-        
         self._close_workbook() # if not closed maually
-        origin = self._filename
-        #b64 = open(origin, 'rb').read().encode('base64')
-        b64 = base64.b64encode(open(origin, 'rb').read())
-        attachment_id = attachment_pool.create({
-            'name': name,
-            'datas_fname': name_of_file,
-            'type': 'binary',
-            'datas': b64,
-            'partner_id': 1,
-            'res_model': 'res.partner',
-            'res_id': 1,
-            })
         _logger.info('Return XLSX file: %s' % self._filename)
         
         return {
             'type' : 'ir.actions.act_url',
-            'url': '/web/binary/saveas?model=ir.attachment&field=datas&'
-                'filename_field=datas_fname&id=%s' % attachment_id,
-            'target': 'self',
+            'name': name,
+            'url': '/web/content/excel.writer/%s/b64_file/%s?download=true' % (
+                self.id,
+                name_of_file,
+                ),
             }
 
     @api.model
