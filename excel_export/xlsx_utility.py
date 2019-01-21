@@ -45,15 +45,16 @@ class ExcelWriter(models.Model):
         ''' Computed fields: B64 file from file content
         '''
         try:
-            origin = self._filename
+            origin = self.fullname
             self.b64_file = base64.b64encode(open(origin, 'rb').read())
         except:
-            slef.b64_file = False    
+            self.b64_file = False    
 
     # -------------------------------------------------------------------------
     #                                   COLUMNS:
     # -------------------------------------------------------------------------
     b64_file = fields.Binary('B64 file', compute='_get_template')
+    fullname = fields.Text('Fullname of file')
     
     # -------------------------------------------------------------------------
     #                                   UTILITY:
@@ -222,15 +223,22 @@ class ExcelWriter(models.Model):
         if not name_of_file:
             now = fields.Datetime.now()
             now = now.replace('-', '_').replace(':', '_') 
-            name_of_file = '/tmp/report_%s.xlsx' % now
+            #name_of_file = '/tmp/report_%s.xlsx' % now
+            name_of_file = 'report_%s.xlsx' % now
         self._close_workbook() # if not closed maually
         _logger.info('Return XLSX file: %s' % self._filename)
+        
+        temp = self.create({
+            'fullname': self._filename,
+            })
+        b64 = temp.b64_file
+        temp_id = temp.id
         
         return {
             'type' : 'ir.actions.act_url',
             'name': name,
             'url': '/web/content/excel.writer/%s/b64_file/%s?download=true' % (
-                self.id,
+                temp_id,
                 name_of_file,
                 ),
             }
