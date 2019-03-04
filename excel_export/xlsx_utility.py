@@ -417,7 +417,7 @@ class ExcelWriter(orm.Model):
             _logger.warning('Load / Re-Load WB')
             self._create_workbook('xlsx')
             WB = self._WB # Create with start method
-            
+            Worksheet
         F = self._default_format # readability
         
         # Save database in self:
@@ -495,7 +495,7 @@ class ExcelWriter(orm.Model):
                     'font_color': F['text'][2],
                     'border': F['border'],
                     'align': 'left',
-                    #'valign': 'vcenter',
+                    'valign': 'top',
                     }),                    
                 'text_center': WB.add_format({
                     'font_name': F['text'][0],
