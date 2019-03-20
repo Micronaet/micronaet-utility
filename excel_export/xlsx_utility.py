@@ -24,8 +24,9 @@ import base64
 import logging
 import openerp
 #import shutil
-import xlsxwriter
 import shutil
+import xlsxwriter
+from xlsxwriter.utility import xl_rowcol_to_cell
 import openerp.netsvc as netsvc
 import openerp.addons.decimal_precision as dp
 from openerp.osv import fields, osv, expression, orm
@@ -135,7 +136,6 @@ class ExcelWriter(orm.Model):
             _logger.info('Using WB: %s' % self._WB)
         except:
             self._create_workbook(extension=extension)
-            
         self._WS[name] = self._WB.add_worksheet(name)
         
     def send_mail_to_group(self, cr, uid, 
@@ -343,7 +343,7 @@ class ExcelWriter(orm.Model):
                         row, col, record[0], default_format)
                 else: # (value, format) case or rich text format
                     self._WS[WS_name].write(row, col, *record)
-            else:# type(record) in (unicode, str, float, int): # Normal text
+            else: # type(record) in (unicode, str, float, int): # Normal text
                 self._WS[WS_name].write(row, col, record, default_format)
             col += 1
         return True
@@ -358,6 +358,17 @@ class ExcelWriter(orm.Model):
         else:    
             self._WS[WS_name].write(row, col, data, default_format)
         return True
+
+    def rowcol_to_cell(self, row, col, row_abs=False, col_abs=False):
+        ''' Return row, col format in "A1" notation
+        '''
+        return xl_rowcol_to_cell(row, col, row_abs=row_abs, col_abs=col_abs)
+
+    def write_formula(self, WS_name, row, col, formula, default_format, value):
+        ''' Write formula in cell passed
+        '''
+        return self._WS[WS_name].write_formula(
+            row, col, formula, default_format, value)
         
     def column_width(self, WS_name, columns_w, col=0):
         ''' WS: Worksheet passed
