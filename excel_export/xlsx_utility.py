@@ -381,7 +381,7 @@ class ExcelWriter(orm.Model):
 
     def row_height(self, WS_name, row_list, height=10):
         ''' WS: Worksheet passed
-            columns_w: list of dimension for the columns
+            row_list: list of row
         '''
         if type(row_list) in (list, tuple):            
             for row in row_list:
