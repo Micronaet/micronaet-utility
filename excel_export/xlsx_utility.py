@@ -370,12 +370,12 @@ class ExcelWriter(orm.Model):
         return self._WS[WS_name].write_formula(
             row, col, formula, default_format, value)
         
-    def column_width(self, WS_name, columns_w, col=0):
+    def column_width(self, WS_name, columns_w, col=0, default_format=False):
         ''' WS: Worksheet passed
             columns_w: list of dimension for the columns
         '''
         for w in columns_w:
-            self._WS[WS_name].set_column(col, col, w)
+            self._WS[WS_name].set_column(col, col, w, default_format)
             col += 1
         return True
 
