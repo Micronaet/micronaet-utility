@@ -117,7 +117,7 @@ class ExcelWriter(orm.Model):
         self._wb_format = False
         
         try:
-            self._WB.close()            
+            del(self._WB)
         except:            
             _logger.error('Error closing WB')    
         self._WB = False # remove object in instance
@@ -548,7 +548,6 @@ class ExcelWriter(orm.Model):
                 # --------------
                 # Text BG color:
                 # --------------
-                #
                 'bg_white': WB.add_format({
                     'bold': True, 
                     'font_name': F['text'][0],
@@ -660,6 +659,18 @@ class ExcelWriter(orm.Model):
                     #'valign': 'vcenter',
                     }),                
                 'bg_blue_number': WB.add_format({
+                    #'bold': True, 
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'font_color': 'black',
+                    'bg_color': '#c4daff',##ffff99',
+                    'align': 'right',
+                    'num_format': F['number'],
+                    #'valign': 'vcenter',
+                    }),                
+
+                'bg_blue_number_bold': WB.add_format({
                     'bold': True, 
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
@@ -667,6 +678,7 @@ class ExcelWriter(orm.Model):
                     'font_color': 'black',
                     'bg_color': '#c4daff',##ffff99',
                     'align': 'right',
+                    'num_format': F['number'],
                     #'valign': 'vcenter',
                     }),                
 
