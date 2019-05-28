@@ -138,6 +138,16 @@ class ExcelWriter(orm.Model):
             self._create_workbook(extension=extension)
         self._WS[name] = self._WB.add_worksheet(name)
         
+    def set_margins(self, ws_name, left=0.2, right=0.2, top=0.2, bottom=0.2):
+        ''' Set page margins
+        '''
+        _logger.warning('Set margin for page: %s' % ws_name)
+        self._WS[ws_name].set_margins(
+            left=left, 
+            right=right, 
+            top=top, 
+            bottom=bottom)
+        
     def send_mail_to_group(self, cr, uid, 
             group_name,
             subject, body, filename, # Mail data
