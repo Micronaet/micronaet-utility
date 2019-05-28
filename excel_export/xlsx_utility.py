@@ -137,6 +137,24 @@ class ExcelWriter(orm.Model):
         except:
             self._create_workbook(extension=extension)
         self._WS[name] = self._WB.add_worksheet(name)
+
+    def set_zoom(self, ws_name, zoom=100):
+        ''' Set page zoom in preview
+        '''
+        _logger.warning('Set zoom for page: %s' % ws_name)
+        self._WS[ws_name].set_zoom(zoom)
+ 
+    def set_print_scale(self, ws_name, scale=100):
+        ''' Set page scale in preview
+        '''
+        _logger.warning('Set scale for page: %s' % ws_name)
+        self._WS[ws_name].set_print_scale(scale)
+        
+    def fit_to_pages(self, ws_name, width=1, height=1):
+        ''' Set page scale in preview
+        '''
+        _logger.warning('Set fit to page: %s' % ws_name)
+        self._WS[ws_name].fit_to_pages(width, height)
         
     def set_margins(self, ws_name, left=0.2, right=0.2, top=0.2, bottom=0.2):
         ''' Set page margins
@@ -437,7 +455,6 @@ class ExcelWriter(orm.Model):
             if not passed load database only
         '''
         try: # Used when load format before WS creation?!?!
-            _logger.warning('Set format WB type')
             WB = self._WB # Create with start method
         except:
             _logger.warning('Load / Re-Load WB')
