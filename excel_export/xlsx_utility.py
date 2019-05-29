@@ -313,7 +313,7 @@ class ExcelWriter(orm.Model):
                 'nodestroy': False,
                 }                
 
-    def worksheet.set_paper(self, ws_name, page_format='A4'):
+    def set_paper(self, ws_name, page_format='A4'):
         ''' Set page format 
         '''
         self._WS[ws_name].set_paper(page_format)
