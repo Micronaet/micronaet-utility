@@ -312,8 +312,13 @@ class ExcelWriter(orm.Model):
                 'target': 'current',
                 'nodestroy': False,
                 }                
+
+    def worksheet.set_paper(self, ws_name, page_format='A4'):
+        ''' Set page format 
+        '''
+        self._WS[ws_name].set_paper(page_format)
         
-    def merge_cell(self, WS_name, rectangle, default_format=False, data=''):
+    def merge_cell(self, ws_name, rectangle, default_format=False, data=''):
         ''' Merge cell procedure:
             WS: Worksheet where work
             rectangle: list for 2 corners xy data: [0, 0, 10, 5]
@@ -322,10 +327,10 @@ class ExcelWriter(orm.Model):
         rectangle.append(data)        
         if default_format:
             rectangle.append(default_format)            
-        self._WS[WS_name].merge_range(*rectangle)
+        self._WS[ws_name].merge_range(*rectangle)
         return 
     
-    def write_image(self, WS_name, row, col, 
+    def write_image(self, ws_name, row, col, 
             x_offset=0, y_offset=0, x_scale=1, y_scale=1, positioning=2,
             filename=False, data=False, 
             tip='Product image',
@@ -349,10 +354,10 @@ class ExcelWriter(orm.Model):
                 filename = 'image1.png' # neeeded if data present
             parameters['image_data'] = data
         
-        self._WS[WS_name].insert_image(row, col, filename, parameters) 
+        self._WS[ws_name].insert_image(row, col, filename, parameters) 
         return True
         
-    def write_xls_line(self, WS_name, row, line, default_format=False, col=0):
+    def write_xls_line(self, ws_name, row, line, default_format=False, col=0):
         ''' Write line in excel file:
             WS: Worksheet where find
             row: position where write
@@ -363,28 +368,28 @@ class ExcelWriter(orm.Model):
         '''
         for record in line:
             if type(record) == bool:
-                self._WS[WS_name].write(
+                self._WS[ws_name].write(
                     row, col, 'X' if record else '', default_format)
             elif type(record) in (list, tuple):
                 if len(record) == 1:
-                    self._WS[WS_name].write(
+                    self._WS[ws_name].write(
                         row, col, record[0], default_format)
                 else: # (value, format) case or rich text format
-                    self._WS[WS_name].write(row, col, *record)
+                    self._WS[ws_name].write(row, col, *record)
             else: # type(record) in (unicode, str, float, int): # Normal text
-                self._WS[WS_name].write(row, col, record, default_format)
+                self._WS[ws_name].write(row, col, record, default_format)
             col += 1
         return True
 
-    def write_xls_data(self, WS_name, row, col, data, default_format=False):
+    def write_xls_data(self, ws_name, row, col, data, default_format=False):
         ''' Write data in row col position with default_format
             
             @return: nothing
         '''
         if default_format:
-            self._WS[WS_name].write(row, col, data, default_format)
+            self._WS[ws_name].write(row, col, data, default_format)
         else:    
-            self._WS[WS_name].write(row, col, data, default_format)
+            self._WS[ws_name].write(row, col, data, default_format)
         return True
 
     def rowcol_to_cell(self, row, col, row_abs=False, col_abs=False):
@@ -392,30 +397,30 @@ class ExcelWriter(orm.Model):
         '''
         return xl_rowcol_to_cell(row, col, row_abs=row_abs, col_abs=col_abs)
 
-    def write_formula(self, WS_name, row, col, formula, default_format, value):
+    def write_formula(self, ws_name, row, col, formula, default_format, value):
         ''' Write formula in cell passed
         '''
-        return self._WS[WS_name].write_formula(
+        return self._WS[ws_name].write_formula(
             row, col, formula, default_format, value)
         
-    def column_width(self, WS_name, columns_w, col=0, default_format=False):
+    def column_width(self, ws_name, columns_w, col=0, default_format=False):
         ''' WS: Worksheet passed
             columns_w: list of dimension for the columns
         '''
         for w in columns_w:
-            self._WS[WS_name].set_column(col, col, w, default_format)
+            self._WS[ws_name].set_column(col, col, w, default_format)
             col += 1
         return True
 
-    def row_height(self, WS_name, row_list, height=10):
+    def row_height(self, ws_name, row_list, height=10):
         ''' WS: Worksheet passed
             row_list: list of row
         '''
         if type(row_list) in (list, tuple):            
             for row in row_list:
-                self._WS[WS_name].set_row(row, height)
+                self._WS[ws_name].set_row(row, height)
         else:        
-            self._WS[WS_name].set_row(row_list, height)                
+            self._WS[ws_name].set_row(row_list, height)                
         return True
         
     def set_format(    
