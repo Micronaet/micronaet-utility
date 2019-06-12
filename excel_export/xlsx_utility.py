@@ -604,7 +604,7 @@ class ExcelWriter(orm.Model):
             # Text BG color:
             # --------------
             'bg_white': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'font_color': F['text'][2],
@@ -614,7 +614,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),
             'bg_blue': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'font_color': F['text'][2],
@@ -624,7 +624,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),
             'bg_red': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'font_color': F['text'][2],
@@ -634,7 +634,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),
             'bg_green': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'font_color': F['text'][2],
@@ -644,7 +644,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),
             'bg_yellow': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'border': F['border'],
@@ -654,7 +654,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),                
             'bg_orange': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'border': F['border'],
@@ -664,7 +664,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),                
             'bg_red_number': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'font_color': F['text'][2],
@@ -674,7 +674,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),
             'bg_green_number': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'font_color': F['text'][2],
@@ -684,7 +684,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),
             'bg_yellow_number': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'border': F['border'],
@@ -694,7 +694,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),                
             'bg_orange_number': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'border': F['border'],
@@ -704,7 +704,7 @@ class ExcelWriter(orm.Model):
                 #'valign': 'vcenter',
                 }),                
             'bg_white_number': WB.add_format({
-                'bold': True, 
+                #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
                 'border': F['border'],
