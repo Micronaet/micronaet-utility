@@ -726,6 +726,17 @@ class ExcelWriter(orm.Model):
                 }),                
 
             # Number Bold background:
+            'bg_red_number_bold': WB.add_format({
+                'bold': True, 
+                'font_name': F['text'][0],
+                'font_size': F['text'][1],
+                'border': F['border'],
+                'font_color': 'black',
+                'bg_color': '#ffc6af',
+                'align': 'right',
+                'num_format': F['number'],
+                #'valign': 'vcenter',
+                }),                
             'bg_green_number_bold': WB.add_format({
                 'bold': True, 
                 'font_name': F['text'][0],
