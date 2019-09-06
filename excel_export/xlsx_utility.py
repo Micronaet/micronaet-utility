@@ -422,6 +422,11 @@ class ExcelWriter(orm.Model):
         else:        
             self._WS[ws_name].set_row(row_list, height)                
         return True
+
+    def autofilter(self, ws_name, r1, c1, r2, c2):
+        ''' Set auto filter
+        '''
+        return self._WS[ws_name].autofilter(r1, c1, r2, c2)
         
     def set_format(    
             self, 
