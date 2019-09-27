@@ -252,8 +252,15 @@ class ExcelWriter(orm.Model):
         attachment_pool = self.pool.get('ir.attachment')
         
         origin = self._filename
-        self._close_workbook() # if not closed maually
-        b64 = open(origin, 'rb').read().encode('base64')
+        self._close_workbook() # if not closed manually
+        try:
+            b64 = open(origin, 'rb').read().encode('base64')
+        except:
+            raise osv.except_osv(
+                _('Report error'), 
+                _('Cannot return file: %s' % origin),
+                )
+                
         attachment_id = attachment_pool.create(cr, uid, {
             'name': name,
             'datas_fname': name_of_file,
