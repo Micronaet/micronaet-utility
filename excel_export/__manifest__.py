@@ -35,6 +35,7 @@
     'demo': [],
     'data': [
         'data/config_data.xml',
+        'security/ir.model.access.csv',
         ],
     'active': False,
     'installable': True,

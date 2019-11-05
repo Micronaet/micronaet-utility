@@ -444,7 +444,65 @@ class ExcelWriter(models.Model):
                 # --------------
                 # Text BG color:
                 # --------------
-                #
+                # No bold:
+                'bg_normal_white': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'bg_color': '#FFFFFF',
+                    'align': 'left',
+                    #'valign': 'vcenter',
+                    }),
+                'bg_normal_red': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'bg_color': '#ffc6af',
+                    'align': 'left',
+                    #'valign': 'vcenter',
+                    }),
+                'bg_normal_green': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'bg_color': '#b1f9c1',
+                    'align': 'left',
+                    #'valign': 'vcenter',
+                    }),
+
+                'bg_normal_white_number': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'font_color': 'black',
+                    'bg_color': '#FFFFFF',
+                    'align': 'right',
+                    'num_format': F['number'],
+                    }),                
+                'bg_normal_red_number': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'bg_color': '#ffc6af',
+                    'align': 'right',
+                    'num_format': F['number'],
+                    }),
+                'bg_normal_green_number': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'bg_color': '#b1f9c1',
+                    'align': 'right',
+                    'num_format': F['number'],
+                    }),
+
+
+                # Bold
                 'bg_white': WB.add_format({
                     'bold': True, 
                     'font_name': F['text'][0],
