@@ -227,9 +227,9 @@ class ExcelWriter(models.Model):
             name_of_file = 'report_%s.xlsx' % now
             
         self._close_workbook() # if not closed maually
-        if self._filename:
+        try:
             filename = self._filename
-        else:
+        except:
             filename = '/tmp/wb_%s.xlsx' % now
             
         _logger.info('Return XLSX file: %s' % filename)
