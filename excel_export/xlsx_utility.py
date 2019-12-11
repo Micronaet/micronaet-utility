@@ -226,14 +226,14 @@ class ExcelWriter(models.Model):
             #name_of_file = '/tmp/report_%s.xlsx' % now
             name_of_file = 'report_%s.xlsx' % now
             
-        self._close_workbook() # if not closed maually
         try:
             filename = self._filename
         except:
             filename = '/tmp/wb_%s.xlsx' % now
-            
         _logger.info('Return XLSX file: %s' % filename)
         
+        self._close_workbook() # if not closed maually
+
         # TODO is necessary?
         temp_id = self.create({
             'fullname': filename,
