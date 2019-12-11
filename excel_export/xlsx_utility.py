@@ -220,12 +220,18 @@ class ExcelWriter(models.Model):
             php: paremeter if activate save_as module for 7.0 (passed base srv)
             context: context passed
         '''
+        now = fields.Datetime.now()
+        now = now.replace('-', '_').replace(':', '_') 
         if not name_of_file:
-            now = fields.Datetime.now()
-            now = now.replace('-', '_').replace(':', '_') 
             #name_of_file = '/tmp/report_%s.xlsx' % now
             name_of_file = 'report_%s.xlsx' % now
+            
         self._close_workbook() # if not closed maually
+        if self._filename:
+            filename = self._filename
+        else:
+            filename = '/tmp/wb_%s.xlsx' % now
+            
         _logger.info('Return XLSX file: %s' % self._filename)
         
         # TODO is necessary?
