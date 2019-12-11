@@ -231,7 +231,6 @@ class ExcelWriter(models.Model):
         except:
             filename = '/tmp/wb_%s.xlsx' % now
         _logger.info('Return XLSX file: %s' % filename)
-        
         self._close_workbook() # if not closed maually
 
         # TODO is necessary?
