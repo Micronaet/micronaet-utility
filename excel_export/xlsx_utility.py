@@ -232,11 +232,11 @@ class ExcelWriter(models.Model):
         else:
             filename = '/tmp/wb_%s.xlsx' % now
             
-        _logger.info('Return XLSX file: %s' % self._filename)
+        _logger.info('Return XLSX file: %s' % filename)
         
         # TODO is necessary?
         temp_id = self.create({
-            'fullname': self._filename,
+            'fullname': filename,
             }).id
         
         return {
