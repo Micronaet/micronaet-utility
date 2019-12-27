@@ -256,9 +256,10 @@ class ExcelWriter(orm.Model):
         try:
             b64 = open(origin, 'rb').read().encode('base64')
         except:
+            _logger.error(_('Cannot return file: %s') % origin)
             raise osv.except_osv(
                 _('Report error'), 
-                _('Cannot return file: %s' % origin),
+                _('Cannot return file: %s') % origin,
                 )
                 
         attachment_id = attachment_pool.create(cr, uid, {
