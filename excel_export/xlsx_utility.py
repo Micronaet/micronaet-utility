@@ -338,6 +338,18 @@ class ExcelWriter(orm.Model):
         self._WS[ws_name].merge_range(*rectangle)
         return 
     
+    def write_comment(self, ws_name, row, col, comment):
+        """ Write comment in a cell
+        """
+        cell = self.rowcol_to_cell(row, col)
+        parameters = {
+            #author, visible, x_scale, width, y_scale, height, color
+            #font_name, font_size, start_cell, start_row, start_col
+            #x_offset, y_offset
+            }
+        self._WS[ws_name].write_comment(cell, comment, parameters)
+        
+        
     def write_image(self, ws_name, row, col, 
             x_offset=0, y_offset=0, x_scale=1, y_scale=1, positioning=2,
             filename=False, data=False, 
