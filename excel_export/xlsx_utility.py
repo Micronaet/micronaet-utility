@@ -409,6 +409,11 @@ class ExcelWriter(orm.Model):
                 self.write_comment(ws_name, row, col, comment)
             col += 1
         
+    def freeze_panes(self, ws_name, row, col):
+        """ Lock row or column
+        """        
+        self._WS[ws_name].freeze_panes(row, col)
+       
 
     def write_xls_data(self, ws_name, row, col, data, default_format=False):
         ''' Write data in row col position with default_format
