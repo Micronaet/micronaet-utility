@@ -390,16 +390,18 @@ class ExcelWriter(orm.Model):
         return True
 
     # Comment:
-    def write_comment(self, ws_name, row, col, comment):
+    def write_comment(self, ws_name, row, col, comment, parameters=None):
         """ Write comment in a cell
         """
         cell = self.rowcol_to_cell(row, col)
-        parameters = {
-            #author, visible, x_scale, width, y_scale, height, color
-            #font_name, font_size, start_cell, start_row, start_col
-            #x_offset, y_offset
-            }
-        self._WS[ws_name].write_comment(cell, comment, parameters)
+        if parameters is None:            
+            parameters = {
+                #author, visible, x_scale, width, y_scale, height, color
+                #font_name, font_size, start_cell, start_row, start_col
+                #x_offset, y_offset
+                }
+        if comment:    
+            self._WS[ws_name].write_comment(cell, comment, parameters)
         
     def write_comment_line(self, ws_name, row, line, col=0):
         """ Write comment line
