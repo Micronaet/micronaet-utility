@@ -142,7 +142,7 @@ class ExcelWriter(orm.Model):
         """ WS: Worksheet passed
             columns_w: list of dimension for the columns
         """
-        for w in columns_w:
+        for col in columns_w:
             self._WS[ws_name].set_column(
                 col, col, None, None, {'hidden': True})
             col += 1
