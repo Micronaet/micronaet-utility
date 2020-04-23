@@ -138,26 +138,23 @@ class ExcelWriter(orm.Model):
             self._create_workbook(extension=extension)
         self._WS[name] = self._WB.add_worksheet(name)
 
-    def column_hidden(self, ws_name, columns_w, col=0):
+    def column_hidden(self, ws_name, columns_w):
         """ WS: Worksheet passed
             columns_w: list of dimension for the columns
         """
         for col in columns_w:
             self._WS[ws_name].set_column(
                 col, col, None, None, {'hidden': True})
-            col += 1
         return True
 
-    '''
-    def row_hidden(self, ws_name, columns_w, col=0):
+    def row_hidden(self, ws_name, row_w):
         """ WS: Worksheet passed
             columns_w: list of dimension for the columns
         """
-        for w in columns_w:
+        for row in row_w:
             self._WS[ws_name].set_row(
-                col, col, None, None, {'hidden': True})
-            col += 1
-        return True'''
+                row, row, None, None, {'hidden': True})
+        return True
 
     def hide(self, ws_name):
         """ Hide sheet
