@@ -138,6 +138,11 @@ class ExcelWriter(orm.Model):
             self._create_workbook(extension=extension)
         self._WS[name] = self._WB.add_worksheet(name)
 
+    def hide(self, ws_name):
+        """ Hide sheet
+        """
+        return self._WS[ws_name].hide()
+
     def set_zoom(self, ws_name, zoom=100):
         ''' Set page zoom in preview
         '''
