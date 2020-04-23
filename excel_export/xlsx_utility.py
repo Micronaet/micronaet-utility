@@ -153,7 +153,7 @@ class ExcelWriter(orm.Model):
         """
         for row in row_w:
             self._WS[ws_name].set_row(
-                row, row, None, None, {'hidden': True})
+                row, None, None, {'hidden': True})
         return True
 
     def hide(self, ws_name):
