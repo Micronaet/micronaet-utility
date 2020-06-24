@@ -456,11 +456,11 @@ class ExcelWriter(orm.Model):
         '''
         return xl_rowcol_to_cell(row, col, row_abs=row_abs, col_abs=col_abs)
 
-    def write_formula(self, ws_name, row, col, formula, default_format, value):
+    def write_formula(self, ws_name, row, col, formula, format_code, value):
         ''' Write formula in cell passed
         '''
         return self._WS[ws_name].write_formula(
-            row, col, formula, default_format, value)
+            row, col, formula, default_format, value='')
         
     def column_width(self, ws_name, columns_w, col=0, default_format=False):
         ''' WS: Worksheet passed
@@ -650,6 +650,22 @@ class ExcelWriter(orm.Model):
                 'border': F['border'],
                 'align': 'right',
                 #'valign': 'vcenter',
+                }),
+            'text_right_green': WB.add_format({
+                'font_name': F['text'][0],
+                'font_size': F['text'][1],
+                'font_color': F['text'][2],
+                'border': F['border'],
+                'align': 'right',
+                'bg_color': '#b1f9c1',
+                }),
+            'text_right_red': WB.add_format({
+                'font_name': F['text'][0],
+                'font_size': F['text'][1],
+                'font_color': F['text'][2],
+                'border': F['border'],
+                'align': 'right',
+                'bg_color': '#ffc6af',
                 }),
                 
             'text_total': WB.add_format({
