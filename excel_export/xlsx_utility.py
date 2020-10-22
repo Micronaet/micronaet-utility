@@ -619,6 +619,24 @@ class ExcelWriter(orm.Model):
             # -------------------------------------------------------------
             #                       TEXT:
             # -------------------------------------------------------------
+            'text_wrap': WB.add_format({
+                'font_name': F['text'][0],
+                'font_size': F['text'][1],
+                'font_color': F['text'][2],
+                'border': F['border'],
+                'align': 'left',
+                'valign': 'top',
+                'text_wrap': True,
+                }),                    
+            'text_right_wrap': WB.add_format({
+                'font_name': F['text'][0],
+                'font_size': F['text'][1],
+                'font_color': F['text'][2],
+                'border': F['border'],
+                'align': 'right',
+                'text_wrap': True,
+                }),
+
             'text': WB.add_format({
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
