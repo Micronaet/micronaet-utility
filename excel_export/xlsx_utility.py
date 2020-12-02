@@ -795,7 +795,7 @@ class ExcelWriter(orm.Model):
                 'align': 'left',
                 #'valign': 'vcenter',
                 }),                
-            'bg_orange_rigth': WB.add_format({
+            'bg_orange_right': WB.add_format({
                 #'bold': True, 
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
