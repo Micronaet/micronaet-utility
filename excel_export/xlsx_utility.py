@@ -611,7 +611,7 @@ class ExcelWriter(orm.Model):
                 'valign': 'vcenter',
                 'bg_color': '#cfcfcf', # grey
                 'border': F['border'],
-                'text_wrap': True,
+                'wrap_text': True,
                 }),
 
             'header90': WB.add_format({
