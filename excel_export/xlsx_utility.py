@@ -397,6 +397,8 @@ class ExcelWriter(orm.Model):
                 if len(record) == 1:
                     self._WS[ws_name].write(
                         row, col, record[0])
+                elif len(record) == 2:
+                    self._WS[ws_name].write(row, col, record[0])
                 else: # (value, format) case or rich text format
                     import pdb; pdb.set_trace()
                     self._WS[ws_name].write(row, col, *record)
