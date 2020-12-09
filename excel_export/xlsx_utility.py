@@ -416,7 +416,7 @@ class ExcelWriter(orm.Model):
             @return: nothing
         '''
         if debug:
-            return self.write_xls_line(ws_name, row, line, col=col)
+            return self.write_xls_line_debug(ws_name, row, line, col=col)
         for record in line:
             if type(record) == bool:
                 self._WS[ws_name].write(
