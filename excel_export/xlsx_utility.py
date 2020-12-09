@@ -399,7 +399,7 @@ class ExcelWriter(orm.Model):
                         self._WS[ws_name].write(
                             row, col, u'%s' % record[0])
                     except:
-                        _logger.error('Impossibile stampare: %s' % record)
+                        _logger.error('Impossibile stampare: %s' % record[0])
                         self._WS[ws_name].write(
                             row, col, u'ERRORE!!!!')
                 else: # (value, format) case or rich text format
