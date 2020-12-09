@@ -413,7 +413,7 @@ class ExcelWriter(orm.Model):
     
 
     def write_xls_line(self, ws_name, row, line, default_format=False, col=0,
-            verbose=False, debug=True):
+            verbose=False, debug=False):
         ''' Write line in excel file:
             WS: Worksheet where find
             row: position where write
