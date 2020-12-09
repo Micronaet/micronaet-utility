@@ -401,7 +401,7 @@ class ExcelWriter(orm.Model):
                     import pdb; pdb.set_trace()
                     self._WS[ws_name].write(row, col, *record)
             else: # type(record) in (unicode, str, float, int): # Normal text
-                self._WS[ws_name].write(row, col, u'' % record)
+                self._WS[ws_name].write(row, col, u'%s' % record)
             col += 1
         return True
     
