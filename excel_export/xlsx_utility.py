@@ -399,8 +399,9 @@ class ExcelWriter(orm.Model):
                         self._WS[ws_name].write(
                             row, col, u'%s' % record[0])
                     except:
-                        print record
-                        import pdb; pdb.set_trace()        
+                        _logger.error('Impossibile stampare: %s' % record)
+                        self._WS[ws_name].write(
+                            row, col, u'ERRORE!!!!')
                 else: # (value, format) case or rich text format
                     import pdb; pdb.set_trace()
                     self._WS[ws_name].write(row, col, *record)
