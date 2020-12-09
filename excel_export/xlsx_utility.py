@@ -388,8 +388,25 @@ class ExcelWriter(orm.Model):
         self._WS[ws_name].insert_image(row, col, filename, parameters) 
         return True
         
+    def write_xls_line_debug(self, ws_name, row, line, col=0):
+        for record in line:
+            if type(record) == bool:
+                self._WS[ws_name].write(
+                    row, col, 'X' if record else '')
+            elif type(record) in (list, tuple):
+                if len(record) == 1:
+                    self._WS[ws_name].write(
+                        row, col, record[0])
+                else: # (value, format) case or rich text format
+                    self._WS[ws_name].write(row, col, *record)
+            else: # type(record) in (unicode, str, float, int): # Normal text
+                self._WS[ws_name].write(row, col, record)
+            col += 1
+        return True
+    
+
     def write_xls_line(self, ws_name, row, line, default_format=False, col=0,
-            verbose=True):
+            verbose=False, debug=True):
         ''' Write line in excel file:
             WS: Worksheet where find
             row: position where write
@@ -398,6 +415,8 @@ class ExcelWriter(orm.Model):
             
             @return: nothing
         '''
+        if debug:
+            return self.write_xls_line(ws_name, row, line, col=col)
         for record in line:
             if type(record) == bool:
                 self._WS[ws_name].write(
