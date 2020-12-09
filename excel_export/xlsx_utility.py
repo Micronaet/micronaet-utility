@@ -395,8 +395,12 @@ class ExcelWriter(orm.Model):
                     row, col, u'X' if record else '')
             elif type(record) in (list, tuple):
                 if len(record) in (1, 2):
-                    self._WS[ws_name].write(
-                        row, col, u'%s' % record[0])
+                    try:
+                        self._WS[ws_name].write(
+                            row, col, u'%s' % record[0])
+                    except:
+                        print record
+                        import pdb; pdb.set_trace()        
                 else: # (value, format) case or rich text format
                     import pdb; pdb.set_trace()
                     self._WS[ws_name].write(row, col, *record)
