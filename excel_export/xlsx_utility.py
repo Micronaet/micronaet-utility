@@ -398,6 +398,7 @@ class ExcelWriter(orm.Model):
                     self._WS[ws_name].write(
                         row, col, record[0])
                 else: # (value, format) case or rich text format
+                    import pdb; pdb.set_trace()
                     self._WS[ws_name].write(row, col, *record)
             else: # type(record) in (unicode, str, float, int): # Normal text
                 self._WS[ws_name].write(row, col, record)
