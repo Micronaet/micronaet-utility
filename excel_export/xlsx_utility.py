@@ -388,7 +388,8 @@ class ExcelWriter(orm.Model):
         self._WS[ws_name].insert_image(row, col, filename, parameters) 
         return True
         
-    def write_xls_line(self, ws_name, row, line, default_format=False, col=0):
+    def write_xls_line(self, ws_name, row, line, default_format=False, col=0,
+            verbose=True):
         ''' Write line in excel file:
             WS: Worksheet where find
             row: position where write
@@ -410,6 +411,8 @@ class ExcelWriter(orm.Model):
             else: # type(record) in (unicode, str, float, int): # Normal text
                 self._WS[ws_name].write(row, col, record, default_format)
             col += 1
+        if verbose:
+            _logger.info('%s' % line)    
         return True
 
     # Comment:
