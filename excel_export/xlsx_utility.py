@@ -400,8 +400,9 @@ class ExcelWriter(orm.Model):
                             row, col, u'%s' % record[0])
                     except:
                         _logger.error('Impossibile stampare: %s' % record[0])
-                        self._WS[ws_name].write(
+                        self._WS[ws_name].write(                        
                             row, col, u'ERRORE!!!!')
+                        import pdb; pdb.set_trace()    
                 else: # (value, format) case or rich text format
                     import pdb; pdb.set_trace()
                     self._WS[ws_name].write(row, col, *record)
@@ -412,7 +413,7 @@ class ExcelWriter(orm.Model):
     
 
     def write_xls_line(self, ws_name, row, line, default_format=False, col=0,
-            verbose=False, debug=False):
+            verbose=False, debug=True):
         ''' Write line in excel file:
             WS: Worksheet where find
             row: position where write
