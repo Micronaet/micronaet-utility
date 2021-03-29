@@ -627,7 +627,7 @@ class ExcelWriter(orm.Model):
                 'font_color': F['header'][2],
                 'align': 'center',
                 'valign': 'vcenter',
-                'bg_color': '#cfcfcf', # grey
+                'bg_color': '#cfcfcf',  # grey
                 'border': F['border'],
                 # 'text_wrap': True,
                 }),
@@ -638,7 +638,7 @@ class ExcelWriter(orm.Model):
                 'font_color': F['header'][2],
                 'align': 'center',
                 'valign': 'vcenter',
-                'bg_color': '#cfcfcf', # grey
+                'bg_color': '#cfcfcf',  # grey
                 'border': F['border'],
                 'text_wrap': True,
                 }),
@@ -792,7 +792,6 @@ class ExcelWriter(orm.Model):
                 'align': 'left',
                 # 'valign': 'vcenter',
                 }),
-
             'bg_grey': WB.add_format({
                 # 'bold': True,
                 'font_name': F['text'][0],
@@ -866,7 +865,7 @@ class ExcelWriter(orm.Model):
                 'align': 'right',
                 # 'valign': 'vcenter',
                 }),
-            'bg_orange_number': WB.add_format({
+            'bg_grey_number': WB.add_format({
                 # 'bold': True,
                 'font_name': F['text'][0],
                 'font_size': F['text'][1],
@@ -1129,8 +1128,6 @@ class ExcelWriter(orm.Model):
                 'align': 'right',
                 # 'valign': 'vcenter',
                 }),
-
-
 
             'number': WB.add_format({
                 'font_name': F['text'][0],
