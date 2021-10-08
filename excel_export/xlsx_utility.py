@@ -23,7 +23,7 @@ import sys
 import base64
 import logging
 import openerp
-#import shutil
+# import shutil
 import shutil
 import xlsxwriter
 from xlsxwriter.utility import xl_rowcol_to_cell
@@ -456,12 +456,13 @@ class ExcelWriter(orm.Model):
         if comment:
             self._WS[ws_name].write_comment(cell, comment, parameters)
 
-    def write_comment_line(self, ws_name, row, line, col=0):
+    def write_comment_line(self, ws_name, row, line, col=0, parameters=None):
         """ Write comment line
         """
         for comment in line:
             if comment:
-                self.write_comment(ws_name, row, col, comment)
+                self.write_comment(
+                    ws_name, row, col, comment, parameters=parameters)
             col += 1
 
     def freeze_panes(self, ws_name, row, col):
@@ -881,7 +882,7 @@ class ExcelWriter(orm.Model):
                 'font_size': F['text'][1],
                 'border': F['border'],
                 'font_color': 'black',
-                'bg_color': '#fffec1',##ffff99',
+                'bg_color': '#fffec1',# #ffff99',
                 'align': 'right',
                 # 'valign': 'vcenter',
                 }),
