@@ -65,8 +65,9 @@ class AccountInvoice(models.Model):
                 res_amount_currency -= amount_currency or 0
                 if i + 1 == len(totlines):
                     amount_currency += res_amount_currency
-
+                payment_date = ''
                 iml.append({
+                    'payment_date': payment_date,
                     'type': 'dest',
                     'name': name,
                     'amount': t[1],
@@ -81,9 +82,11 @@ class AccountInvoice(models.Model):
                     'payment_type': payment_type,
                 })
         else:
+            payment_date = invoice.date_invoice
             iml.append({
                 'type': 'dest',
                 'name': name,
+                'payment_date': payment_date,
                 'amount': total,
                 'partner_id': partner_id,
                 'account_id': invoice.account_id.id,
