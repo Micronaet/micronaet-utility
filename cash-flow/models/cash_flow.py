@@ -39,7 +39,6 @@ class AccountInvoice(models.Model):
     def generate_payment(self):
         """ Generate payment
         """
-        pdb.set_trace()
         payment_pool = self.env['account.payment']
         invoice = self
         name = invoice.sequence_number_next or invoice.name or '/'
@@ -60,6 +59,7 @@ class AccountInvoice(models.Model):
             res_amount_currency = total_currency
             ctx['date'] = invoice._get_currency_rate_date()
             i = 0
+            pdb.set_trace()
             for amount_currency, t in enumerate(totlines):
                 # last line: add the diff
                 res_amount_currency -= amount_currency or 0
