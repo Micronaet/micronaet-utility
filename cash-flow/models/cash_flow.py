@@ -39,10 +39,11 @@ class AccountInvoice(models.Model):
     def generate_payment(self):
         """ Generate payment
         """
+        pdb.set_trace()
         payment_pool = self.env['account.payment']
         invoice = self
         name = invoice.sequence_number_next or invoice.name or '/'
-        currency_id = invoice.company_id.currency_id or 1  # todo
+        currency_id = invoice.company_id.currency_id.id or 1  # todo
 
         diff_currency = False  # inv.currency_id != company_currency
         payment_method_id = 1  # todo
@@ -69,7 +70,7 @@ class AccountInvoice(models.Model):
                     'account_id': invoice.account_id.id,
                     'date_maturity': t[0],
                     'amount_currency': diff_currency and amount_currency,
-                    'currency_id': diff_currency and invoice.currency_id.id,
+                    'currency_id': diff_currency and invoice.currency_id.id or currency_id,
                     'invoice_id': invoice.id,
                     'payment_method_id': payment_method_id,
                 })
@@ -81,7 +82,7 @@ class AccountInvoice(models.Model):
                 'account_id': invoice.account_id.id,
                 'date_maturity': invoice.date_due,
                 'amount_currency': diff_currency and total_currency,
-                'currency_id': diff_currency and invoice.currency_id.id,
+                'currency_id': diff_currency and invoice.currency_id.id or currency_id,
                 'invoice_id': invoice.id,
                 'payment_method_id': payment_method_id,
             })
