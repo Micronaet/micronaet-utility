@@ -59,7 +59,6 @@ class AccountInvoice(models.Model):
             res_amount_currency = total_currency
             ctx['date'] = invoice._get_currency_rate_date()
             i = 0
-            pdb.set_trace()
             for amount_currency, detail in enumerate(totlines):
                 # last line: add the diff
                 res_amount_currency -= amount_currency or 0
