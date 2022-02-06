@@ -67,11 +67,11 @@ class AccountInvoice(models.Model):
                     amount_currency += res_amount_currency
                 payment_date, amount = detail
                 iml.append({
-                    'payment_date': payment_date,
                     'type': 'dest',
                     'name': name,
                     'amount': amount,
                     'partner_id': partner_id,
+                    'partner_type': partner_type,
                     'account_id': invoice.account_id.id,
                     'payment_date': payment_date,
                     'date_maturity': payment_date,
