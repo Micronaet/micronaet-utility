@@ -42,6 +42,7 @@
         <menuitem id="menu_cash_flow_root" name="Cash Flow" sequence="1"/>
             <menuitem id="menu_list_root" name="Anagrafichee" parent="menu_cash_flow_root" sequence="10"/>
                 <menuitem id="menu_list_partner" name="Partner" parent="menu_list_root" sequence="10" action="base.action_partner_form"/>
+                <menuitem id="menu_list_payment" name="Termini di pagamento" parent="menu_list_root" sequence="20" action="account.action_payment_term_form"/>
 
             <menuitem id="menu_invoice_root" name="Fatture" parent="menu_cash_flow_root" sequence="20"/>
                 <menuitem id="menu_invoice_invoice" name="Elenco" parent="menu_invoice_root" sequence="10" action="invoice_cash_flow_view_action"/>
