@@ -28,12 +28,12 @@ import shutil
 from odoo import models, fields, api
 from odoo.tools.translate import _
 
-
 _logger = logging.getLogger(__name__)
+
 
 class ExcelWriter(models.Model):
     """ Model name: ExcelWriter
-    """    
+    """
     _name = 'excel.writer'
     _description = 'Excel writer'
 
@@ -48,14 +48,14 @@ class ExcelWriter(models.Model):
             origin = self.fullname
             self.b64_file = base64.b64encode(open(origin, 'rb').read())
         except:
-            self.b64_file = False    
+            self.b64_file = False
 
     # -------------------------------------------------------------------------
     #                                   COLUMNS:
     # -------------------------------------------------------------------------
     b64_file = fields.Binary('B64 file', compute='_get_template')
     fullname = fields.Text('Fullname of file')
-    
+
     # -------------------------------------------------------------------------
     #                                   UTILITY:
     # -------------------------------------------------------------------------
@@ -66,8 +66,8 @@ class ExcelWriter(models.Model):
         destination = destination.replace('/', '_').replace(':', '_')
         if not(destination.endswith('xlsx') or destination.endswith('xls')):
             destination = '%s.xlsx' % destination
-        return destination    
-        
+        return destination
+
     # Format utility:
     @api.model
     def format_date(self, value):
@@ -82,21 +82,21 @@ class ExcelWriter(models.Model):
             )
 
     @api.model
-    def format_hour(self, value, hhmm_format=True, approx=0.001, 
+    def format_hour(self, value, hhmm_format=True, approx=0.001,
             zero_value='0:00'):
         ''' Format hour HH:MM
         '''
         if not hhmm_format:
             return value
-            
+
         if not value:
             return zero_value
-            
-        value += approx    
+
+        value += approx
         hour = int(value)
         minute = int((value - hour) * 60)
-        return '%d:%02d' % (hour, minute) 
-    
+        return '%d:%02d' % (hour, minute)
+
     # Excel utility:
     @api.model
     def _create_workbook(self, extension='xlsx'):
@@ -105,13 +105,13 @@ class ExcelWriter(models.Model):
         now = fields.Datetime.now()
         now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
         filename = '/tmp/wb_%s.%s' % (now, extension)
-             
+
         _logger.info('Start create file %s' % filename)
         self._WB = xlsxwriter.Workbook(filename)
         self._WS = {}
         self._filename = filename
         _logger.warning('Created WB and file: %s' % filename)
-        
+
         self.set_format() # setup default format for text used
         self.get_format() # Load database of formats
 
@@ -121,11 +121,11 @@ class ExcelWriter(models.Model):
         '''
         self._WS = {}
         self._wb_format = False
-        
+
         try:
-            self._WB.close()            
-        except:            
-            _logger.error('Error closing WB')    
+            self._WB.close()
+        except:
+            _logger.error('Error closing WB')
         self._WB = False # remove object in instance
 
     @api.model
@@ -144,15 +144,15 @@ class ExcelWriter(models.Model):
             _logger.info('Using WB: %s' % self._WB)
         except:
             self._create_workbook(extension=extension)
-            
+
         self._WS[name] = self._WB.add_worksheet(name)
-        
+
     @api.model
     def send_mail_to_group(self,
             group_name,
             subject, body, filename, # Mail data
             ):
-        ''' Send mail of current workbook to all partner present in group 
+        ''' Send mail of current workbook to all partner present in group
             passed
             group_name: use format module_name.group_id
             subject: mail subject
@@ -160,7 +160,7 @@ class ExcelWriter(models.Model):
             filename: name of xlsx attached file
         '''
         # Send mail with attachment:
-        
+
         # Pool used
         group_pool = self.env['res.groups']
         model_pool = self.env['ir.model.data']
@@ -168,32 +168,32 @@ class ExcelWriter(models.Model):
 
         self._close_workbook() # Close before read file
         attachments = [(
-            filename, 
+            filename,
             open(self._filename, 'rb').read(), # Raw data
             )]
 
         group = group_name.split('.')
         groups_id = model_pool.get_object_reference(
-            cr, uid, group[0], group[1])[1]    
+            cr, uid, group[0], group[1])[1]
         partner_ids = []
         for user in group_pool.browse(group_id).users:
             partner_ids.append(user.partner_id.id)
-            
+
         thread_pool = self.env['mail.thread']
-        thread_pool.message_post(False, 
-            type='email', 
-            body=body, 
+        thread_pool.message_post(False,
+            type='email',
+            body=body,
             subject=subject,
             partner_ids=[(6, 0, partner_ids)],
-            attachments=attachments, 
+            attachments=attachments,
             )
-        self._close_workbook() # if not closed maually        
+        self._close_workbook() # if not closed maually
 
     @api.model
     def save_file_as(self, destination):
         ''' Close workbook and save in another place (passed)
         '''
-        _logger.warning('Save file as: %s' % destination)        
+        _logger.warning('Save file as: %s' % destination)
         origin = self._filename
         self._close_workbook() # if not closed maually
         shutil.copy(origin, destination)
@@ -221,11 +221,11 @@ class ExcelWriter(models.Model):
             context: context passed
         '''
         now = fields.Datetime.now()
-        now = now.replace('-', '_').replace(':', '_') 
+        now = now.replace('-', '_').replace(':', '_')
         if not name_of_file:
             #name_of_file = '/tmp/report_%s.xlsx' % now
             name_of_file = 'report_%s.xlsx' % now
-            
+
         try:
             filename = self._filename
         except:
@@ -237,7 +237,7 @@ class ExcelWriter(models.Model):
         temp_id = self.create({
             'fullname': filename,
             }).id
-        
+
         return {
             'type' : 'ir.actions.act_url',
             'name': name,
@@ -254,12 +254,12 @@ class ExcelWriter(models.Model):
             rectangle: list for 2 corners xy data: [0, 0, 10, 5]
             default_format: setup format for cells
         '''
-        rectangle.append(data)        
+        rectangle.append(data)
         if default_format:
-            rectangle.append(default_format)            
+            rectangle.append(default_format)
         self._WS[WS_name].merge_range(*rectangle)
-        return 
-             
+        return
+
     @api.model
     def write_xls_line(self, WS_name, row, line, default_format=False, col=0):
         ''' Write line in excel file:
@@ -267,21 +267,21 @@ class ExcelWriter(models.Model):
             row: position where write
             line: Row passed is a list of element or tuple (element, format)
             default_format: if present replace when format is not present
-            
+
             @return: nothing
         '''
         for record in line:
             if type(record) == bool:
                 record = ''
             if type(record) not in (list, tuple):
-                if default_format:                    
+                if default_format:
                     self._WS[WS_name].write(row, col, record, default_format)
-                else:    
-                    self._WS[WS_name].write(row, col, record)                
+                else:
+                    self._WS[WS_name].write(row, col, record)
             elif len(record) == 2: # Normal text, format
                 self._WS[WS_name].write(row, col, *record)
             else: # Rich format TODO
-                
+
                 self._WS[WS_name].write_rich_string(row, col, *record)
             col += 1
         return True
@@ -289,15 +289,15 @@ class ExcelWriter(models.Model):
     @api.model
     def write_xls_data(self, WS_name, row, col, data, default_format=False):
         ''' Write data in row col position with default_format
-            
+
             @return: nothing
         '''
         if default_format:
             self._WS[WS_name].write(row, col, data, default_format)
-        else:    
+        else:
             self._WS[WS_name].write(row, col, data, default_format)
         return True
-        
+
     @api.model
     def column_width(self, WS_name, columns_w, col=0):
         ''' WS: Worksheet passed
@@ -313,18 +313,18 @@ class ExcelWriter(models.Model):
         ''' WS: Worksheet passed
             columns_w: list of dimension for the columns
         '''
-        if type(row_list) in (list, tuple):            
+        if type(row_list) in (list, tuple):
             for row in row_list:
                 self._WS[WS_name].set_row(row, height)
-        else:        
-            self._WS[WS_name].set_row(row_list, height)                
+        else:
+            self._WS[WS_name].set_row(row_list, height)
         return True
-        
+
     @api.model
-    def set_format(    
-            self, 
+    def set_format(
+            self,
             # Title:
-            title_font='Courier 10 pitch', title_size=11, title_fg='black', 
+            title_font='Courier 10 pitch', title_size=11, title_fg='black',
             # Header:
             header_font='Courier 10 pitch', header_size=9, header_fg='black',
             # Text:
@@ -334,8 +334,8 @@ class ExcelWriter(models.Model):
             # Layout:
             border=1,
             ):
-        ''' Setup 4 element used in normal reporting 
-            Every time replace format setup with new database           
+        ''' Setup 4 element used in normal reporting
+            Every time replace format setup with new database
         '''
         self._default_format = {
             'title': (title_font, title_size, title_fg),
@@ -344,11 +344,11 @@ class ExcelWriter(models.Model):
             'number': number_format,
             'border': border,
             }
-        _logger.warning('Set format variables: %s' % self._default_format)            
+        _logger.warning('Set format variables: %s' % self._default_format)
         return
-    
+
     @api.model
-    def get_format(self, key=False):  
+    def get_format(self, key=False):
         ''' Database for format cells
             key: mode of format
             if not passed load database only
@@ -357,18 +357,18 @@ class ExcelWriter(models.Model):
         _logger.warning('Set format WB type')
         WB = self._WB # Create with start method
         #except:
-            
+
         F = self._default_format # readability
-        
+
         # Save database in self:
         create = False
         try:
             if not self._wb_format: # raise error if not present
-                create = True            
-        except:    
+                create = True
+        except:
             create = True
 
-        if create:    
+        if create:
             self._wb_format = {
                 # -------------------------------------------------------------
                 # Used when key not present:
@@ -384,18 +384,18 @@ class ExcelWriter(models.Model):
                 #                       TITLE:
                 # -------------------------------------------------------------
                 'title' : WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['title'][0],
                     'font_size': F['title'][1],
                     'font_color': F['title'][2],
                     'align': 'left',
                     }),
-                    
+
                 # -------------------------------------------------------------
                 #                       HEADER:
                 # -------------------------------------------------------------
                 'header': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['header'][0],
                     'font_size': F['header'][1],
                     'font_color': F['header'][2],
@@ -416,7 +416,7 @@ class ExcelWriter(models.Model):
                     'border': F['border'],
                     'align': 'left',
                     #'valign': 'vcenter',
-                    }),                    
+                    }),
                 'text_center': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
@@ -433,9 +433,9 @@ class ExcelWriter(models.Model):
                     'align': 'right',
                     #'valign': 'vcenter',
                     }),
-                    
+
                 'text_total': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -486,7 +486,7 @@ class ExcelWriter(models.Model):
                     'bg_color': '#FFFFFF',
                     'align': 'right',
                     'num_format': F['number'],
-                    }),                
+                    }),
                 'bg_normal_red_number': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
@@ -509,7 +509,7 @@ class ExcelWriter(models.Model):
 
                 # Bold
                 'bg_white': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -519,7 +519,7 @@ class ExcelWriter(models.Model):
                     #'valign': 'vcenter',
                     }),
                 'bg_blue': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -529,7 +529,7 @@ class ExcelWriter(models.Model):
                     #'valign': 'vcenter',
                     }),
                 'bg_red': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -539,7 +539,7 @@ class ExcelWriter(models.Model):
                     #'valign': 'vcenter',
                     }),
                 'bg_green': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -549,7 +549,7 @@ class ExcelWriter(models.Model):
                     #'valign': 'vcenter',
                     }),
                 'bg_yellow': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
@@ -557,9 +557,9 @@ class ExcelWriter(models.Model):
                     'bg_color': '#fffec1',
                     'align': 'left',
                     #'valign': 'vcenter',
-                    }),                
+                    }),
                 'bg_orange': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
@@ -567,9 +567,9 @@ class ExcelWriter(models.Model):
                     'bg_color': '#fcdebd',
                     'align': 'left',
                     #'valign': 'vcenter',
-                    }),                
+                    }),
                 'bg_red_number': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -580,7 +580,7 @@ class ExcelWriter(models.Model):
                     #'valign': 'vcenter',
                     }),
                 'bg_green_number': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -591,7 +591,7 @@ class ExcelWriter(models.Model):
                     #'valign': 'vcenter',
                     }),
                 'bg_yellow_number': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
@@ -600,9 +600,9 @@ class ExcelWriter(models.Model):
                     'align': 'right',
                     'num_format': F['number'],
                     #'valign': 'vcenter',
-                    }),                
+                    }),
                 'bg_orange_number': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
@@ -611,9 +611,9 @@ class ExcelWriter(models.Model):
                     'align': 'right',
                     'num_format': F['number'],
                     #'valign': 'vcenter',
-                    }),                
+                    }),
                 'bg_white_number': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
@@ -622,9 +622,9 @@ class ExcelWriter(models.Model):
                     'align': 'right',
                     'num_format': F['number'],
                     #'valign': 'vcenter',
-                    }),                
+                    }),
                 'bg_blue_number': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
@@ -633,11 +633,11 @@ class ExcelWriter(models.Model):
                     'align': 'right',
                     'num_format': F['number'],
                     #'valign': 'vcenter',
-                    }),                
+                    }),
 
                 # TODO remove?
                 'bg_order': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'bg_color': '#cc9900',
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
@@ -695,7 +695,7 @@ class ExcelWriter(models.Model):
                     'align': 'left',
                     'valign': 'vcenter',
                     #'text_wrap': True
-                    }),                
+                    }),
                 'text_wrap': WB.add_format({
                     'font_color': 'black',
                     'font_name': F['text'][0],
@@ -768,7 +768,7 @@ class ExcelWriter(models.Model):
                     }),
 
                 'number_total': WB.add_format({
-                    'bold': True, 
+                    'bold': True,
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'font_color': F['text'][2],
@@ -779,13 +779,13 @@ class ExcelWriter(models.Model):
                     #'valign': 'vcenter',
                     }),
                 }
-        
+
         # Return format or default one's
         if key:
             return self._wb_format.get(
-                key, 
+                key,
                 self._wb_format.get('default'),
                 )
         else:
-            return True    
+            return True
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
