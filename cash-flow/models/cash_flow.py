@@ -60,12 +60,12 @@ class AccountInvoice(models.Model):
             ctx['date'] = invoice._get_currency_rate_date()
             i = 0
             pdb.set_trace()
-            for amount_currency, t in enumerate(totlines):
+            for amount_currency, detail in enumerate(totlines):
                 # last line: add the diff
                 res_amount_currency -= amount_currency or 0
                 if i + 1 == len(totlines):
                     amount_currency += res_amount_currency
-                payment_date = ''
+                payment_date, amount = detail
                 iml.append({
                     'payment_date': payment_date,
                     'type': 'dest',
