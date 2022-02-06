@@ -44,6 +44,8 @@ class AccountInvoice(models.Model):
         invoice = self
         name = invoice.sequence_number_next or invoice.name or '/'
         currency_id = invoice.company_id.currency_id.id or 1  # todo
+        journal_id = 5  # bank
+        payment_type = 'inbound'
 
         diff_currency = False  # inv.currency_id != company_currency
         payment_method_id = 1  # todo
@@ -73,6 +75,8 @@ class AccountInvoice(models.Model):
                     'currency_id': diff_currency and invoice.currency_id.id or currency_id,
                     'invoice_id': invoice.id,
                     'payment_method_id': payment_method_id,
+                    'journal_id': journal_id,
+                    'payment_type': payment_type,
                 })
         else:
             iml.append({
@@ -85,6 +89,9 @@ class AccountInvoice(models.Model):
                 'currency_id': diff_currency and invoice.currency_id.id or currency_id,
                 'invoice_id': invoice.id,
                 'payment_method_id': payment_method_id,
+                'journal_id': journal_id,
+                'payment_type': payment_type,
+
             })
         for data in iml:
             payment_pool.create(data)
