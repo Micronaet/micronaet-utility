@@ -58,7 +58,7 @@ partner_pool = odoo.model('res.partner')
 invoice_pool = odoo.model('account.invoice')
 
 import pdb; pdb.set_trace()
-partner_db = {}
+partner_db = []
 counter = 0
 for row in open(file_in, 'r'):
     counter += 1
@@ -67,12 +67,12 @@ for row in open(file_in, 'r'):
         ('name', '=', name),
     ])
     if partner_ids:
-        partner_db[name] = partner_ids[0]
+        partner_db.append(partner_ids[0])
         print('[INFO] %s. Partner %s updated' % (counter, name))
     else:
-        partner_db[name] = partner_pool.create({
+        partner_db.append(partner_pool.create({
             'name': name,
-        })
+        }))
         print('[INFO] %s. Partner %s created' % (counter, name))
 
 import pdb; pdb.set_trace()
