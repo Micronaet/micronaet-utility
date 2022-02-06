@@ -46,6 +46,7 @@ class AccountInvoice(models.Model):
         currency_id = invoice.company_id.currency_id.id or 1  # todo
         journal_id = 5  # bank
         payment_type = 'inbound'
+        partner_id = invoice.partner_id.id
 
         diff_currency = False  # inv.currency_id != company_currency
         payment_method_id = 1  # todo
@@ -69,6 +70,7 @@ class AccountInvoice(models.Model):
                     'type': 'dest',
                     'name': name,
                     'amount': t[1],
+                    'partner_id': partner_id,
                     'account_id': invoice.account_id.id,
                     'date_maturity': t[0],
                     'amount_currency': diff_currency and amount_currency,
@@ -83,6 +85,7 @@ class AccountInvoice(models.Model):
                 'type': 'dest',
                 'name': name,
                 'amount': total,
+                'partner_id': partner_id,
                 'account_id': invoice.account_id.id,
                 'date_maturity': invoice.date_due,
                 'amount_currency': diff_currency and total_currency,
