@@ -43,9 +43,10 @@ class AccountInvoice(models.Model):
         invoice = self
         name = invoice.sequence_number_next or invoice.name or '/'
         currency_id = invoice.company_id.currency_id.id or 1  # todo
-        journal_id = 5  # bank
+        journal_id = 7  # bank  (cash 5)
         payment_type = 'inbound'
         partner_id = invoice.partner_id.id
+        partner_type = 'customer'
 
         diff_currency = False  # inv.currency_id != company_currency
         payment_method_id = 1  # todo
@@ -88,10 +89,10 @@ class AccountInvoice(models.Model):
                 'name': name,
                 'payment_date': payment_date,
                 'amount': total,
+                'partner_type': partner_type,
                 'partner_id': partner_id,
                 'account_id': invoice.account_id.id,
-                'payment_date': invoice.date_due,
-                'date_maturity': invoice.date_due,
+                'date_maturity': payment_date,
                 'amount_currency': diff_currency and total_currency,
                 'currency_id': diff_currency and invoice.currency_id.id or currency_id,
                 'invoice_id': invoice.id,
