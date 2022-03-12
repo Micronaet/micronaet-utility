@@ -486,7 +486,7 @@ class ExcelWriter(orm.Model):
         """
         return xl_rowcol_to_cell(row, col, row_abs=row_abs, col_abs=col_abs)
 
-    def write_formula(self, ws_name, row, col, formula, format_code, value):
+    def write_formula(self, ws_name, row, col, formula, default_format, value):
         """ Write formula in cell passed
         """
         return self._WS[ws_name].write_formula(
