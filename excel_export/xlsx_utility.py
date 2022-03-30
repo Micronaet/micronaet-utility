@@ -632,6 +632,17 @@ class ExcelWriter(orm.Model):
                 'border': F['border'],
                 # 'text_wrap': True,
                 }),
+            'header_black': WB.add_format({
+                'bold': True,
+                'font_name': F['header'][0],
+                'font_size': F['header'][1],
+                'font_color': '#FFFFFF',
+                'align': 'center',
+                'valign': 'vcenter',
+                'bg_color': '#000000',  # black
+                'border': F['border'],
+                # 'text_wrap': True,
+                }),
             'header_wrap': WB.add_format({
                 'bold': True,
                 'font_name': F['header'][0],
