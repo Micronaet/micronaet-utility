@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tgk_hide_left_sidebar_tgk_hide_left_sidebar,tgk_hide_left_sidebar.tgk_hide_left_sidebar,model_tgk_hide_left_sidebar_tgk_hide_left_sidebar,,1,0,0,0

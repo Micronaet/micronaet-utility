@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <template id="assets_backend" name="hide_left_sidebar_js_tgk assets" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <link rel="stylesheet" href="/tgk_hide_left_sidebar/static/src/css/style.css"/>
+                <script type="text/javascript" src="/tgk_hide_left_sidebar/static/src/js/hide_left_sidebar.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>
