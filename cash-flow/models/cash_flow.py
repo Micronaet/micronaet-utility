@@ -99,9 +99,9 @@ class AccountInvoice(models.Model):
                 'payment_method_id': payment_method_id,
                 'journal_id': journal_id,
                 'payment_type': payment_type,
-
             })
         for data in iml:
             payment_pool.create(data)
-    manual_total = fields.Float('Totale')
+        return True
 
+    manual_total = fields.Float('Totale')

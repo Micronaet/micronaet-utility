@@ -22,8 +22,10 @@ import sys
 import logging
 import base64
 
-import xlsxwriter
 import shutil
+import xlsxwriter
+
+from xlsxwriter.utility import xl_rowcol_to_cell
 
 from odoo import models, fields, api
 from odoo.tools.translate import _
@@ -42,8 +44,8 @@ class ExcelWriter(models.Model):
     # -------------------------------------------------------------------------
     @api.one
     def _get_template(self):
-        ''' Computed fields: B64 file from file content
-        '''
+        """ Computed fields: B64 file from file content
+        """
         try:
             origin = self.fullname
             self.b64_file = base64.b64encode(open(origin, 'rb').read())
@@ -61,8 +63,8 @@ class ExcelWriter(models.Model):
     # -------------------------------------------------------------------------
     @api.model
     def clean_filename(self, destination):
-        ''' Clean char that generate error
-        '''
+        """ Clean char that generate error
+        """
         destination = destination.replace('/', '_').replace(':', '_')
         if not(destination.endswith('xlsx') or destination.endswith('xls')):
             destination = '%s.xlsx' % destination
@@ -71,8 +73,8 @@ class ExcelWriter(models.Model):
     # Format utility:
     @api.model
     def format_date(self, value):
-        ''' Format hour DD:MM:YYYY
-        '''
+        """ Format hour DD:MM:YYYY
+        """
         if not value:
             return ''
         return '%s/%s/%s' % (
@@ -82,10 +84,11 @@ class ExcelWriter(models.Model):
             )
 
     @api.model
-    def format_hour(self, value, hhmm_format=True, approx=0.001,
+    def format_hour(
+            self, value, hhmm_format=True, approx=0.001,
             zero_value='0:00'):
-        ''' Format hour HH:MM
-        '''
+        """ Format hour HH:MM
+        """
         if not hhmm_format:
             return value
 
@@ -100,9 +103,9 @@ class ExcelWriter(models.Model):
     # Excel utility:
     @api.model
     def _create_workbook(self, extension='xlsx'):
-        ''' Create workbook in a temp file
-        '''
-        now = fields.Datetime.now()
+        """ Create workbook in a temp file
+        """
+        now = str(fields.Datetime.now())
         now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
         filename = '/tmp/wb_%s.%s' % (now, extension)
 
@@ -117,8 +120,8 @@ class ExcelWriter(models.Model):
 
     @api.model
     def _close_workbook(self, ):
-        ''' Close workbook
-        '''
+        """ Close workbook
+        """
         self._WS = {}
         self._wb_format = False
 
@@ -130,14 +133,14 @@ class ExcelWriter(models.Model):
 
     @api.model
     def close_workbook(self, ):
-        ''' Close workbook
-        '''
+        """ Close workbook
+        """
         return self._close_workbook()
 
     @api.model
     def create_worksheet(self, name=False, extension='xlsx'):
-        ''' Create database for WS in this module
-        '''
+        """ Create database for WS in this module
+        """
         try:
             if not self._WB:
                 self._create_workbook(extension=extension)
@@ -152,13 +155,13 @@ class ExcelWriter(models.Model):
             group_name,
             subject, body, filename, # Mail data
             ):
-        ''' Send mail of current workbook to all partner present in group
+        """ Send mail of current workbook to all partner present in group
             passed
             group_name: use format module_name.group_id
             subject: mail subject
             body: mail body
             filename: name of xlsx attached file
-        '''
+        """
         # Send mail with attachment:
 
         # Pool used
@@ -191,8 +194,8 @@ class ExcelWriter(models.Model):
 
     @api.model
     def save_file_as(self, destination):
-        ''' Close workbook and save in another place (passed)
-        '''
+        """ Close workbook and save in another place (passed)
+        """
         _logger.warning('Save file as: %s' % destination)
         origin = self._filename
         self._close_workbook() # if not closed maually
@@ -201,8 +204,8 @@ class ExcelWriter(models.Model):
 
     @api.model
     def save_binary_xlsx(self, binary):
-        ''' Save binary data passed as file temp (returned)
-        '''
+        """ Save binary data passed as file temp (returned)
+        """
         b64_file = base64.decodestring(binary)
         fields.Datetime.now()
         filename = \
@@ -214,12 +217,12 @@ class ExcelWriter(models.Model):
 
     @api.model
     def return_attachment(self, name, name_of_file=False):
-        ''' Return attachment passed
+        """ Return attachment passed
             name: Name for the attachment
             name_of_file: file name downloaded
             php: paremeter if activate save_as module for 7.0 (passed base srv)
             context: context passed
-        '''
+        """
         now = fields.Datetime.now()
         now = now.replace('-', '_').replace(':', '_')
         if not name_of_file:
@@ -249,11 +252,11 @@ class ExcelWriter(models.Model):
 
     @api.model
     def merge_cell(self, WS_name, rectangle, default_format=False, data=''):
-        ''' Merge cell procedure:
+        """ Merge cell procedure:
             WS: Worksheet where work
             rectangle: list for 2 corners xy data: [0, 0, 10, 5]
             default_format: setup format for cells
-        '''
+        """
         rectangle.append(data)
         if default_format:
             rectangle.append(default_format)
@@ -262,14 +265,14 @@ class ExcelWriter(models.Model):
 
     @api.model
     def write_xls_line(self, WS_name, row, line, default_format=False, col=0):
-        ''' Write line in excel file:
+        """ Write line in excel file:
             WS: Worksheet where find
             row: position where write
             line: Row passed is a list of element or tuple (element, format)
             default_format: if present replace when format is not present
 
             @return: nothing
-        '''
+        """
         for record in line:
             if type(record) == bool:
                 record = ''
@@ -288,10 +291,10 @@ class ExcelWriter(models.Model):
 
     @api.model
     def write_xls_data(self, WS_name, row, col, data, default_format=False):
-        ''' Write data in row col position with default_format
+        """ Write data in row col position with default_format
 
             @return: nothing
-        '''
+        """
         if default_format:
             self._WS[WS_name].write(row, col, data, default_format)
         else:
@@ -299,10 +302,19 @@ class ExcelWriter(models.Model):
         return True
 
     @api.model
-    def column_width(self, WS_name, columns_w, col=0):
-        ''' WS: Worksheet passed
+    def write_url(self, WS_name, row, col, link, string, tip=''):
+        """ WS: Worksheet passed
             columns_w: list of dimension for the columns
-        '''
+        """
+        cell = xl_rowcol_to_cell(row, col)
+        self._WS[WS_name].write_url(cell, link, string=string, tip=tip)
+        return True
+
+    @api.model
+    def column_width(self, WS_name, columns_w, col=0):
+        """ WS: Worksheet passed
+            columns_w: list of dimension for the columns
+        """
         for w in columns_w:
             self._WS[WS_name].set_column(col, col, w)
             col += 1
@@ -310,9 +322,9 @@ class ExcelWriter(models.Model):
 
     @api.model
     def row_height(self, WS_name, row_list, height=10):
-        ''' WS: Worksheet passed
+        """ WS: Worksheet passed
             columns_w: list of dimension for the columns
-        '''
+        """
         if type(row_list) in (list, tuple):
             for row in row_list:
                 self._WS[WS_name].set_row(row, height)
@@ -334,9 +346,9 @@ class ExcelWriter(models.Model):
             # Layout:
             border=1,
             ):
-        ''' Setup 4 element used in normal reporting
+        """ Setup 4 element used in normal reporting
             Every time replace format setup with new database
-        '''
+        """
         self._default_format = {
             'title': (title_font, title_size, title_fg),
             'header': (header_font, header_size, header_fg),
@@ -349,10 +361,10 @@ class ExcelWriter(models.Model):
 
     @api.model
     def get_format(self, key=False):
-        ''' Database for format cells
+        """ Database for format cells
             key: mode of format
             if not passed load database only
-        '''
+        """
         #try:
         _logger.warning('Set format WB type')
         WB = self._WB # Create with start method
@@ -788,4 +800,4 @@ class ExcelWriter(models.Model):
                 )
         else:
             return True
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+
