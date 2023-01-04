@@ -611,13 +611,33 @@ Excel.write_xls_line(page, row, (
 # Details:
 state = False
 pdb.set_trace()
+row += 1
+partner_row = row  # Leave empty first line (for partner name)
+
+row += 1
+Excel.write_xls_line(page, row, (
+    'Modello',
+    'Tot. lavoraz.',
+), f_header)
 for line in blocks[block][1]:
     # -------------------------------------------------------------------------
     # New block (next write partner and header):
     # -------------------------------------------------------------------------
     if line.startswith('-----------------'):
-        pdb.set_trace()
-        state = 'partner'
+        # Partner name:
+        row += 2
+        partner_row = row
+        # Excel.write_xls_line(page, row, (
+        #    'Rimpiazzare con il nome partner',  # todo
+        #    ), f_title)
+
+        # Header:
+        row += 1
+        Excel.write_xls_line(page, row, (
+            'Modello',
+            'Tot. lavoraz.',
+            ), f_header)
+        state = 'data'
 
     # -------------------------------------------------------------------------
     # Jump header:
@@ -637,20 +657,21 @@ for line in blocks[block][1]:
     # -------------------------------------------------------------------------
     # Write partner and header:
     # -------------------------------------------------------------------------
-    elif state == 'partner':
-        # Partner name:
-        row += 2
-        Excel.write_xls_line(page, row, (
-            line,
-            ), f_title)
+    # todo never used:
+    # elif state == 'partner':
+    #    # Partner name:
+    #    row += 2
+    #    Excel.write_xls_line(page, row, (
+    #        line,
+    #        ), f_title)
 
-        # Header:
-        row += 1
-        Excel.write_xls_line(page, row, (
-            'Modello',
-            'Tot. lavoraz.',
-            ), f_header)
-        state = 'jump'
+    #    # Header:
+    #    row += 1
+    #    Excel.write_xls_line(page, row, (
+    #        'Modello',
+    #        'Tot. lavoraz.',
+    #        ), f_header)
+    #    state = 'jump'
 
     # -------------------------------------------------------------------------
     # Data row:
@@ -660,10 +681,13 @@ for line in blocks[block][1]:
         line_part = split_block(block, line)
         if line_part[0] == 'Totale':
             f_select = f_bold
+            # Write in header partner reference:
+            Excel.write_xls_line(page, partner_row, line_part[2:], f_title)
+
         else:
             f_select = f_text
-            line_part = line_part[:2]  # remove partner code and name
-        Excel.write_xls_line(page, row, line_part, f_select)
+            # line_part = line_part[:2]  # remove partner code and name
+        Excel.write_xls_line(page, row, line_part[:2], f_select)
 
 
 # -----------------------------------------------------------------------------
