@@ -143,6 +143,8 @@ def split_block(block, line):
         return (
             line[:15].strip(),  # Model
             line[15:20].strip(),  # Qty
+            line[20:30].strip(),  # Partner code
+            line[30:].strip(),  # Partner name
             )
     elif block == 5:
         return (
@@ -656,7 +658,6 @@ for line in blocks[block][1]:
         line_part = split_block(block, line)
         if line_part[0] == 'Totale':
             f_select = f_bold
-            pdb.set_trace()
         else:
             f_select = f_text
         Excel.write_xls_line(page, row, line_part, f_select)
