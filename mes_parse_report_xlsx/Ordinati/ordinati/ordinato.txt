@@ -1,0 +1,1519 @@
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   1
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  582   CORD156T607C052S4E46C2T  COORD. C156 AR            3 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C052S4E46C2T  COORD. C156 AR            3 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C003S4E3GC35  COORD. C156 AR           31 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C003S4E3GC35  COORD. C156 AR           31 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C003S4E01C01  COORD. C156 AR            9 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C003S4E01C01  COORD. C156 AR            9 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C003S4E46C2T  COORD. C156 AR           39 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C003S4E46C2T  COORD. C156 AR           39 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E3GC35  COORD. C156 AR           30 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E3GC35  COORD. C156 AR           30 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E01C01  COORD. C156 AR            5 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E01C01  COORD. C156 AR            5 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E46C2T  COORD. C156 AR           18 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E46C2T  COORD. C156 AR           18 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C098S4E46C2T  COORD. C156 AR            6 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C098S4E46C2T  COORD. C156 AR            6 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C098S4E3GC35  COORD. C156 AR            5 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C098S4E3GC35  COORD. C156 AR            5 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C052S4E3GC35  COORD. C156 AR            6 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C052S4E3GC35  COORD. C156 AR            6 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E44C7D  COORD. C156 AR            2 501.00070 FAST 2 S.R.L.                  UH2645- |   5063   1   2641 20/12/22 651.00006 BERTOLI                 
+  582   CORD156T607C025S4E44C7D  COORD. C156 AR            2 501.00070 FAST 2 S.R.L.                  UP4802- |   5063   1   2642 20/12/22 651.00006 BERTOLI                 
+Modello CORD156T607 . . . . . . . . . . . .tot. .........154                                                  |                                                                   
+  574   CORD160T531C730S4E2VC71  COORD. C160 AR            2 501.00002 GOLDEN SEASON S.R.L.           H2642-- |   5019   2   2470 24/11/22 651.00009 LUCA                    
+  574   CORD160T531C730S4E2VC71  COORD. C160 AR            2 501.00002 GOLDEN SEASON S.R.L.           P4725-- |   5019   2   2470 24/11/22 651.00009 LUCA                    
+  574   CORD160T531C200S4E2VC71  COORD. C160 AR           42 501.00002 GOLDEN SEASON S.R.L.           H2642-- |   5019   2   2470 24/11/22 651.00009 LUCA                    
+  574   CORD160T531C200S4E2VC71  COORD. C160 AR           42 501.00002 GOLDEN SEASON S.R.L.           P4725-- |   5019   2   2470 24/11/22 651.00009 LUCA                    
+  574   CORD160T531C199S4E2VC71  COORD. C160 AR            4 501.00002 GOLDEN SEASON S.R.L.           H2642-- |   5019   2   2470 24/11/22 651.00009 LUCA                    
+  574   CORD160T531C199S4E2VC71  COORD. C160 AR            4 501.00002 GOLDEN SEASON S.R.L.           P4725-- |   5019   2   2470 24/11/22 651.00009 LUCA                    
+Modello CORD160T531 . . . . . . . . . . . .tot. ..........48                                                  |                                                                   
+  574   CORD161T593C199S4E2VC71  COORD. C161 AR            2 501.00002 GOLDEN SEASON S.R.L.           H2676-- |   5324   1   2695 29/12/22 651.00001 JOHN                    
+  574   CORD161T593C199S4E2VC71  COORD. C161 AR            2 501.00002 GOLDEN SEASON S.R.L.           P4761-- |   5324   1   2696 29/12/22 651.00001 JOHN                    
+  574   CORD161T593C495S4E2VC71  COORD. C161 AR           32 501.00002 GOLDEN SEASON S.R.L.           H2676-- |   5324   1   2695 29/12/22 651.00001 JOHN                    
+  574   CORD161T593C495S4E2VC71  COORD. C161 AR           32 501.00002 GOLDEN SEASON S.R.L.           P4761-- |   5324   1   2696 29/12/22 651.00001 JOHN                    
+  574   CORD161T593C699S4E2VC71  COORD. C161 AR           16 501.00002 GOLDEN SEASON S.R.L.           H2676-- |   5324   1   2695 29/12/22 651.00001 JOHN                    
+  574   CORD161T593C699S4E2VC71  COORD. C161 AR           16 501.00002 GOLDEN SEASON S.R.L.           P4761-- |   5324   1   2696 29/12/22 651.00001 JOHN                    
+Modello CORD161T593 . . . . . . . . . . . .tot. ..........50                                                  |                                                                   
+  574   CORD162T593C495S4E2VC71  COORD. C162 AR            7 501.00002 GOLDEN SEASON S.R.L.           H2640-- |   5325   1   2697 29/12/22 651.00001 JOHN                    
+  574   CORD162T593C495S4E2VC71  COORD. C162 AR            7 501.00002 GOLDEN SEASON S.R.L.           P4760-- |   5325   1   2698 29/12/22 651.00001 JOHN                    
+  574   CORD162T593C110S4E2VC71  COORD. C162 AR           19 501.00002 GOLDEN SEASON S.R.L.           H2640-- |   5325   1   2697 29/12/22 651.00001 JOHN                    
+  574   CORD162T593C110S4E2VC71  COORD. C162 AR           19 501.00002 GOLDEN SEASON S.R.L.           P4760-- |   5325   1   2698 29/12/22 651.00001 JOHN                    
+  574   CORD162T593C199S4E2VC71  COORD. C162 AR            2 501.00002 GOLDEN SEASON S.R.L.           H2640-- |   5325   1   2697 29/12/22 651.00001 JOHN                    
+  574   CORD162T593C199S4E2VC71  COORD. C162 AR            2 501.00002 GOLDEN SEASON S.R.L.           P4760-- |   5325   1   2698 29/12/22 651.00001 JOHN                    
+Modello CORD162T593 . . . . . . . . . . . .tot. ..........28                                                  |                                                                   
+  574   CORD165T535C300S4E2VC71  COORD. C165 AR          113 501.00002 GOLDEN SEASON S.R.L.           H2672-- |   5317   1   2668 23/12/22 651.00001 JOHN                    
+  574   CORD165T535C300S4E2VC71  COORD. C165 AR          113 501.00002 GOLDEN SEASON S.R.L.           P4754-- |   5317   1   2669 23/12/22 651.00001 JOHN                    
+  574   CORD165T535C199S4E2VC71  COORD. C165 AR           16 501.00002 GOLDEN SEASON S.R.L.           H2672-- |   5317   1   2668 23/12/22 651.00001 JOHN                    
+  574   CORD165T535C199S4E2VC71  COORD. C165 AR           16 501.00002 GOLDEN SEASON S.R.L.           P4754-- |   5317   1   2669 23/12/22 651.00001 JOHN                    
+  574   CORD165T535C120S4E2VC71  COORD. C165 AR            9 501.00002 GOLDEN SEASON S.R.L.           H2672-- |   5317   1   2668 23/12/22 651.00001 JOHN                    
+  574   CORD165T535C120S4E2VC71  COORD. C165 AR            9 501.00002 GOLDEN SEASON S.R.L.           P4754-- |   5317   1   2669 23/12/22 651.00001 JOHN                    
+Modello CORD165T535 . . . . . . . . . . . .tot. .........138                                                  |                                                                   
+  574   CORD166T535C300S4E2VC71  COORD. C166 AR           17 501.00002 GOLDEN SEASON S.R.L.           H2639-- |   5318   1   2670 23/12/22 651.00001 JOHN                    
+  574   CORD166T535C300S4E2VC71  COORD. C166 AR           17 501.00002 GOLDEN SEASON S.R.L.           P4728-- |   5318   1   2671 23/12/22 651.00001 JOHN                    
+  574   CORD166T535C199S4E2VC71  COORD. C166 AR           15 501.00002 GOLDEN SEASON S.R.L.           H2639-- |   5318   1   2670 23/12/22 651.00001 JOHN                    
+  574   CORD166T535C199S4E2VC71  COORD. C166 AR           15 501.00002 GOLDEN SEASON S.R.L.           P4728-- |   5318   1   2671 23/12/22 651.00001 JOHN                    
+  574   CORD166T535C120S4E2VC71  COORD. C166 AR           61 501.00002 GOLDEN SEASON S.R.L.           H2639-- |   5318   1   2670 23/12/22 651.00001 JOHN                    
+  574   CORD166T535C120S4E2VC71  COORD. C166 AR           61 501.00002 GOLDEN SEASON S.R.L.           P4728-- |   5318   1   2671 23/12/22 651.00001 JOHN                    
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   2
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+Modello CORD166T535 . . . . . . . . . . . .tot. ..........93                                                  |                                                                   
+  574   CORD167T592C004S4E2VC71  COORD. C167 AR           26 501.00002 GOLDEN SEASON S.R.L.           H2675-- |   5198   2   2688 28/12/22 651.00032 LUCA GHEDI              
+  574   CORD167T592C004S4E2VC71  COORD. C167 AR           26 501.00002 GOLDEN SEASON S.R.L.           P4749-- |   5198   2     16 03/01/23 651.00034 ROMANO                  
+  574   CORD167T592C005S4E2VC71  COORD. C167 AR           13 501.00002 GOLDEN SEASON S.R.L.           H2675-- |   5198   2   2688 28/12/22 651.00032 LUCA GHEDI              
+  574   CORD167T592C005S4E2VC71  COORD. C167 AR           13 501.00002 GOLDEN SEASON S.R.L.           P4749-- |   5198   2     16 03/01/23 651.00034 ROMANO                  
+Modello CORD167T592 . . . . . . . . . . . .tot. ..........39                                                  |                                                                   
+  574   CORD168T532C120S4E2VC71  COORD. C168 AR           10 501.00002 GOLDEN SEASON S.R.L.           H2644-- |   5190   2   2662 22/12/22 651.00032 LUCA GHEDI              
+  574   CORD168T532C120S4E2VC71  COORD. C168 AR           10 501.00002 GOLDEN SEASON S.R.L.           P4727-- |   5190   1   2638 20/12/22 651.00006 BERTOLI                 
+  574   CORD168T532C330S4E2VC71  COORD. C168 AR           58 501.00002 GOLDEN SEASON S.R.L.           H2644-- |   5190   2   2662 22/12/22 651.00032 LUCA GHEDI              
+  574   CORD168T532C330S4E2VC71  COORD. C168 AR           58 501.00002 GOLDEN SEASON S.R.L.           P4727-- |   5190   1   2638 20/12/22 651.00006 BERTOLI                 
+Modello CORD168T532 . . . . . . . . . . . .tot. ..........68                                                  |                                                                   
+  574   CORD169T532C199S4E2VC71  COORD. C169 AR           15 501.00002 GOLDEN SEASON S.R.L.           H2641-- |   5357   1   2690 28/12/22 651.00006 BERTOLI                 
+  574   CORD169T532C199S4E2VC71  COORD. C169 AR           15 501.00002 GOLDEN SEASON S.R.L.           P4726-- |   5357   1   2691 28/12/22 651.00006 BERTOLI                 
+  574   CORD169T532C120S4E2VC71  COORD. C169 AR           88 501.00002 GOLDEN SEASON S.R.L.           H2641-- |   5357   1   2690 28/12/22 651.00006 BERTOLI                 
+  574   CORD169T532C120S4E2VC71  COORD. C169 AR           88 501.00002 GOLDEN SEASON S.R.L.           P4726-- |   5357   1   2691 28/12/22 651.00006 BERTOLI                 
+Modello CORD169T532 . . . . . . . . . . . .tot. .........103                                                  |                                                                   
+  549   G009N--T559C299S4E56C73  GON.MOD.G009N            10 501.00026 SORELLE RAMONDA S.P.A.                 |   5082   2   2645 20/12/22 651.00004 MARIO                   
+  549   G009N--T559C199S4E56C73  GON.MOD.G009N             7 501.00026 SORELLE RAMONDA S.P.A.                 |   5082   2   2645 20/12/22 651.00004 MARIO                   
+  552   G009N--T559C299S4E56C73  GON.MOD.G009N             9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5082   2   2645 20/12/22 651.00004 MARIO                   
+  552   G009N--T559C199S4E56C73  GON.MOD.G009N             9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5082   2   2645 20/12/22 651.00004 MARIO                   
+Modello G009N--T559 . . . . . . . . . . . .tot. ..........35                                                  |                                                                   
+  527   G009N--T813C300S4E56C73  GON.MOD.G009N             7 501.00034 RAMONDA TESSILE S.P.A.                 |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  531   G009N--T813C199S4E13C3L  GON.MOD.G009N            13 501.00056 CIENNE S.R.L.                          |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  531   G009N--T813C299S4E13C3L  GON.MOD.G009N            17 501.00056 CIENNE S.R.L.                          |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  547   G009N--T813C300S4E1AC1V  GON.MOD.G009N             7 501.00120 ROMEO S.R.L.                           |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  547   G009N--T813C199S4E1AC1V  GON.MOD.G009N             7 501.00120 ROMEO S.R.L.                           |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  547   G009N--T813C299S4E1AC1V  GON.MOD.G009N             7 501.00120 ROMEO S.R.L.                           |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  556   G009N--T813C300S4E56C73  GON.MOD.G009N            12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  556   G009N--T813C299S4E56C73  GON.MOD.G009N            12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  556   G009N--T813C199S4E56C73  GON.MOD.G009N            12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  560   G009N--T813C199S4E56C73  GON.MOD.G009N             6 501.00026 SORELLE RAMONDA S.P.A.                 |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  560   G009N--T813C299S4E56C73  GON.MOD.G009N             6 501.00026 SORELLE RAMONDA S.P.A.                 |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  572   G009N--T813C730S4E1CC25  GON.MOD.G009N             5 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  572   G009N--T813C299S4E1CC25  GON.MOD.G009N            23 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  572   G009N--T813C199S4E1CC25  GON.MOD.G009N            13 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5131   1   2743 30/12/22 651.00001 JOHN                    
+  593   G009N--T813C199S4E56C73  GON.MOD.G009N            12 501.00029 FORM S.P.A.                            |   5130   1   2742 30/12/22 651.00001 JOHN                    
+  593   G009N--T813C299S4E56C73  GON.MOD.G009N            12 501.00029 FORM S.P.A.                            |   5130   1   2742 30/12/22 651.00001 JOHN                    
+Modello G009N--T813 . . . . . . . . . . . .tot. .........171                                                  |                                                                   
+  527   G009SF-T563C001S4E56C73  GON.MOD.G009 S            7 501.00034 RAMONDA TESSILE S.P.A.                 |   5299   1   2738 30/12/22 651.00001 JOHN                    
+Modello G009SF-T563 . . . . . . . . . . . .tot. ...........7                                                  |                                                                   
+  527   G009SF-T568C299S4E56C73  GON.MOD.G009 S            7 501.00034 RAMONDA TESSILE S.P.A.                 |   5122   1   2732 30/12/22 651.00001 JOHN                    
+Modello G009SF-T568 . . . . . . . . . . . .tot. ...........7                                                  |                                                                   
+  500   G009SF-T588C299S4E1CC25  GON.MOD.G009 S            3 501.00133 BAGAGLINI FRANCESCA                    |   5103   1   2723 30/12/22 651.00001 JOHN                    
+  550   G009SF-T588C299S4E56C73  GON.MOD.G009 S            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5103   1   2723 30/12/22 651.00001 JOHN                    
+  551   G009SF-T588C299S4E56C73  GON.MOD.G009 S            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5103   1   2723 30/12/22 651.00001 JOHN                    
+Modello G009SF-T588 . . . . . . . . . . . .tot. ..........17                                                  |                                                                   
+  550   G009SF-T589C299S4E56C73  GON.MOD.G009 S            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+  551   G009SF-T589C299S4E56C73  GON.MOD.G009 S            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+  552   G009SF-T589C299S4E56C73  GON.MOD.G009 S            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+  553   G009SF-T589C299S4E56C73  GON.MOD.G009 S            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+  556   G009SF-T589C299S4E56C73  GON.MOD.G009 S           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+  556   G009SF-T589C110S4E56C73  GON.MOD.G009 S           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+  559   G009SF-T589C110S4E56C73  GON.MOD.G009 S            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+  559   G009SF-T589C299S4E56C73  GON.MOD.G009 S            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5112   1   2713 30/12/22 651.00001 JOHN                    
+Modello G009SF-T589 . . . . . . . . . . . .tot. ..........63                                                  |                                                                   
+  593   G068C--T813C299S4E56C73  GON.MOD.G068C            12 501.00029 FORM S.P.A.                            |   5132   1   2744 30/12/22 651.00001 JOHN                    
+  593   G068C--T813C199S4E56C73  GON.MOD.G068C            16 501.00029 FORM S.P.A.                            |   5132   1   2744 30/12/22 651.00001 JOHN                    
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   3
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+Modello G068C--T813 . . . . . . . . . . . .tot. ..........28                                                  |                                                                   
+  562   G068CSFT588C300S4E3AC9U  GONNA G068C S.            6 501.00065 PERUSELLI BRUNO S.R.L.                 |   5104   1   2724 30/12/22 651.00001 JOHN                    
+  562   G068CSFT588C199S4E3AC9U  GONNA G068C S.           12 501.00065 PERUSELLI BRUNO S.R.L.                 |   5104   1   2724 30/12/22 651.00001 JOHN                    
+  562   G068CSFT588C295S4E3AC9U  GONNA G068C S.           12 501.00065 PERUSELLI BRUNO S.R.L.                 |   5104   1   2724 30/12/22 651.00001 JOHN                    
+Modello G068CSFT588 . . . . . . . . . . . .tot. ..........30                                                  |                                                                   
+  527   G1627--T559C299S4E56C73  GON.MOD.G1627             7 501.00034 RAMONDA TESSILE S.P.A.                 |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  527   G1627--T559C199S4E56C73  GON.MOD.G1627             7 501.00034 RAMONDA TESSILE S.P.A.                 |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  544   G1627--T559C199S4E63C68  GON.MOD.G1627            11 501.00055 LIVRIERI DONATO                        |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  544   G1627--T559C405S4E63C68  GON.MOD.G1627             6 501.00055 LIVRIERI DONATO                        |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  544   G1627--T559C299S4E63C68  GON.MOD.G1627            12 501.00055 LIVRIERI DONATO                        |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  549   G1627--T559C199S4E56C73  GON.MOD.G1627             6 501.00026 SORELLE RAMONDA S.P.A.                 |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  549   G1627--T559C299S4E56C73  GON.MOD.G1627             6 501.00026 SORELLE RAMONDA S.P.A.                 |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  553   G1627--T559C199S4E56C73  GON.MOD.G1627             7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  553   G1627--T559C299S4E56C73  GON.MOD.G1627             7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  553   G1627--T559C405S4E56C73  GON.MOD.G1627             6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  554   G1627--T559C199S4E56C73  GON.MOD.G1627             6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  556   G1627--T559C405S4E56C73  GON.MOD.G1627            12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  556   G1627--T559C199S4E56C73  GON.MOD.G1627            12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  556   G1627--T559C299S4E56C73  GON.MOD.G1627            12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  557   G1627--T559C199S4E56C73  GON.MOD.G1627            10 501.00048 BRULA SHOP S.R.L.                      |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  560   G1627--T559C299S4E56C73  GON.MOD.G1627             5 501.00026 SORELLE RAMONDA S.P.A.                 |   5085   2   2648 20/12/22 651.00004 MARIO                   
+  563   G1627--T559C199S4E88C7F  GON.MOD.G1627            48 501.00067 SMART S.P.A.                           |   5084   2   2647 20/12/22 651.00004 MARIO                   
+  563   G1627--T559C299S4E88C7F  GON.MOD.G1627            54 501.00067 SMART S.P.A.                           |   5084   2   2647 20/12/22 651.00004 MARIO                   
+  573   G1627--T559C299S4E17C18  GON.MOD.G1627            21 501.00007 VARDAS A.E.V.E.E.                      |   5083   2   2646 20/12/22 651.00004 MARIO                   
+  605   G1627--T559C299S4E1CC25  GON.MOD.G1627             3 501.00069 BI.VI SNC di Benda e Varuzza           |   5085   2   2648 20/12/22 651.00004 MARIO                   
+Modello G1627--T559 . . . . . . . . . . . .tot. .........258                                                  |                                                                   
+  592   G2511N-T568C299S4E71C9G  GON.MOD.G2511N            6 501.00114 ARTEMISIA di Farolfi V. Casano         |   5127   1   2737 30/12/22 651.00001 JOHN                    
+Modello G2511N-T568 . . . . . . . . . . . .tot. ...........6                                                  |                                                                   
+  592   G2511N-T588C295S4E71C9G  GON.MOD.G2511N            6 501.00114 ARTEMISIA di Farolfi V. Casano         |   5105   1   2725 30/12/22 651.00001 JOHN                    
+Modello G2511N-T588 . . . . . . . . . . . .tot. ...........6                                                  |                                                                   
+  572   G2511N-T589C110S4E1CC25  GON.MOD.G2511N           12 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5114   1   2715 30/12/22 651.00001 JOHN                    
+  573   G2511N-T589C299S4E17C18  GON.MOD.G2511N           35 501.00007 VARDAS A.E.V.E.E.                      |   5113   1   2714 30/12/22 651.00001 JOHN                    
+Modello G2511N-T589 . . . . . . . . . . . .tot. ..........47                                                  |                                                                   
+  560   G2511N-T806C199S4E56C73  GON.MOD.G2511N            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  560   G2511N-T806C199S4E56C73  GON.MOD.G2511N            1 501.00026 SORELLE RAMONDA S.P.A.                 |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  560   G2511N-T806C295S4E56C73  GON.MOD.G2511N            6 501.00026 SORELLE RAMONDA S.P.A.                 |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  561   G2511N-T806C300S4E56C73  GON.MOD.G2511N           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  561   G2511N-T806C299S4E56C73  GON.MOD.G2511N           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  572   G2511N-T806C295S4E1CC25  GON.MOD.G2511N           18 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  572   G2511N-T806C300S4E1CC25  GON.MOD.G2511N            9 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  592   G2511N-T806C300S4E71C9G  GON.MOD.G2511N            6 501.00114 ARTEMISIA di Farolfi V. Casano         |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  592   G2511N-T806C199S4E71C9G  GON.MOD.G2511N            6 501.00114 ARTEMISIA di Farolfi V. Casano         |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  602   G2511N-T806C295S4E1CC25  GON.MOD.G2511N            5 501.00063 EL BOTTEGON S.N.C. di Galdino          |   5044   2   2644 20/12/22 651.00004 MARIO                   
+  602   G2511N-T806C199S4E1CC25  GON.MOD.G2511N            5 501.00063 EL BOTTEGON S.N.C. di Galdino          |   5044   2   2644 20/12/22 651.00004 MARIO                   
+Modello G2511N-T806 . . . . . . . . . . . .tot. ..........81                                                  |                                                                   
+  573   H1150--T813C299S4E17C18  GIAC.MOD.H1150           40 501.00007 VARDAS A.E.V.E.E.                      |   5332   1   2751 30/12/22 651.00001 JOHN                    
+Modello H1150--T813 . . . . . . . . . . . .tot. ..........40                                                  |                                                                   
+  583   H2282--T560C299S4E1CC25  GIACCA H2282 A           16 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  583   H2282--T560C240S4E1CC25  GIACCA H2282 A           17 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  584   H2282--T560C240S4E1CC25  GIACCA H2282 A            7 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  584   H2282--T560C299S4E1CC25  GIACCA H2282 A            8 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  585   H2282--T560C299S4E1CC25  GIACCA H2282 A           18 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  585   H2282--T560C240S4E1CC25  GIACCA H2282 A           17 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  586   H2282--T560C299S4E1CC25  GIACCA H2282 A            7 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  586   H2282--T560C240S4E1CC25  GIACCA H2282 A            9 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  587   H2282--T560C299S4E1CC25  GIACCA H2282 A            8 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  587   H2282--T560C240S4E1CC25  GIACCA H2282 A           15 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   4
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  588   H2282--T560C240S4E1CC25  GIACCA H2282 A            8 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  589   H2282--T560C240S4E1CC25  GIACCA H2282 A           13 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  590   H2282--T560C240S4E1CC25  GIACCA H2282 A           11 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  591   H2282--T560C240S4E1CC25  GIACCA H2282 A           17 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  591   H2282--T560C299S4E1CC25  GIACCA H2282 A           17 501.00020 NICO S.P.A.                            |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  601   H2282--T560C240S4E1CC25  GIACCA H2282 A           16 501.00092 NICO POLSKA SP. Z O.O.                 |   5072   2 100292 29/12/22 651.00003 CARLO                   
+  601   H2282--T560C299S4E1CC25  GIACCA H2282 A           15 501.00092 NICO POLSKA SP. Z O.O.                 |   5072   2 100292 29/12/22 651.00003 CARLO                   
+Modello H2282--T560 . . . . . . . . . . . .tot. .........219                                                  |                                                                   
+  583   H2292--T560C299S4E1CC25  SOPR. H2292 AR           15 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  583   H2292--T560C240S4E1CC25  SOPR. H2292 AR           16 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  583   H2292--T560C115S4E1CC25  SOPR. H2292 AR           18 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  584   H2292--T560C240S4E1CC25  SOPR. H2292 AR            9 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  585   H2292--T560C299S4E1CC25  SOPR. H2292 AR           17 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  585   H2292--T560C115S4E1CC25  SOPR. H2292 AR           11 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  585   H2292--T560C240S4E1CC25  SOPR. H2292 AR           12 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  586   H2292--T560C240S4E1CC25  SOPR. H2292 AR            9 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  587   H2292--T560C240S4E1CC25  SOPR. H2292 AR           10 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  590   H2292--T560C240S4E1CC25  SOPR. H2292 AR           10 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+  591   H2292--T560C240S4E1CC25  SOPR. H2292 AR           16 501.00020 NICO S.P.A.                            |   5073   1   2603 16/12/22 651.00001 JOHN                    
+Modello H2292--T560 . . . . . . . . . . . .tot. .........143                                                  |                                                                   
+  509   H2554--T559C199S4E1CC25  GIACCA H2554 A            8 501.00131 MAGAZZINI M.C. SRL                     |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  509   H2554--T559C299S4E1CC25  GIACCA H2554 A            8 501.00131 MAGAZZINI M.C. SRL                     |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  538   H2554--T559C299S4E56C73  GIACCA H2554 A            4 501.00049 BRAVI CALZATURE S.R.L.                 |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  538   H2554--T559C199S4E56C73  GIACCA H2554 A            5 501.00049 BRAVI CALZATURE S.R.L.                 |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  547   H2554--T559C299S4E1AC1V  GIACCA H2554 A            6 501.00120 ROMEO S.R.L.                           |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  549   H2554--T559C405S4E56C73  GIACCA H2554 A            6 501.00026 SORELLE RAMONDA S.P.A.                 |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  549   H2554--T559C299S4E56C73  GIACCA H2554 A            7 501.00026 SORELLE RAMONDA S.P.A.                 |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  553   H2554--T559C405S4E56C73  GIACCA H2554 A            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  553   H2554--T559C299S4E56C73  GIACCA H2554 A            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  558   H2554--T559C405S4E56C73  GIACCA H2554 A           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  558   H2554--T559C299S4E56C73  GIACCA H2554 A           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  560   H2554--T559C299S4E56C73  GIACCA H2554 A            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  562   H2554--T559C299S4E3AC9U  GIACCA H2554 A           12 501.00065 PERUSELLI BRUNO S.R.L.                 |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  569   H2554--T559C299S4E1CC25  GIACCA H2554 A            4 501.00072 BERTELLO OSVALDO                       |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  569   H2554--T559C199S4E1CC25  GIACCA H2554 A            4 501.00072 BERTELLO OSVALDO                       |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  570   H2554--T559C199S4E71C9G  GIACCA H2554 A            3 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  570   H2554--T559C299S4E71C9G  GIACCA H2554 A            3 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  572   H2554--T559C299S4E1CC25  GIACCA H2554 A           16 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  572   H2554--T559C199S4E1CC25  GIACCA H2554 A            5 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  572   H2554--T559C110S4E1CC25  GIACCA H2554 A           13 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  572   H2554--T559C405S4E1CC25  GIACCA H2554 A            6 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  573   H2554--T559C299S4E17C18  GIACCA H2554 A           21 501.00007 VARDAS A.E.V.E.E.                      |   5086   2   2634 20/12/22 651.00003 CARLO                   
+  575   H2554--T559C199S4E1CC25  GIACCA H2554 A            8 501.00052 TESSIL MODA S.R.L.                     |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  575   H2554--T559C299S4E1CC25  GIACCA H2554 A            8 501.00052 TESSIL MODA S.R.L.                     |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  605   H2554--T559C299S4E1CC25  GIACCA H2554 A            3 501.00069 BI.VI SNC di Benda e Varuzza           |   5087   2   2636 20/12/22 651.00003 CARLO                   
+  607   H2554--T559C199S4E1CC25  GIACCA H2554 A            1 501.00087 M&S S.R.L.                             |   5087   2   2636 20/12/22 651.00003 CARLO                   
+Modello H2554--T559 . . . . . . . . . . . .tot. .........188                                                  |                                                                   
+  506   H2555--T563C001S4E1NC1Z  GIACCA H2555 A           11 501.00012 NEW DAVID SCOTT S.R.L.                 |   5300   1   2739 30/12/22 651.00001 JOHN                    
+  536   H2555--T563C001S4E1CC25  GIACCA H2555 A            2 501.00081 COSTA NEVIA                            |   5301   1   2740 30/12/22 651.00001 JOHN                    
+  542   H2555--T563C001S4E1CC25  GIACCA H2555 A            3 501.00137 DE TOMASSI TIZIANA                     |   5301   1   2740 30/12/22 651.00001 JOHN                    
+  570   H2555--T563C001S4E71C9G  GIACCA H2555 A            3 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5301   1   2740 30/12/22 651.00001 JOHN                    
+  592   H2555--T563C001S4E71C9G  GIACCA H2555 A            1 501.00114 ARTEMISIA di Farolfi V. Casano         |   5301   1   2740 30/12/22 651.00001 JOHN                    
+  603   H2555--T563C001S4E1CC25  GIACCA H2555 A            1 501.00116 LA FURLANA S.R.L.                      |   5301   1   2740 30/12/22 651.00001 JOHN                    
+  606   H2555--T563C001S4E1CC25  GIACCA H2555 A           12 501.00145 FRANKO PLUS d.o.o.                     |   5301   1   2740 30/12/22 651.00001 JOHN                    
+Modello H2555--T563 . . . . . . . . . . . .tot. ..........33                                                  |                                                                   
+  506   H2555--T806C199S4E1NC1Z  GIACCA H2555 A           11 501.00012 NEW DAVID SCOTT S.R.L.                 |   5046   2   2576 12/12/22 651.00003 CARLO                   
+  506   H2555--T806C299S4E1NC1Z  GIACCA H2555 A           11 501.00012 NEW DAVID SCOTT S.R.L.                 |   5046   2   2576 12/12/22 651.00003 CARLO                   
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   5
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  536   H2555--T806C299S4E1CC25  GIACCA H2555 A            3 501.00081 COSTA NEVIA                            |   5047   2   2577 12/12/22 651.00003 CARLO                   
+  536   H2555--T806C110S4E1CC25  GIACCA H2555 A            3 501.00081 COSTA NEVIA                            |   5047   2   2577 12/12/22 651.00003 CARLO                   
+  573   H2555--T806C299S4E17C18  GIACCA H2555 A           39 501.00007 VARDAS A.E.V.E.E.                      |   5045   2   2575 12/12/22 651.00003 CARLO                   
+  605   H2555--T806C300S4E1CC25  GIACCA H2555 A            2 501.00069 BI.VI SNC di Benda e Varuzza           |   5047   2   2577 12/12/22 651.00003 CARLO                   
+  605   H2555--T806C299S4E1CC25  GIACCA H2555 A            2 501.00069 BI.VI SNC di Benda e Varuzza           |   5047   2   2577 12/12/22 651.00003 CARLO                   
+Modello H2555--T806 . . . . . . . . . . . .tot. ..........71                                                  |                                                                   
+  578   H2639--T535C120S4E2VC71  GIACCA H2639            119 501.00002 GOLDEN SEASON S.R.L.                   |   5319   1   2672 23/12/22 651.00001 JOHN                    
+  578   H2639--T535C300S4E2VC71  GIACCA H2639             21 501.00002 GOLDEN SEASON S.R.L.                   |   5319   1   2672 23/12/22 651.00001 JOHN                    
+  578   H2639--T535C199S4E2VC71  GIACCA H2639             30 501.00002 GOLDEN SEASON S.R.L.                   |   5319   1   2672 23/12/22 651.00001 JOHN                    
+Modello H2639--T535 . . . . . . . . . . . .tot. .........170                                                  |                                                                   
+  578   H2640--T593C199S4E2VC71  GIACCA H2640              8 501.00002 GOLDEN SEASON S.R.L.                   |   5326   1   2699 29/12/22 651.00001 JOHN                    
+  578   H2640--T593C699S4E2VC71  GIACCA H2640              8 501.00002 GOLDEN SEASON S.R.L.                   |   5326   1   2699 29/12/22 651.00001 JOHN                    
+  578   H2640--T593C110S4E2VC71  GIACCA H2640             45 501.00002 GOLDEN SEASON S.R.L.                   |   5326   1   2699 29/12/22 651.00001 JOHN                    
+  578   H2640--T593C495S4E2VC71  GIACCA H2640              4 501.00002 GOLDEN SEASON S.R.L.                   |   5326   1   2699 29/12/22 651.00001 JOHN                    
+Modello H2640--T593 . . . . . . . . . . . .tot. ..........65                                                  |                                                                   
+  578   H2641--T532C120S4E2VC71  CAPOSPALLA H26          173 501.00002 GOLDEN SEASON S.R.L.                   |   5359   1   2693 28/12/22 651.00006 BERTOLI                 
+  578   H2641--T532C330S4E2VC71  CAPOSPALLA H26           54 501.00002 GOLDEN SEASON S.R.L.                   |   5359   1   2693 28/12/22 651.00006 BERTOLI                 
+  578   H2641--T532C199S4E2VC71  CAPOSPALLA H26           33 501.00002 GOLDEN SEASON S.R.L.                   |   5359   1   2693 28/12/22 651.00006 BERTOLI                 
+Modello H2641--T532 . . . . . . . . . . . .tot. .........260                                                  |                                                                   
+  578   H2642--T531C450S4E2VC71  GIACCA H2642              4 501.00002 GOLDEN SEASON S.R.L.                   |   5023   2   2467 24/11/22 651.00009 LUCA                    
+  578   H2642--T531C199S4E2VC71  GIACCA H2642             34 501.00002 GOLDEN SEASON S.R.L.                   |   5023   2   2467 24/11/22 651.00009 LUCA                    
+  578   H2642--T531C730S4E2VC71  GIACCA H2642              9 501.00002 GOLDEN SEASON S.R.L.                   |   5023   2   2467 24/11/22 651.00009 LUCA                    
+  578   H2642--T531C200S4E2VC71  GIACCA H2642             78 501.00002 GOLDEN SEASON S.R.L.                   |   5023   2   2467 24/11/22 651.00009 LUCA                    
+Modello H2642--T531 . . . . . . . . . . . .tot. .........125                                                  |                                                                   
+  578   H2644--T532C199S4E2VC71  GIACCA H2644             11 501.00002 GOLDEN SEASON S.R.L.                   |   5192   2   2661 22/12/22 651.00032 LUCA GHEDI              
+  578   H2644--T532C120S4E2VC71  GIACCA H2644             36 501.00002 GOLDEN SEASON S.R.L.                   |   5192   2   2661 22/12/22 651.00032 LUCA GHEDI              
+  578   H2644--T532C330S4E2VC71  GIACCA H2644             75 501.00002 GOLDEN SEASON S.R.L.                   |   5192   2   2661 22/12/22 651.00032 LUCA GHEDI              
+Modello H2644--T532 . . . . . . . . . . . .tot. .........122                                                  |                                                                   
+  510   H2651--T560C450S4E71C9G  SOPRAB.MOD.H26            3 501.00019 TONIN MANUELA                          |   5074   1   2604 16/12/22 651.00001 JOHN                    
+  510   H2651--T560C199S4E71C9G  SOPRAB.MOD.H26            3 501.00019 TONIN MANUELA                          |   5074   1   2604 16/12/22 651.00001 JOHN                    
+  536   H2651--T560C299S4E1CC25  SOPRAB.MOD.H26            2 501.00081 COSTA NEVIA                            |   5074   1   2604 16/12/22 651.00001 JOHN                    
+  575   H2651--T560C450S4E1CC25  SOPRAB.MOD.H26            5 501.00052 TESSIL MODA S.R.L.                     |   5074   1   2604 16/12/22 651.00001 JOHN                    
+  575   H2651--T560C299S4E1CC25  SOPRAB.MOD.H26            7 501.00052 TESSIL MODA S.R.L.                     |   5074   1   2604 16/12/22 651.00001 JOHN                    
+Modello H2651--T560 . . . . . . . . . . . .tot. ..........20                                                  |                                                                   
+  570   H2651--T801C280S4E71C9G  SOPRAB.MOD.H26            2 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5037   1   2459 24/11/22 651.00001 JOHN                    
+Modello H2651--T801 . . . . . . . . . . . .tot. ...........2                                                  |                                                                   
+  518   H2651A-T560C450S4E1CC25  SOPRAB.MOD.H26            4 501.00041 MAX TIES S.R.L.                        |   5075   1   2605 16/12/22 651.00001 JOHN                    
+  518   H2651A-T560C199S4E1CC25  SOPRAB.MOD.H26            6 501.00041 MAX TIES S.R.L.                        |   5075   1   2605 16/12/22 651.00001 JOHN                    
+  518   H2651A-T560C120S4E1CC25  SOPRAB.MOD.H26            6 501.00041 MAX TIES S.R.L.                        |   5075   1   2605 16/12/22 651.00001 JOHN                    
+  522   H2651A-T560C199S4E1CC25  SOPRAB.MOD.H26            5 501.00124 RIMA SRL SEMPLIFICATA                  |   5075   1   2605 16/12/22 651.00001 JOHN                    
+  522   H2651A-T560C450S4E1CC25  SOPRAB.MOD.H26            4 501.00124 RIMA SRL SEMPLIFICATA                  |   5075   1   2605 16/12/22 651.00001 JOHN                    
+Modello H2651A-T560 . . . . . . . . . . . .tot. ..........25                                                  |                                                                   
+  508   H2652--T559C299S4E1UC1R  GIACCA MOD.H26            5 501.00132 ALMA VENEZIA S.R.L.S. Uniperso         |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  516   H2652--T559C299S4E1CC25  GIACCA MOD.H26            4 501.00021 PERO' S.R.L.                           |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  523   H2652--T559C299S4E1CC25  GIACCA MOD.H26            4 501.00135 CALABRESE ANNA MARIA                   |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  523   H2652--T559C199S4E1CC25  GIACCA MOD.H26            4 501.00135 CALABRESE ANNA MARIA                   |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  562   H2652--T559C199S4E3AC9U  GIACCA MOD.H26           11 501.00065 PERUSELLI BRUNO S.R.L.                 |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  562   H2652--T559C299S4E3AC9U  GIACCA MOD.H26           11 501.00065 PERUSELLI BRUNO S.R.L.                 |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  562   H2652--T559C450S4E3AC9U  GIACCA MOD.H26            5 501.00065 PERUSELLI BRUNO S.R.L.                 |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  565   H2652--T559C299S4E71C9G  GIACCA MOD.H26            4 501.00039 IL CEDRO S.R.L.S.                      |   5088   2   2635 20/12/22 651.00003 CARLO                   
+  597   H2652--T559C299S4E2HC2F  GIACCA MOD.H26            6 501.00140 MARTINI SPORT SRL                      |   5088   2   2635 20/12/22 651.00003 CARLO                   
+Modello H2652--T559 . . . . . . . . . . . .tot. ..........54                                                  |                                                                   
+  510   H2664--T801C199S4E71C9G  SOPRAB.MOD.H26            7 501.00019 TONIN MANUELA                          |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  510   H2664--T801C280S4E71C9G  SOPRAB.MOD.H26            7 501.00019 TONIN MANUELA                          |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  512   H2664--T801C299S4E56C73  SOPRAB.MOD.H26            5 501.00014 BERNARDI BASSANO di Bernardi N         |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  512   H2664--T801C300S4E56C73  SOPRAB.MOD.H26            4 501.00014 BERNARDI BASSANO di Bernardi N         |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  515   H2664--T801C299S4E56C73  SOPRAB.MOD.H26            5 501.00016 VESTIRE RAMONDA S.R.L.                 |   5039   2   2572 12/12/22 651.00003 CARLO                   
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   6
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  515   H2664--T801C199S4E56C73  SOPRAB.MOD.H26            5 501.00016 VESTIRE RAMONDA S.R.L.                 |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  520   H2664--T801C299S4E56C73  SOPRAB.MOD.H26            4 501.00008 MODE SPITALER S.A.S C. & CO. K         |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  538   H2664--T801C299S4E56C73  SOPRAB.MOD.H26            1 501.00049 BRAVI CALZATURE S.R.L.                 |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  538   H2664--T801C450S4E56C73  SOPRAB.MOD.H26            4 501.00049 BRAVI CALZATURE S.R.L.                 |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  538   H2664--T801C199S4E56C73  SOPRAB.MOD.H26            4 501.00049 BRAVI CALZATURE S.R.L.                 |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  538   H2664--T801C299S4E56C73  SOPRAB.MOD.H26            4 501.00049 BRAVI CALZATURE S.R.L.                 |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  547   H2664--T801C280S4E1AC1V  SOPRAB.MOD.H26            4 501.00120 ROMEO S.R.L.                           |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  547   H2664--T801C299S4E1AC1V  SOPRAB.MOD.H26            5 501.00120 ROMEO S.R.L.                           |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  563   H2664--T801C280S4E88C7F  SOPRAB.MOD.H26           42 501.00067 SMART S.P.A.                           |   5038   2   2573 12/12/22 651.00003 CARLO                   
+  569   H2664--T801C280S4E1CC25  SOPRAB.MOD.H26            4 501.00072 BERTELLO OSVALDO                       |   5039   2   2572 12/12/22 651.00003 CARLO                   
+  605   H2664--T801C300S4E1CC25  SOPRAB.MOD.H26            2 501.00069 BI.VI SNC di Benda e Varuzza           |   5039   2   2572 12/12/22 651.00003 CARLO                   
+Modello H2664--T801 . . . . . . . . . . . .tot. .........107                                                  |                                                                   
+  578   H2672--T535C300S4E2VC71  GIACCA H2672            123 501.00002 GOLDEN SEASON S.R.L.                   |   5320   1   2673 23/12/22 651.00001 JOHN                    
+  578   H2672--T535C120S4E2VC71  GIACCA H2672             15 501.00002 GOLDEN SEASON S.R.L.                   |   5320   1   2673 23/12/22 651.00001 JOHN                    
+  578   H2672--T535C199S4E2VC71  GIACCA H2672             12 501.00002 GOLDEN SEASON S.R.L.                   |   5320   1   2673 23/12/22 651.00001 JOHN                    
+Modello H2672--T535 . . . . . . . . . . . .tot. .........150                                                  |                                                                   
+  578   H2675--T592C004S4E2VC71  GIACCA H2675             96 501.00002 GOLDEN SEASON S.R.L.                   |   5201   2   2687 28/12/22 651.00032 LUCA GHEDI              
+  578   H2675--T592C005S4E2VC71  GIACCA H2675             35 501.00002 GOLDEN SEASON S.R.L.                   |   5201   2   2687 28/12/22 651.00032 LUCA GHEDI              
+Modello H2675--T592 . . . . . . . . . . . .tot. .........131                                                  |                                                                   
+  578   H2676--T593C495S4E2VC71  GIACCA H2676             72 501.00002 GOLDEN SEASON S.R.L.                   |   5327   1   2700 29/12/22 651.00001 JOHN                    
+  578   H2676--T593C699S4E2VC71  GIACCA H2676              6 501.00002 GOLDEN SEASON S.R.L.                   |   5327   1   2700 29/12/22 651.00001 JOHN                    
+  578   H2676--T593C110S4E2VC71  GIACCA H2676              6 501.00002 GOLDEN SEASON S.R.L.                   |   5327   1   2700 29/12/22 651.00001 JOHN                    
+Modello H2676--T593 . . . . . . . . . . . .tot. ..........84                                                  |                                                                   
+  612   H2741--T806C299S4E1QC33  GIACCA H2741 A          100 501.00093 LFC OUTLETS S.R.L.                     |   5048   2   2574 12/12/22 651.00003 CARLO                   
+Modello H2741--T806 . . . . . . . . . . . .tot. .........100                                                  |                                                                   
+  544   P1475N-T022C299S4E63C68  PANT.MOD.P1475           12 501.00055 LIVRIERI DONATO                        |   5034   2   2562 09/12/22 651.00002 MARIA LIU               
+  544   P1475N-T022C199S4E63C68  PANT.MOD.P1475            9 501.00055 LIVRIERI DONATO                        |   5034   2   2562 09/12/22 651.00002 MARIA LIU               
+  581   P1475N-T022C199S4E56C73  PANT.MOD.P1475            5 501.00077 ALLEGRO CLAUDIO                        |   5034   2   2562 09/12/22 651.00002 MARIA LIU               
+  581   P1475N-T022C399S4E56C73  PANT.MOD.P1475            7 501.00077 ALLEGRO CLAUDIO                        |   5034   2   2562 09/12/22 651.00002 MARIA LIU               
+  581   P1475N-T022C299S4E56C73  PANT.MOD.P1475            7 501.00077 ALLEGRO CLAUDIO                        |   5034   2   2562 09/12/22 651.00002 MARIA LIU               
+  611   P1475N-T022C399S4E11C37  PANT.MOD.P1475            6 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5033   2   2561 09/12/22 651.00002 MARIA LIU               
+  611   P1475N-T022C199S4E11C37  PANT.MOD.P1475           15 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5033   2   2561 09/12/22 651.00002 MARIA LIU               
+  611   P1475N-T022C199S4E11C37  PANT.MOD.P1475           15 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5033   2   2561 09/12/22 651.00002 MARIA LIU               
+  611   P1475N-T022C299S4E11C37  PANT.MOD.P1475           10 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5033   2   2561 09/12/22 651.00002 MARIA LIU               
+  611   P1475N-T022C399S4E11C37  PANT.MOD.P1475            6 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5033   2   2561 09/12/22 651.00002 MARIA LIU               
+  611   P1475N-T022C299S4E11C37  PANT.MOD.P1475           18 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5033   2   2561 09/12/22 651.00002 MARIA LIU               
+Modello P1475N-T022 . . . . . . . . . . . .tot. .........110                                                  |                                                                   
+  500   P1475N-T559C199S4E1CC25  PANT.MOD.P1475            6 501.00133 BAGAGLINI FRANCESCA                    |   5089   2   2659 21/12/22 651.00016 LINA                    
+  523   P1475N-T559C199S4E1CC25  PANT.MOD.P1475            4 501.00135 CALABRESE ANNA MARIA                   |   5089   2   2659 21/12/22 651.00016 LINA                    
+  547   P1475N-T559C199S4E1AC1V  PANT.MOD.P1475           13 501.00120 ROMEO S.R.L.                           |   5089   2   2659 21/12/22 651.00016 LINA                    
+  547   P1475N-T559C299S4E1AC1V  PANT.MOD.P1475           13 501.00120 ROMEO S.R.L.                           |   5089   2   2659 21/12/22 651.00016 LINA                    
+  550   P1475N-T559C199S4E56C73  PANT.MOD.P1475           11 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  550   P1475N-T559C299S4E56C73  PANT.MOD.P1475           11 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  551   P1475N-T559C199S4E56C73  PANT.MOD.P1475           11 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  551   P1475N-T559C299S4E56C73  PANT.MOD.P1475           11 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  552   P1475N-T559C199S4E56C73  PANT.MOD.P1475            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  552   P1475N-T559C299S4E56C73  PANT.MOD.P1475            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  553   P1475N-T559C199S4E56C73  PANT.MOD.P1475            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  553   P1475N-T559C299S4E56C73  PANT.MOD.P1475            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  554   P1475N-T559C199S4E56C73  PANT.MOD.P1475            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  556   P1475N-T559C405S4E56C73  PANT.MOD.P1475           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  556   P1475N-T559C199S4E56C73  PANT.MOD.P1475           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5089   2   2659 21/12/22 651.00016 LINA                    
+  557   P1475N-T559C199S4E56C73  PANT.MOD.P1475           10 501.00048 BRULA SHOP S.R.L.                      |   5089   2   2659 21/12/22 651.00016 LINA                    
+Modello P1475N-T559 . . . . . . . . . . . .tot. .........144                                                  |                                                                   
+  520   P1475N-T813C299S4E56C73  PANT.MOD.P1475            4 501.00008 MODE SPITALER S.A.S C. & CO. K         |   5134   1   2746 30/12/22 651.00001 JOHN                    
+  548   P1475N-T813C300S4E72C7V  PANT.MOD.P1475           11 501.00017 YONI S.R.L.                            |   5134   1   2746 30/12/22 651.00001 JOHN                    
+  548   P1475N-T813C299S4E72C7V  PANT.MOD.P1475            6 501.00017 YONI S.R.L.                            |   5134   1   2746 30/12/22 651.00001 JOHN                    
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   7
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  573   P1475N-T813C299S4E17C18  PANT.MOD.P1475           46 501.00007 VARDAS A.E.V.E.E.                      |   5133   1   2745 30/12/22 651.00001 JOHN                    
+  573   P1475N-T813C300S4E17C18  PANT.MOD.P1475           28 501.00007 VARDAS A.E.V.E.E.                      |   5133   1   2745 30/12/22 651.00001 JOHN                    
+  573   P1475N-T813C199S4E17C18  PANT.MOD.P1475           46 501.00007 VARDAS A.E.V.E.E.                      |   5133   1   2745 30/12/22 651.00001 JOHN                    
+Modello P1475N-T813 . . . . . . . . . . . .tot. .........141                                                  |                                                                   
+  533   P2045--T813C300S4E56C73  PANT.MOD.P2045            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  533   P2045--T813C199S4E56C73  PANT.MOD.P2045            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  533   P2045--T813C299S4E56C73  PANT.MOD.P2045            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  536   P2045--T813C199S4E1CC25  PANT.MOD.P2045            3 501.00081 COSTA NEVIA                            |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  536   P2045--T813C299S4E1CC25  PANT.MOD.P2045            3 501.00081 COSTA NEVIA                            |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  544   P2045--T813C300S4E63C68  PANT.MOD.P2045            6 501.00055 LIVRIERI DONATO                        |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  544   P2045--T813C199S4E63C68  PANT.MOD.P2045           11 501.00055 LIVRIERI DONATO                        |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  544   P2045--T813C299S4E63C68  PANT.MOD.P2045           13 501.00055 LIVRIERI DONATO                        |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  547   P2045--T813C299S4E1AC1V  PANT.MOD.P2045           13 501.00120 ROMEO S.R.L.                           |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  547   P2045--T813C300S4E1AC1V  PANT.MOD.P2045            8 501.00120 ROMEO S.R.L.                           |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  547   P2045--T813C199S4E1AC1V  PANT.MOD.P2045           13 501.00120 ROMEO S.R.L.                           |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  553   P2045--T813C299S4E56C73  PANT.MOD.P2045            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  553   P2045--T813C300S4E56C73  PANT.MOD.P2045            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  556   P2045--T813C300S4E56C73  PANT.MOD.P2045           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  556   P2045--T813C299S4E56C73  PANT.MOD.P2045           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  557   P2045--T813C299S4E56C73  PANT.MOD.P2045           14 501.00048 BRULA SHOP S.R.L.                      |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  557   P2045--T813C199S4E56C73  PANT.MOD.P2045           14 501.00048 BRULA SHOP S.R.L.                      |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  559   P2045--T813C199S4E56C73  PANT.MOD.P2045            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  559   P2045--T813C299S4E56C73  PANT.MOD.P2045            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  560   P2045--T813C199S4E56C73  PANT.MOD.P2045            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  560   P2045--T813C299S4E56C73  PANT.MOD.P2045            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  573   P2045--T813C299S4E17C18  PANT.MOD.P2045           37 501.00007 VARDAS A.E.V.E.E.                      |   5135   1   2747 30/12/22 651.00001 JOHN                    
+  573   P2045--T813C199S4E17C18  PANT.MOD.P2045           30 501.00007 VARDAS A.E.V.E.E.                      |   5135   1   2747 30/12/22 651.00001 JOHN                    
+  573   P2045--T813C300S4E17C18  PANT.MOD.P2045           30 501.00007 VARDAS A.E.V.E.E.                      |   5135   1   2747 30/12/22 651.00001 JOHN                    
+  594   P2045--T813C300S4E1CC25  PANT.MOD.P2045            6 501.00142 RU.VI.MI. SRL                          |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  594   P2045--T813C730S4E1CC25  PANT.MOD.P2045            3 501.00142 RU.VI.MI. SRL                          |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  594   P2045--T813C299S4E1CC25  PANT.MOD.P2045            6 501.00142 RU.VI.MI. SRL                          |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  603   P2045--T813C299S4E1CC25  PANT.MOD.P2045           28 501.00116 LA FURLANA S.R.L.                      |   5136   1   2748 30/12/22 651.00001 JOHN                    
+  603   P2045--T813C300S4E1CC25  PANT.MOD.P2045           28 501.00116 LA FURLANA S.R.L.                      |   5136   1   2748 30/12/22 651.00001 JOHN                    
+Modello P2045--T813 . . . . . . . . . . . .tot. .........346                                                  |                                                                   
+  611   P2087--T022C399S4E11C37  PANT. P2087 AR            2 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5035   2   2624 19/12/22 651.00002 MARIA LIU               
+  611   P2087--T022C299S4E11C37  PANT.MOD.P2087           13 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5035   2   2624 19/12/22 651.00002 MARIA LIU               
+  611   P2087--T022C199S4E11C37  PANTALONE P208           23 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5035   2   2624 19/12/22 651.00002 MARIA LIU               
+  611   P2087--T022C399S4E11C37  PANT. P2087 AR            1 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5035   2   2624 19/12/22 651.00002 MARIA LIU               
+Modello P2087--T022 . . . . . . . . . . . .tot. ..........39                                                  |                                                                   
+  531   P2087P-T813C199S4E13C3L  PANT. P2087P A            6 501.00056 CIENNE S.R.L.                          |   5137   1   2749 30/12/22 651.00001 JOHN                    
+  531   P2087P-T813C300S4E13C3L  PANT. P2087P A            8 501.00056 CIENNE S.R.L.                          |   5137   1   2749 30/12/22 651.00001 JOHN                    
+  531   P2087P-T813C299S4E13C3L  PANT. P2087P A            9 501.00056 CIENNE S.R.L.                          |   5137   1   2749 30/12/22 651.00001 JOHN                    
+  548   P2087P-T813C300S4E72C7V  PANT. P2087P A            7 501.00017 YONI S.R.L.                            |   5137   1   2749 30/12/22 651.00001 JOHN                    
+  548   P2087P-T813C299S4E72C7V  PANT. P2087P A           15 501.00017 YONI S.R.L.                            |   5137   1   2749 30/12/22 651.00001 JOHN                    
+  548   P2087P-T813C199S4E72C7V  PANT. P2087P A            6 501.00017 YONI S.R.L.                            |   5137   1   2749 30/12/22 651.00001 JOHN                    
+  581   P2087P-T813C299S4E56C73  PANT. P2087P A           10 501.00077 ALLEGRO CLAUDIO                        |   5137   1   2749 30/12/22 651.00001 JOHN                    
+  581   P2087P-T813C730S4E56C73  PANT. P2087P A            6 501.00077 ALLEGRO CLAUDIO                        |   5137   1   2749 30/12/22 651.00001 JOHN                    
+Modello P2087P-T813 . . . . . . . . . . . .tot. ..........67                                                  |                                                                   
+  573   P2523--T813C299S4E17C18  PANT.MOD.P2523           60 501.00007 VARDAS A.E.V.E.E.                      |   5333   1   2752 30/12/22 651.00001 JOHN                    
+Modello P2523--T813 . . . . . . . . . . . .tot. ..........60                                                  |                                                                   
+  506   P2801N-T588C299S4E1NC1Z  PANT.MOD.P2801           28 501.00012 NEW DAVID SCOTT S.R.L.                 |   5106   1   2726 30/12/22 651.00001 JOHN                    
+Modello P2801N-T588 . . . . . . . . . . . .tot. ..........28                                                  |                                                                   
+  503   P2801N-T589C295S4E1CC25  PANT.MOD.P2801            5 501.00011 PEPORINI LUCA                          |   5117   1   2718 30/12/22 651.00001 JOHN                    
+  506   P2801N-T589C110S4E1NC1Z  PANT.MOD.P2801           28 501.00012 NEW DAVID SCOTT S.R.L.                 |   5115   1   2716 30/12/22 651.00001 JOHN                    
+  506   P2801N-T589C199S4E1NC1Z  PANT.MOD.P2801           28 501.00012 NEW DAVID SCOTT S.R.L.                 |   5115   1   2716 30/12/22 651.00001 JOHN                    
+  573   P2801N-T589C299S4E17C18  PANT.MOD.P2801           36 501.00007 VARDAS A.E.V.E.E.                      |   5116   1   2717 30/12/22 651.00001 JOHN                    
+Modello P2801N-T589 . . . . . . . . . . . .tot. ..........97                                                  |                                                                   
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   8
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  583   P3301--T560C299S4E1CC25  PANT.MOD.P3301           24 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  583   P3301--T560C240S4E1CC25  PANT.MOD.P3301           30 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  583   P3301--T560C115S4E1CC25  PANT.MOD.P3301           18 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  584   P3301--T560C299S4E1CC25  PANT.MOD.P3301           15 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  584   P3301--T560C240S4E1CC25  PANT.MOD.P3301           10 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  585   P3301--T560C299S4E1CC25  PANT.MOD.P3301           24 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  585   P3301--T560C115S4E1CC25  PANT.MOD.P3301           15 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  585   P3301--T560C240S4E1CC25  PANT.MOD.P3301           21 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  586   P3301--T560C299S4E1CC25  PANT.MOD.P3301           16 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  586   P3301--T560C240S4E1CC25  PANT.MOD.P3301           14 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  587   P3301--T560C240S4E1CC25  PANT.MOD.P3301           16 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  587   P3301--T560C299S4E1CC25  PANT.MOD.P3301           17 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  588   P3301--T560C240S4E1CC25  PANT.MOD.P3301           14 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  589   P3301--T560C240S4E1CC25  PANT.MOD.P3301           14 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  590   P3301--T560C240S4E1CC25  PANT.MOD.P3301           15 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  591   P3301--T560C299S4E1CC25  PANT.MOD.P3301           24 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  591   P3301--T560C240S4E1CC25  PANT.MOD.P3301           23 501.00020 NICO S.P.A.                            |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  601   P3301--T560C240S4E1CC25  PANT.MOD.P3301           16 501.00092 NICO POLSKA SP. Z O.O.                 |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  601   P3301--T560C115S4E1CC25  PANT.MOD.P3301           18 501.00092 NICO POLSKA SP. Z O.O.                 |   5076   1   2606 16/12/22 651.00001 JOHN                    
+  601   P3301--T560C299S4E1CC25  PANT.MOD.P3301           22 501.00092 NICO POLSKA SP. Z O.O.                 |   5076   1   2606 16/12/22 651.00001 JOHN                    
+Modello P3301--T560 . . . . . . . . . . . .tot. .........366                                                  |                                                                   
+  572   P3301--T801C299S4E1CC25  PANT.MOD. P330            6 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5040   1   2663 22/12/22 651.00001 JOHN                    
+  572   P3301--T801C199S4E1CC25  PANT.MOD. P330           11 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5040   1   2663 22/12/22 651.00001 JOHN                    
+Modello P3301--T801 . . . . . . . . . . . .tot. ..........17                                                  |                                                                   
+  531   P3531--T559C199S4E13C3L  PANT. P3531 AR           14 501.00056 CIENNE S.R.L.                          |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  531   P3531--T559C299S4E13C3L  PANT. P3531 AR           31 501.00056 CIENNE S.R.L.                          |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  549   P3531--T559C299S4E56C73  PANT. P3531 AR           10 501.00026 SORELLE RAMONDA S.P.A.                 |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  549   P3531--T559C199S4E56C73  PANT. P3531 AR           10 501.00026 SORELLE RAMONDA S.P.A.                 |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  560   P3531--T559C299S4E56C73  PANT. P3531 AR            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  560   P3531--T559C199S4E56C73  PANT. P3531 AR            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  566   P3531--T559C299S4E56C73  PANT. P3531 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  566   P3531--T559C199S4E56C73  PANT. P3531 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  567   P3531--T559C299S4E56C73  PANT. P3531 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  567   P3531--T559C199S4E56C73  PANT. P3531 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  568   P3531--T559C299S4E56C73  PANT. P3531 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+  568   P3531--T559C199S4E56C73  PANT. P3531 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5090   2   2625 19/12/22 651.00002 MARIA LIU               
+Modello P3531--T559 . . . . . . . . . . . .tot. .........129                                                  |                                                                   
+  572   P3531--T864C299S4E1CC25  PANT.P3531 ART           12 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5345   1   2709 29/12/22 651.00006 BERTOLI                 
+  572   P3531--T864C199S4E1CC25  PANT.P3531 ART            8 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5345   1   2709 29/12/22 651.00006 BERTOLI                 
+Modello P3531--T864 . . . . . . . . . . . .tot. ..........20                                                  |                                                                   
+  515   P3535N-T568C299S4E56C73  PANT.MOD.P3535            9 501.00016 VESTIRE RAMONDA S.R.L.                 |   5125   1   2735 30/12/22 651.00001 JOHN                    
+  535   P3535N-T568C299S4E56C73  PANT.MOD.P3535            5 501.00016 VESTIRE RAMONDA S.R.L.                 |   5125   1   2735 30/12/22 651.00001 JOHN                    
+  536   P3535N-T568C299S4E1CC25  PANT.MOD.P3535            5 501.00081 COSTA NEVIA                            |   5125   1   2735 30/12/22 651.00001 JOHN                    
+  592   P3535N-T568C299S4E71C9G  PANT.MOD.P3535            5 501.00114 ARTEMISIA di Farolfi V. Casano         |   5125   1   2735 30/12/22 651.00001 JOHN                    
+  599   P3535N-T568C299S4E10C1T  PANT.MOD.P3535           27 501.00073 DONNAEFFE s.r.l.                       |   5124   1   2734 30/12/22 651.00001 JOHN                    
+  612   P3535N-T568C299S4E1QC33  PANT.MOD.P3535          125 501.00093 LFC OUTLETS S.R.L.                     |   5123   1   2733 30/12/22 651.00001 JOHN                    
+Modello P3535N-T568 . . . . . . . . . . . .tot. .........176                                                  |                                                                   
+  612   P3535N-T589C299S4E1QC33  PANT.MOD.P3535          125 501.00093 LFC OUTLETS S.R.L.                     |   5118   1   2719 30/12/22 651.00001 JOHN                    
+Modello P3535N-T589 . . . . . . . . . . . .tot. .........125                                                  |                                                                   
+  521   P3535N-T864C295S4E1CC25  PANT.MOD.P3535            6 501.00050 MARCUZZI MODA S.n.c. Di Zucche         |   5346   1   2710 29/12/22 651.00006 BERTOLI                 
+  521   P3535N-T864C199S4E1CC25  PANT.MOD.P3535            6 501.00050 MARCUZZI MODA S.n.c. Di Zucche         |   5346   1   2710 29/12/22 651.00006 BERTOLI                 
+  526   P3535N-T864C199S4E56C73  PANT.MOD.P3535           11 501.00026 SORELLE RAMONDA S.P.A.                 |   5346   1   2710 29/12/22 651.00006 BERTOLI                 
+  526   P3535N-T864C300S4E56C73  PANT.MOD.P3535           11 501.00026 SORELLE RAMONDA S.P.A.                 |   5346   1   2710 29/12/22 651.00006 BERTOLI                 
+  533   P3535N-T864C300S4E56C73  PANT.MOD.P3535           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5346   1   2710 29/12/22 651.00006 BERTOLI                 
+  533   P3535N-T864C199S4E56C73  PANT.MOD.P3535           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5346   1   2710 29/12/22 651.00006 BERTOLI                 
+Modello P3535N-T864 . . . . . . . . . . . .tot. ..........54                                                  |                                                                   
+  512   P3713--T864C295S4E56C73  PANT.MOD.P3713            5 501.00014 BERNARDI BASSANO di Bernardi N         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina   9
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  531   P3713--T864C199S4E13C3L  PANT.MOD.P3713           12 501.00056 CIENNE S.R.L.                          |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  531   P3713--T864C295S4E13C3L  PANT.MOD.P3713           14 501.00056 CIENNE S.R.L.                          |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  533   P3713--T864C300S4E56C73  PANT.MOD.P3713            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  533   P3713--T864C199S4E56C73  PANT.MOD.P3713            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  534   P3713--T864C199S4E56C73  PANT.MOD.P3713            7 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.           |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  535   P3713--T864C199S4E56C73  PANT.MOD.P3713            5 501.00016 VESTIRE RAMONDA S.R.L.                 |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  535   P3713--T864C299S4E56C73  PANT.MOD.P3713            5 501.00016 VESTIRE RAMONDA S.R.L.                 |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  538   P3713--T864C199S4E56C73  PANT.MOD.P3713            8 501.00049 BRAVI CALZATURE S.R.L.                 |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  538   P3713--T864C295S4E56C73  PANT.MOD.P3713            8 501.00049 BRAVI CALZATURE S.R.L.                 |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  539   P3713--T864C300S4E1CC25  PANT.MOD.P3713            5 501.00079 BERGAMASCO ERICA                       |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  539   P3713--T864C199S4E1CC25  PANT.MOD.P3713           11 501.00079 BERGAMASCO ERICA                       |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  555   P3713--T864C199S4E22C2D  PANT.MOD.P3713            4 501.00042 BONIZZI GERMANO ABB.TO di Boni         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  555   P3713--T864C295S4E22C2D  PANT.MOD.P3713            4 501.00042 BONIZZI GERMANO ABB.TO di Boni         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  556   P3713--T864C300S4E56C73  PANT.MOD.P3713           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  556   P3713--T864C199S4E56C73  PANT.MOD.P3713           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  556   P3713--T864C295S4E56C73  PANT.MOD.P3713           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  560   P3713--T864C199S4E56C73  PANT.MOD.P3713            6 501.00026 SORELLE RAMONDA S.P.A.                 |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  560   P3713--T864C295S4E56C73  PANT.MOD.P3713            6 501.00026 SORELLE RAMONDA S.P.A.                 |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  569   P3713--T864C295S4E1CC25  PANT.MOD.P3713            5 501.00072 BERTELLO OSVALDO                       |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  569   P3713--T864C199S4E1CC25  PANT.MOD.P3713            5 501.00072 BERTELLO OSVALDO                       |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  570   P3713--T864C199S4E71C9G  PANT.MOD.P3713            6 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  570   P3713--T864C300S4E71C9G  PANT.MOD.P3713            4 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  570   P3713--T864C299S4E71C9G  PANT.MOD.P3713            6 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  570   P3713--T864C295S4E71C9G  PANT.MOD.P3713            5 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  603   P3713--T864C295S4E1CC25  PANT.MOD.P3713           33 501.00116 LA FURLANA S.R.L.                      |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  605   P3713--T864C295S4E1CC25  PANT.MOD.P3713            5 501.00069 BI.VI SNC di Benda e Varuzza           |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+  605   P3713--T864C199S4E1CC25  PANT.MOD.P3713            5 501.00069 BI.VI SNC di Benda e Varuzza           |   5347   1   2711 29/12/22 651.00006 BERTOLI                 
+Modello P3713--T864 . . . . . . . . . . . .tot. .........222                                                  |                                                                   
+  513   P3749P-T559C199S4E2GC1Q  PANT.MOD.P3749           10 501.00025 MODA COUNTRY CLUB S.R.L.               |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  513   P3749P-T559C450S4E2GC1Q  PANT.MOD.P3749            7 501.00025 MODA COUNTRY CLUB S.R.L.               |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  513   P3749P-T559C299S4E2GC1Q  PANT.MOD.P3749           10 501.00025 MODA COUNTRY CLUB S.R.L.               |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  536   P3749P-T559C199S4E1CC25  PANT.MOD.P3749            2 501.00081 COSTA NEVIA                            |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  536   P3749P-T559C299S4E1CC25  PANT.MOD.P3749            7 501.00081 COSTA NEVIA                            |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  563   P3749P-T559C199S4E88C7F  PANT.MOD.P3749           85 501.00067 SMART S.P.A.                           |   5091   2      7 02/01/23 651.00002 MARIA LIU               
+  563   P3749P-T559C299S4E88C7F  PANT.MOD.P3749           76 501.00067 SMART S.P.A.                           |   5091   2      7 02/01/23 651.00002 MARIA LIU               
+  563   P3749P-T559C199S4E88C7F  PANT.MOD.P3749           13 501.00067 SMART S.P.A.                           |   5091   2      7 02/01/23 651.00002 MARIA LIU               
+  566   P3749P-T559C199S4E56C73  PANT.MOD.P3749            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  566   P3749P-T559C299S4E56C73  PANT.MOD.P3749            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  567   P3749P-T559C299S4E56C73  PANT.MOD.P3749            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  567   P3749P-T559C199S4E56C73  PANT.MOD.P3749            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  568   P3749P-T559C199S4E56C73  PANT.MOD.P3749            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+  568   P3749P-T559C299S4E56C73  PANT.MOD.P3749            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5092   2      8 02/01/23 651.00002 MARIA LIU               
+Modello P3749P-T559 . . . . . . . . . . . .tot. .........252                                                  |                                                                   
+  538   P3888--T563C001S4E56C73  PANT.MOD.P3888            7 501.00049 BRAVI CALZATURE S.R.L.                 |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  549   P3888--T563C001S4E56C73  PANT.MOD.P3888            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  550   P3888--T563C001S4E56C73  PANT.MOD.P3888            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  551   P3888--T563C001S4E56C73  PANT.MOD.P3888            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  553   P3888--T563C001S4E56C73  PANT.MOD.P3888            5 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  554   P3888--T563C001S4E56C73  PANT.MOD.P3888            5 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  558   P3888--T563C001S4E56C73  PANT.MOD.P3888           11 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  559   P3888--T563C001S4E56C73  PANT.MOD.P3888            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  561   P3888--T563C001S4E56C73  PANT.MOD.P3888            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  570   P3888--T563C001S4E71C9G  PANT.MOD.P3888            4 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5302   1   2741 30/12/22 651.00001 JOHN                    
+  606   P3888--T563C001S4E1CC25  PANT.MOD.P3888           10 501.00145 FRANKO PLUS d.o.o.                     |   5302   1   2741 30/12/22 651.00001 JOHN                    
+Modello P3888--T563 . . . . . . . . . . . .tot. ..........81                                                  |                                                                   
+  500   P3926--T801C199S4E1CC25  PANT.MOD.P3926            5 501.00133 BAGAGLINI FRANCESCA                    |   5041   2   2657 21/12/22 651.00016 LINA                    
+  513   P3926--T801C450S4E2GC1Q  PANT.MOD.P3926            7 501.00025 MODA COUNTRY CLUB S.R.L.               |   5041   2   2657 21/12/22 651.00016 LINA                    
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  10
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  513   P3926--T801C199S4E2GC1Q  PANT.MOD.P3926            7 501.00025 MODA COUNTRY CLUB S.R.L.               |   5041   2   2657 21/12/22 651.00016 LINA                    
+  513   P3926--T801C280S4E2GC1Q  PANT.MOD.P3926            7 501.00025 MODA COUNTRY CLUB S.R.L.               |   5041   2   2657 21/12/22 651.00016 LINA                    
+  528   P3926--T801C199S4E03C02  PANT.MOD.P3926            7 501.00059 OLD ENGLAND S.R.L.                     |   5041   2   2657 21/12/22 651.00016 LINA                    
+  528   P3926--T801C120S4E03C02  PANT.MOD.P3926            6 501.00059 OLD ENGLAND S.R.L.                     |   5041   2   2657 21/12/22 651.00016 LINA                    
+  528   P3926--T801C299S4E03C02  PANT.MOD.P3926            7 501.00059 OLD ENGLAND S.R.L.                     |   5041   2   2657 21/12/22 651.00016 LINA                    
+  529   P3926--T801C299S4E71C9G  PANT.MOD.P3926            7 501.00015 M.A. SRL                               |   5041   2   2657 21/12/22 651.00016 LINA                    
+  534   P3926--T801C199S4E56C73  PANT.MOD.P3926            6 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.           |   5041   2   2657 21/12/22 651.00016 LINA                    
+  534   P3926--T801C299S4E56C73  PANT.MOD.P3926            6 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.           |   5041   2   2657 21/12/22 651.00016 LINA                    
+  536   P3926--T801C120S4E1CC25  PANT.MOD.P3926            3 501.00081 COSTA NEVIA                            |   5041   2   2657 21/12/22 651.00016 LINA                    
+  538   P3926--T801C199S4E56C73  PANT.MOD.P3926            6 501.00049 BRAVI CALZATURE S.R.L.                 |   5041   2   2657 21/12/22 651.00016 LINA                    
+  544   P3926--T801C299S4E63C68  PANT.MOD.P3926            6 501.00055 LIVRIERI DONATO                        |   5041   2   2657 21/12/22 651.00016 LINA                    
+  544   P3926--T801C120S4E63C68  PANT.MOD.P3926            6 501.00055 LIVRIERI DONATO                        |   5041   2   2657 21/12/22 651.00016 LINA                    
+  596   P3926--T801C120S4E1CC25  PANT.MOD.P3926            4 501.00143 COQUETTE S.R.L.S.                      |   5041   2   2657 21/12/22 651.00016 LINA                    
+  596   P3926--T801C199S4E1CC25  PANT.MOD.P3926            4 501.00143 COQUETTE S.R.L.S.                      |   5041   2   2657 21/12/22 651.00016 LINA                    
+  597   P3926--T801C120S4E2HC2F  PANT.MOD.P3926           11 501.00140 MARTINI SPORT SRL                      |   5041   2   2657 21/12/22 651.00016 LINA                    
+  597   P3926--T801C199S4E2HC2F  PANT.MOD.P3926           11 501.00140 MARTINI SPORT SRL                      |   5041   2   2657 21/12/22 651.00016 LINA                    
+Modello P3926--T801 . . . . . . . . . . . .tot. .........116                                                  |                                                                   
+  564   P3941--T813C300S4E9AC06  PANT.MOD.P3941            7 501.00024 LE TABLEAU SERVICE S.R.L.S.            |   5138   1   2750 30/12/22 651.00001 JOHN                    
+  564   P3941--T813C199S4E9AC06  PANT.MOD.P3941           12 501.00024 LE TABLEAU SERVICE S.R.L.S.            |   5138   1   2750 30/12/22 651.00001 JOHN                    
+  564   P3941--T813C299S4E9AC06  PANT.MOD.P3941           12 501.00024 LE TABLEAU SERVICE S.R.L.S.            |   5138   1   2750 30/12/22 651.00001 JOHN                    
+Modello P3941--T813 . . . . . . . . . . . .tot. ..........31                                                  |                                                                   
+  564   P4020--T560C199S4E9AC06  PANT.MOD.P4020           10 501.00024 LE TABLEAU SERVICE S.R.L.S.            |   5079   1   2607 16/12/22 651.00001 JOHN                    
+  564   P4020--T560C299S4E9AC06  PANT.MOD.P4020           10 501.00024 LE TABLEAU SERVICE S.R.L.S.            |   5079   1   2607 16/12/22 651.00001 JOHN                    
+Modello P4020--T560 . . . . . . . . . . . .tot. ..........20                                                  |                                                                   
+  573   P4020--T806C299S4E17C18  PANT.MOD.P4020           46 501.00007 VARDAS A.E.V.E.E.                      |   5056   2   2658 21/12/22 651.00016 LINA                    
+  573   P4020--T806C199S4E17C18  PANT.MOD.P4020           46 501.00007 VARDAS A.E.V.E.E.                      |   5056   2   2658 21/12/22 651.00016 LINA                    
+Modello P4020--T806 . . . . . . . . . . . .tot. ..........92                                                  |                                                                   
+  540   P4222N-T568C299S4E1CC25  PANT.MOD.P4222            6 501.00036 COSA MI METTO S.R.L.S.                 |   5126   1   2736 30/12/22 651.00001 JOHN                    
+Modello P4222N-T568 . . . . . . . . . . . .tot. ...........6                                                  |                                                                   
+  533   P4222N-T588C299S4E56C73  PANT.MOD.P4222            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  534   P4222N-T588C295S4E56C73  PANT.MOD.P4222            6 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.           |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  538   P4222N-T588C199S4E56C73  PANT.MOD.P4222            7 501.00049 BRAVI CALZATURE S.R.L.                 |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  538   P4222N-T588C295S4E56C73  PANT.MOD.P4222            7 501.00049 BRAVI CALZATURE S.R.L.                 |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  540   P4222N-T588C299S4E1CC25  PANT.MOD.P4222            6 501.00036 COSA MI METTO S.R.L.S.                 |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  540   P4222N-T588C199S4E1CC25  PANT.MOD.P4222            6 501.00036 COSA MI METTO S.R.L.S.                 |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  552   P4222N-T588C299S4E56C73  PANT.MOD.P4222            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  553   P4222N-T588C299S4E56C73  PANT.MOD.P4222            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  557   P4222N-T588C300S4E56C73  PANT.MOD.P4222           13 501.00048 BRULA SHOP S.R.L.                      |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  557   P4222N-T588C299S4E56C73  PANT.MOD.P4222           13 501.00048 BRULA SHOP S.R.L.                      |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  570   P4222N-T588C299S4E71C9G  PANT.MOD.P4222            6 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  592   P4222N-T588C295S4E71C9G  PANT.MOD.P4222            4 501.00114 ARTEMISIA di Farolfi V. Casano         |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  597   P4222N-T588C300S4E2HC2F  PANT.MOD.P4222            5 501.00140 MARTINI SPORT SRL                      |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  597   P4222N-T588C295S4E2HC2F  PANT.MOD.P4222            8 501.00140 MARTINI SPORT SRL                      |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  605   P4222N-T588C295S4E1CC25  PANT.MOD.P4222            4 501.00069 BI.VI SNC di Benda e Varuzza           |   5108   1   2728 30/12/22 651.00001 JOHN                    
+  612   P4222N-T588C300S4E1QC33  PANT.MOD.P4222          125 501.00093 LFC OUTLETS S.R.L.                     |   5107   1   2727 30/12/22 651.00001 JOHN                    
+  612   P4222N-T588C299S4E1QC33  PANT.MOD.P4222          125 501.00093 LFC OUTLETS S.R.L.                     |   5107   1   2727 30/12/22 651.00001 JOHN                    
+Modello P4222N-T588 . . . . . . . . . . . .tot. .........355                                                  |                                                                   
+  534   P4222N-T806C199S4E56C73  PANT.MOD.P4222            7 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.           |   5058   2   2569 12/12/22 651.00002 MARIA LIU               
+  534   P4222N-T806C299S4E56C73  PANT.MOD.P4222            7 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.           |   5058   2   2569 12/12/22 651.00002 MARIA LIU               
+  555   P4222N-T806C110S4E22C2D  PANT.MOD.P4222            4 501.00042 BONIZZI GERMANO ABB.TO di Boni         |   5058   2   2569 12/12/22 651.00002 MARIA LIU               
+  555   P4222N-T806C295S4E22C2D  PANT.MOD.P4222            4 501.00042 BONIZZI GERMANO ABB.TO di Boni         |   5058   2   2569 12/12/22 651.00002 MARIA LIU               
+  592   P4222N-T806C199S4E71C9G  PANT.MOD.P4222            6 501.00114 ARTEMISIA di Farolfi V. Casano         |   5058   2   2569 12/12/22 651.00002 MARIA LIU               
+  592   P4222N-T806C295S4E71C9G  PANT.MOD.P4222            6 501.00114 ARTEMISIA di Farolfi V. Casano         |   5058   2   2569 12/12/22 651.00002 MARIA LIU               
+  605   P4222N-T806C110S4E1CC25  PANT.MOD.P4222            3 501.00069 BI.VI SNC di Benda e Varuzza           |   5058   2   2569 12/12/22 651.00002 MARIA LIU               
+  612   P4222N-T806C299S4E1QC33  PANT.MOD.P4222          170 501.00093 LFC OUTLETS S.R.L.                     |   5057   2   2570 12/12/22 651.00002 MARIA LIU               
+  612   P4222N-T806C300S4E1QC33  PANT.MOD.P4222          140 501.00093 LFC OUTLETS S.R.L.                     |   5057   2   2570 12/12/22 651.00002 MARIA LIU               
+  612   P4222N-T806C470S4E1QC33  PANT.MOD.P4222          120 501.00093 LFC OUTLETS S.R.L.                     |   5057   2   2570 12/12/22 651.00002 MARIA LIU               
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  11
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  612   P4222N-T806C730S4E1QC33  PANT.MOD.P4222          108 501.00093 LFC OUTLETS S.R.L.                     |   5057   2   2570 12/12/22 651.00002 MARIA LIU               
+  612   P4222N-T806C730S4E1QC33  PANT.MOD.P4222           12 501.00093 LFC OUTLETS S.R.L.                     |   5057   2   2570 12/12/22 651.00002 MARIA LIU               
+  612   P4222N-T806C110S4E1QC33  PANT.MOD.P4222          120 501.00093 LFC OUTLETS S.R.L.                     |   5057   2   2570 12/12/22 651.00002 MARIA LIU               
+Modello P4222N-T806 . . . . . . . . . . . .tot. .........707                                                  |                                                                   
+  520   P4227--T588C300S4E56C73  PANT.MOD.P4227            3 501.00008 MODE SPITALER S.A.S C. & CO. K         |   5109   1   2729 30/12/22 651.00001 JOHN                    
+  520   P4227--T588C295S4E56C73  PANT.MOD.P4227            7 501.00008 MODE SPITALER S.A.S C. & CO. K         |   5109   1   2729 30/12/22 651.00001 JOHN                    
+  520   P4227--T588C299S4E56C73  PANT.MOD.P4227            7 501.00008 MODE SPITALER S.A.S C. & CO. K         |   5109   1   2729 30/12/22 651.00001 JOHN                    
+Modello P4227--T588 . . . . . . . . . . . .tot. ..........17                                                  |                                                                   
+  531   P4227--T589C299S4E13C3L  PANT.MOD.P4227           16 501.00056 CIENNE S.R.L.                          |   5119   1   2720 30/12/22 651.00001 JOHN                    
+  605   P4227--T589C299S4E1CC25  PANT.MOD.P4227            4 501.00069 BI.VI SNC di Benda e Varuzza           |   5119   1   2720 30/12/22 651.00001 JOHN                    
+Modello P4227--T589 . . . . . . . . . . . .tot. ..........20                                                  |                                                                   
+  503   P4227--T806C299S4E1CC25  PANT.MOD.P4227            4 501.00011 PEPORINI LUCA                          |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  511   P4227--T806C299S4E1CC25  PANT.MOD.P4227           12 501.00058 MAX 26 S.R.L.                          |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  511   P4227--T806C199S4E1CC25  PANT.MOD.P4227           12 501.00058 MAX 26 S.R.L.                          |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  523   P4227--T806C300S4E1CC25  PANT.MOD.P4227            7 501.00135 CALABRESE ANNA MARIA                   |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  523   P4227--T806C199S4E1CC25  PANT.MOD.P4227            9 501.00135 CALABRESE ANNA MARIA                   |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  523   P4227--T806C295S4E1CC25  PANT.MOD.P4227            8 501.00135 CALABRESE ANNA MARIA                   |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  533   P4227--T806C299S4E56C73  PANT.MOD.P4227           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  533   P4227--T806C300S4E56C73  PANT.MOD.P4227           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  533   P4227--T806C199S4E56C73  PANT.MOD.P4227           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  540   P4227--T806C199S4E1CC25  PANT.MOD.P4227            7 501.00036 COSA MI METTO S.R.L.S.                 |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  540   P4227--T806C299S4E1CC25  PANT.MOD.P4227            7 501.00036 COSA MI METTO S.R.L.S.                 |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  542   P4227--T806C199S4E1CC25  PANT.MOD.P4227            7 501.00137 DE TOMASSI TIZIANA                     |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  542   P4227--T806C300S4E1CC25  PANT.MOD.P4227            4 501.00137 DE TOMASSI TIZIANA                     |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  557   P4227--T806C110S4E56C73  PANT.MOD.P4227            7 501.00048 BRULA SHOP S.R.L.                      |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  557   P4227--T806C199S4E56C73  PANT.MOD.P4227           12 501.00048 BRULA SHOP S.R.L.                      |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+  557   P4227--T806C299S4E56C73  PANT.MOD.P4227           12 501.00048 BRULA SHOP S.R.L.                      |   5059   2   2588 14/12/22 651.00002 MARIA LIU               
+Modello P4227--T806 . . . . . . . . . . . .tot. .........138                                                  |                                                                   
+  525   P4227SAT806C450S4E1CC25  PANT.MOD.P4227            5 501.00060 LIFE KIT - S.R.L.S.                    |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  525   P4227SAT806C199S4E1CC25  PANT.MOD.P4227           10 501.00060 LIFE KIT - S.R.L.S.                    |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  525   P4227SAT806C299S4E1CC25  PANT.MOD.P4227           10 501.00060 LIFE KIT - S.R.L.S.                    |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  525   P4227SAT806C300S4E1CC25  PANT.MOD.P4227           15 501.00060 LIFE KIT - S.R.L.S.                    |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  525   P4227SAT806C110S4E1CC25  PANT.MOD.P4227           15 501.00060 LIFE KIT - S.R.L.S.                    |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  525   P4227SAT806C110S4E1CC25  PANT.MOD.P4227            5 501.00060 LIFE KIT - S.R.L.S.                    |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  538   P4227SAT806C110S4E56C73  PANT.MOD.P4227            8 501.00049 BRAVI CALZATURE S.R.L.                 |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  538   P4227SAT806C199S4E56C73  PANT.MOD.P4227            8 501.00049 BRAVI CALZATURE S.R.L.                 |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  538   P4227SAT806C295S4E56C73  PANT.MOD.P4227            8 501.00049 BRAVI CALZATURE S.R.L.                 |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  605   P4227SAT806C299S4E1CC25  PANT.MOD.P4227            5 501.00069 BI.VI SNC di Benda e Varuzza           |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  605   P4227SAT806C199S4E1CC25  PANT.MOD.P4227            5 501.00069 BI.VI SNC di Benda e Varuzza           |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+  605   P4227SAT806C300S4E1CC25  PANT.MOD.P4227            5 501.00069 BI.VI SNC di Benda e Varuzza           |   5060   2   2599 16/12/22 651.00002 MARIA LIU               
+Modello P4227SAT806 . . . . . . . . . . . .tot. ..........99                                                  |                                                                   
+  500   P4236--T588C295S4E1CC25  PANT.MOD.P4236            5 501.00133 BAGAGLINI FRANCESCA                    |   5110   1   2730 30/12/22 651.00001 JOHN                    
+  550   P4236--T588C299S4E56C73  PANT.MOD.P4236           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5110   1   2730 30/12/22 651.00001 JOHN                    
+  551   P4236--T588C299S4E56C73  PANT.MOD.P4236           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5110   1   2730 30/12/22 651.00001 JOHN                    
+  562   P4236--T588C199S4E3AC9U  PANT.MOD.P4236            8 501.00065 PERUSELLI BRUNO S.R.L.                 |   5110   1   2730 30/12/22 651.00001 JOHN                    
+  562   P4236--T588C295S4E3AC9U  PANT.MOD.P4236            8 501.00065 PERUSELLI BRUNO S.R.L.                 |   5110   1   2730 30/12/22 651.00001 JOHN                    
+  562   P4236--T588C300S4E3AC9U  PANT.MOD.P4236            8 501.00065 PERUSELLI BRUNO S.R.L.                 |   5110   1   2730 30/12/22 651.00001 JOHN                    
+Modello P4236--T588 . . . . . . . . . . . .tot. ..........53                                                  |                                                                   
+  500   P4236--T589C110S4E1CC25  PANT.MOD.P4236            5 501.00133 BAGAGLINI FRANCESCA                    |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  515   P4236--T589C110S4E56C73  PANT.MOD.P4236            6 501.00016 VESTIRE RAMONDA S.R.L.                 |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  521   P4236--T589C110S4E1CC25  PANT.MOD.P4236            6 501.00050 MARCUZZI MODA S.n.c. Di Zucche         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  534   P4236--T589C299S4E56C73  PANT.MOD.P4236            7 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.           |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  538   P4236--T589C199S4E56C73  PANT.MOD.P4236            7 501.00049 BRAVI CALZATURE S.R.L.                 |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  538   P4236--T589C299S4E56C73  PANT.MOD.P4236            7 501.00049 BRAVI CALZATURE S.R.L.                 |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  547   P4236--T589C299S4E1AC1V  PANT.MOD.P4236            6 501.00120 ROMEO S.R.L.                           |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  550   P4236--T589C299S4E56C73  PANT.MOD.P4236           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  551   P4236--T589C299S4E56C73  PANT.MOD.P4236           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  12
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  552   P4236--T589C299S4E56C73  PANT.MOD.P4236            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  552   P4236--T589C110S4E56C73  PANT.MOD.P4236            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  555   P4236--T589C110S4E22C2D  PANT.MOD.P4236            3 501.00042 BONIZZI GERMANO ABB.TO di Boni         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  556   P4236--T589C110S4E56C73  PANT.MOD.P4236           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  556   P4236--T589C299S4E56C73  PANT.MOD.P4236           12 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  558   P4236--T589C299S4E56C73  PANT.MOD.P4236           11 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  558   P4236--T589C110S4E56C73  PANT.MOD.P4236           11 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  559   P4236--T589C110S4E56C73  PANT.MOD.P4236            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  559   P4236--T589C299S4E56C73  PANT.MOD.P4236            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  603   P4236--T589C295S4E1CC25  PANT.MOD.P4236           28 501.00116 LA FURLANA S.R.L.                      |   5121   1   2722 30/12/22 651.00001 JOHN                    
+  611   P4236--T589C110S4E11C37  PANT.MOD.P4236           15 501.00125 MARIA GLENSTER P. PAPAGEORGIOU         |   5120   1   2721 30/12/22 651.00001 JOHN                    
+Modello P4236--T589 . . . . . . . . . . . .tot. .........184                                                  |                                                                   
+  549   P4476--T559C199S4E56C73  PANT. P4476 AR            9 501.00026 SORELLE RAMONDA S.P.A.                 |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  549   P4476--T559C299S4E56C73  PANT. P4476 AR            9 501.00026 SORELLE RAMONDA S.P.A.                 |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  560   P4476--T559C199S4E56C73  PANT. P4476 AR            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  560   P4476--T559C299S4E56C73  PANT. P4476 AR            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  563   P4476--T559C199S4E88C7F  PANT. P4476 AR           95 501.00067 SMART S.P.A.                           |   5093   2   2622 19/12/22 651.00002 MARIA LIU               
+  563   P4476--T559C299S4E88C7F  PANT. P4476 AR           77 501.00067 SMART S.P.A.                           |   5093   2   2622 19/12/22 651.00002 MARIA LIU               
+  566   P4476--T559C299S4E56C73  PANT. P4476 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  566   P4476--T559C199S4E56C73  PANT. P4476 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  567   P4476--T559C199S4E56C73  PANT. P4476 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  567   P4476--T559C299S4E56C73  PANT. P4476 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  568   P4476--T559C199S4E56C73  PANT. P4476 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  568   P4476--T559C299S4E56C73  PANT. P4476 AR            9 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  572   P4476--T559C405S4E1CC25  PANT. P4476 AR            6 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  572   P4476--T559C299S4E1CC25  PANT. P4476 AR           10 501.00066 GRASSI CONFEZIONI S.N.C. di Gr         |   5095   2   2620 19/12/22 651.00002 MARIA LIU               
+  599   P4476--T559C199S4E10C1T  PANT. P4476 AR           26 501.00073 DONNAEFFE s.r.l.                       |   5094   2   2621 19/12/22 651.00002 MARIA LIU               
+  599   P4476--T559C299S4E10C1T  PANT. P4476 AR           26 501.00073 DONNAEFFE s.r.l.                       |   5094   2   2621 19/12/22 651.00002 MARIA LIU               
+Modello P4476--T559 . . . . . . . . . . . .tot. .........322                                                  |                                                                   
+  608   P4476B-T559C199S4E3UC2N  PANT.P4476B AR           11 501.00068 DONNE DA SOGNO S.R.L.                  |   5096   2   2627 19/12/22 651.00002 MARIA LIU               
+  608   P4476B-T559C299S4E3UC2N  PANT.P4476B AR            8 501.00068 DONNE DA SOGNO S.R.L.                  |   5096   2   2627 19/12/22 651.00002 MARIA LIU               
+  608   P4476B-T559C299S4E3UC2N  PANT.P4476B AR           14 501.00068 DONNE DA SOGNO S.R.L.                  |   5096   2   2627 19/12/22 651.00002 MARIA LIU               
+  609   P4476B-T559C450S4E9HC36  PANT.P4476B AR            4 501.00068 DONNE DA SOGNO S.R.L.                  |   5096   2   2627 19/12/22 651.00002 MARIA LIU               
+  609   P4476B-T559C199S4E9HC36  PANT.P4476B AR           26 501.00068 DONNE DA SOGNO S.R.L.                  |   5096   2   2627 19/12/22 651.00002 MARIA LIU               
+  609   P4476B-T559C299S4E9HC36  PANT.P4476B AR           21 501.00068 DONNE DA SOGNO S.R.L.                  |   5096   2   2627 19/12/22 651.00002 MARIA LIU               
+Modello P4476B-T559 . . . . . . . . . . . .tot. ..........84                                                  |                                                                   
+  573   P4477--T806C110S4E17C18  PANT.MOD.P4477           32 501.00007 VARDAS A.E.V.E.E.                      |   5062   2   2600 16/12/22 651.00002 MARIA LIU               
+  573   P4477--T806C299S4E17C18  PANT.MOD.P4477           32 501.00007 VARDAS A.E.V.E.E.                      |   5062   2   2600 16/12/22 651.00002 MARIA LIU               
+Modello P4477--T806 . . . . . . . . . . . .tot. ..........64                                                  |                                                                   
+  518   P4613--T559C199S4E1CC25  PANT.MOD.P4613            8 501.00041 MAX TIES S.R.L.                        |   5097   1   2527 02/12/22 651.00001 JOHN                    
+  522   P4613--T559C199S4E1CC25  PANT.MOD.P4613            5 501.00124 RIMA SRL SEMPLIFICATA                  |   5097   1   2527 02/12/22 651.00001 JOHN                    
+  524   P4613--T559C299S4E02C2Q  PANT.MOD.P4613            8 501.00061 CID S.R.L.                             |   5097   1   2527 02/12/22 651.00001 JOHN                    
+  524   P4613--T559C199S4E02C2Q  PANT.MOD.P4613            9 501.00061 CID S.R.L.                             |   5097   1   2527 02/12/22 651.00001 JOHN                    
+  524   P4613--T559C450S4E02C2Q  PANT.MOD.P4613            6 501.00061 CID S.R.L.                             |   5097   1   2527 02/12/22 651.00001 JOHN                    
+Modello P4613--T559 . . . . . . . . . . . .tot. ..........36                                                  |                                                                   
+  577   P4726--T532C199S4E15C71  PANT.MOD.P4726           33 501.00002 GOLDEN SEASON S.R.L.                   |   5358   1   2692 28/12/22 651.00006 BERTOLI                 
+  577   P4726--T532C120S4E15C71  PANT.MOD.P4726          165 501.00002 GOLDEN SEASON S.R.L.                   |   5358   1   2692 28/12/22 651.00006 BERTOLI                 
+  577   P4726--T532C330S4E15C71  PANT.MOD.P4726           67 501.00002 GOLDEN SEASON S.R.L.                   |   5358   1   2692 28/12/22 651.00006 BERTOLI                 
+Modello P4726--T532 . . . . . . . . . . . .tot. .........265                                                  |                                                                   
+  577   P4727--T532C199S4E15C71  PANT.MOD.P4727           26 501.00002 GOLDEN SEASON S.R.L.                   |   5191   1   2639 20/12/22 651.00006 BERTOLI                 
+  577   P4727--T532C120S4E15C71  PANT.MOD.P4727           45 501.00002 GOLDEN SEASON S.R.L.                   |   5191   1   2639 20/12/22 651.00006 BERTOLI                 
+  577   P4727--T532C330S4E15C71  PANT.MOD.P4727          107 501.00002 GOLDEN SEASON S.R.L.                   |   5191   1   2639 20/12/22 651.00006 BERTOLI                 
+Modello P4727--T532 . . . . . . . . . . . .tot. .........178                                                  |                                                                   
+  577   P4728--T535C300S4E15C71  PANT.MOD.P4728           48 501.00002 GOLDEN SEASON S.R.L.                   |   5321   1   2674 23/12/22 651.00001 JOHN                    
+  577   P4728--T535C199S4E15C71  PANT.MOD.P4728           38 501.00002 GOLDEN SEASON S.R.L.                   |   5321   1   2674 23/12/22 651.00001 JOHN                    
+  577   P4728--T535C120S4E15C71  PANT.MOD.P4728          130 501.00002 GOLDEN SEASON S.R.L.                   |   5321   1   2674 23/12/22 651.00001 JOHN                    
+Modello P4728--T535 . . . . . . . . . . . .tot. .........216                                                  |                                                                   
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  13
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  546   P4730--T559C299S4E71C9G  PANT.MOD.P4730           16 501.00023 MONTICELLO s.n.c. di Monticell         |   5098   1   2528 02/12/22 651.00001 JOHN                    
+  546   P4730--T559C199S4E71C9G  PANT.MOD.P4730           16 501.00023 MONTICELLO s.n.c. di Monticell         |   5098   1   2528 02/12/22 651.00001 JOHN                    
+  562   P4730--T559C299S4E3AC9U  PANT.MOD.P4730           12 501.00065 PERUSELLI BRUNO S.R.L.                 |   5098   1   2528 02/12/22 651.00001 JOHN                    
+Modello P4730--T559 . . . . . . . . . . . .tot. ..........44                                                  |                                                                   
+  508   P4736--T559C299S4E1UC1R  PANT.MOD.P4736            5 501.00132 ALMA VENEZIA S.R.L.S. Uniperso         |   5099   1   2529 02/12/22 651.00001 JOHN                    
+  524   P4736--T559C299S4E02C2Q  PANT.MOD.P4736            6 501.00061 CID S.R.L.                             |   5099   1   2529 02/12/22 651.00001 JOHN                    
+  524   P4736--T559C199S4E02C2Q  PANT.MOD.P4736            6 501.00061 CID S.R.L.                             |   5099   1   2529 02/12/22 651.00001 JOHN                    
+  562   P4736--T559C299S4E3AC9U  PANT.MOD.P4736           11 501.00065 PERUSELLI BRUNO S.R.L.                 |   5099   1   2529 02/12/22 651.00001 JOHN                    
+  562   P4736--T559C450S4E3AC9U  PANT.MOD.P4736            5 501.00065 PERUSELLI BRUNO S.R.L.                 |   5099   1   2529 02/12/22 651.00001 JOHN                    
+  562   P4736--T559C199S4E3AC9U  PANT.MOD.P4736           11 501.00065 PERUSELLI BRUNO S.R.L.                 |   5099   1   2529 02/12/22 651.00001 JOHN                    
+  565   P4736--T559C299S4E71C9G  PANT.MOD.P4736            4 501.00039 IL CEDRO S.R.L.S.                      |   5099   1   2529 02/12/22 651.00001 JOHN                    
+  597   P4736--T559C299S4E2HC2F  PANT.MOD.P4736            6 501.00140 MARTINI SPORT SRL                      |   5099   1   2529 02/12/22 651.00001 JOHN                    
+Modello P4736--T559 . . . . . . . . . . . .tot. ..........54                                                  |                                                                   
+  577   P4749--T592C005S4E15C71  PANT.MOD.P4749           64 501.00002 GOLDEN SEASON S.R.L.                   |   5199   2     17 03/01/23 651.00034 ROMANO                  
+  577   P4749--T592C004S4E15C71  PANT.MOD.P4749           48 501.00002 GOLDEN SEASON S.R.L.                   |   5199   2     17 03/01/23 651.00034 ROMANO                  
+Modello P4749--T592 . . . . . . . . . . . .tot. .........112                                                  |                                                                   
+  562   P4751--T560C199S4E3AC9U  PANT.MOD.P4751            7 501.00065 PERUSELLI BRUNO S.R.L.                 |   5080   1   2608 16/12/22 651.00001 JOHN                    
+  562   P4751--T560C299S4E3AC9U  PANT.MOD.P4751           11 501.00065 PERUSELLI BRUNO S.R.L.                 |   5080   1   2608 16/12/22 651.00001 JOHN                    
+  562   P4751--T560C120S4E3AC9U  PANT.MOD.P4751            7 501.00065 PERUSELLI BRUNO S.R.L.                 |   5080   1   2608 16/12/22 651.00001 JOHN                    
+Modello P4751--T560 . . . . . . . . . . . .tot. ..........25                                                  |                                                                   
+  577   P4753--T593C495S4E15C71  PANT.MOD.P4753           33 501.00002 GOLDEN SEASON S.R.L.                   |   5328   1   2701 29/12/22 651.00001 JOHN                    
+  577   P4753--T593C699S4E15C71  PANT.MOD.P4753           87 501.00002 GOLDEN SEASON S.R.L.                   |   5328   1   2701 29/12/22 651.00001 JOHN                    
+Modello P4753--T593 . . . . . . . . . . . .tot. .........120                                                  |                                                                   
+  577   P4754--T535C120S4E15C71  PANT.MOD.P4754           15 501.00002 GOLDEN SEASON S.R.L.                   |   5322   1   2675 23/12/22 651.00001 JOHN                    
+  577   P4754--T535C300S4E15C71  PANT.MOD.P4754           88 501.00002 GOLDEN SEASON S.R.L.                   |   5322   1   2675 23/12/22 651.00001 JOHN                    
+Modello P4754--T535 . . . . . . . . . . . .tot. .........103                                                  |                                                                   
+  577   P4759--T592C004S4E15C71  PANT.MOD.P4759           97 501.00002 GOLDEN SEASON S.R.L.                   |   5200   2     15 03/01/23 651.00034 ROMANO                  
+  577   P4759--T592C005S4E15C71  PANT.MOD.P4759           41 501.00002 GOLDEN SEASON S.R.L.                   |   5200   2     15 03/01/23 651.00034 ROMANO                  
+Modello P4759--T592 . . . . . . . . . . . .tot. .........138                                                  |                                                                   
+  577   P4760--T593C699S4E15C71  PANT.MOD.P4760           56 501.00002 GOLDEN SEASON S.R.L.                   |   5329   1   2702 29/12/22 651.00001 JOHN                    
+  577   P4760--T593C110S4E15C71  PANT.MOD.P4760           54 501.00002 GOLDEN SEASON S.R.L.                   |   5329   1   2702 29/12/22 651.00001 JOHN                    
+  577   P4760--T593C495S4E15C71  PANT.MOD.P4760           17 501.00002 GOLDEN SEASON S.R.L.                   |   5329   1   2702 29/12/22 651.00001 JOHN                    
+Modello P4760--T593 . . . . . . . . . . . .tot. .........127                                                  |                                                                   
+  577   P4761--T593C699S4E15C71  PANT.MOD.P4761            4 501.00002 GOLDEN SEASON S.R.L.                   |   5330   1   2703 29/12/22 651.00001 JOHN                    
+  577   P4761--T593C495S4E15C71  PANT.MOD.P4761           44 501.00002 GOLDEN SEASON S.R.L.                   |   5330   1   2703 29/12/22 651.00001 JOHN                    
+Modello P4761--T593 . . . . . . . . . . . .tot. ..........48                                                  |                                                                   
+  614   P4762Z-T591C025S4E08C1H  PANT.P4762Z AR            2 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C047S4E08C1H  PANT.P4762Z AR            9 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C002S4E08C1H  PANT.P4762Z AR           10 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C002S4E27C1P  PANT.P4762Z AR           62 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C002S4E27C1P  PANT.P4762Z AR            2 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C025S4E27C1P  PANT.P4762Z AR          135 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C047S4E27C1P  PANT.P4762Z AR           86 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C020S4E27C1P  PANT.P4762Z AR           12 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+  614   P4762Z-T591C025S4E27C1P  PANT.P4762Z AR            4 501.00071 ZANETTI MODA S.R.L.                    |   5067   2   2590 14/12/22 651.00004 MARIO                   
+Modello P4762Z-T591 . . . . . . . . . . . .tot. .........322                                                  |                                                                   
+  613   P4765Z-T590C046S4E27C43  PANT.P4765Z AR           24 501.00071 ZANETTI MODA S.R.L.                    |   5066   2   2565 09/12/22 651.00002 MARIA LIU               
+  613   P4765Z-T590C046S4E30C11  PANT.P4765Z AR            3 501.00071 ZANETTI MODA S.R.L.                    |   5066   2   2565 09/12/22 651.00002 MARIA LIU               
+  613   P4765Z-T590C046S4E27C1P  PANT.P4765Z AR           97 501.00071 ZANETTI MODA S.R.L.                    |   5066   2   2565 09/12/22 651.00002 MARIA LIU               
+  613   P4765Z-T590C046S4E27C43  PANT.P4765Z AR            9 501.00071 ZANETTI MODA S.R.L.                    |   5066   2   2565 09/12/22 651.00002 MARIA LIU               
+Modello P4765Z-T590 . . . . . . . . . . . .tot. .........133                                                  |                                                                   
+  616   P4766Z-T611C045S4E27C1P  PANT.P4766Z AR            9 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C038S4E27C1P  PANT.P4766Z AR            4 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C046S4E27C1P  PANT.P4766Z AR            4 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C001S4E27C43  PANT.P4766Z AR            6 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C035S4E27C43  PANT.P4766Z AR            4 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C045S4E27C43  PANT.P4766Z AR            6 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  14
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  616   P4766Z-T611C001S4E08C1H  PANT.P4766Z AR            7 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C035S4E27C1P  PANT.P4766Z AR           23 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C006S4E27C1P  PANT.P4766Z AR           10 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C001S4E27C1P  PANT.P4766Z AR           93 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+  616   P4766Z-T611C002S4E27C1P  PANT.P4766Z AR           20 501.00071 ZANETTI MODA S.R.L.                    |   5070   2   2589 14/12/22 651.00004 MARIO                   
+Modello P4766Z-T611 . . . . . . . . . . . .tot. .........186                                                  |                                                                   
+  617   P4767Z-T611C025S4E27C1P  PANT.P4767Z AR            5 501.00071 ZANETTI MODA S.R.L.                    |   5071   2   2591 14/12/22 651.00004 MARIO                   
+  617   P4767Z-T611C035S4E27C1P  PANT.P4767Z AR            2 501.00071 ZANETTI MODA S.R.L.                    |   5071   2   2591 14/12/22 651.00004 MARIO                   
+  617   P4767Z-T611C025S4E27C43  PANT.P4767Z AR            3 501.00071 ZANETTI MODA S.R.L.                    |   5071   2   2591 14/12/22 651.00004 MARIO                   
+  617   P4767Z-T611C001S4E27C1P  PANT.P4767Z AR           10 501.00071 ZANETTI MODA S.R.L.                    |   5071   2   2591 14/12/22 651.00004 MARIO                   
+Modello P4767Z-T611 . . . . . . . . . . . .tot. ..........20                                                  |                                                                   
+  517   P4768--T560C199S4E1CC25  PANT.MOD.P4768            7 501.00018 CIERRE 8 S.R.L.                        |   5065   2   2655 21/12/22 651.00016 LINA                    
+Modello P4768--T560 . . . . . . . . . . . .tot. ...........7                                                  |                                                                   
+  512   P4768--T801C300S4E56C73  PANT.MOD.P4768            4 501.00014 BERNARDI BASSANO di Bernardi N         |   5042   2   2656 21/12/22 651.00016 LINA                    
+  512   P4768--T801C299S4E56C73  PANT.MOD.P4768            5 501.00014 BERNARDI BASSANO di Bernardi N         |   5042   2   2656 21/12/22 651.00016 LINA                    
+  515   P4768--T801C299S4E56C73  PANT.MOD.P4768            6 501.00016 VESTIRE RAMONDA S.R.L.                 |   5042   2   2656 21/12/22 651.00016 LINA                    
+  538   P4768--T801C299S4E56C73  PANT.MOD.P4768            8 501.00049 BRAVI CALZATURE S.R.L.                 |   5042   2   2656 21/12/22 651.00016 LINA                    
+  538   P4768--T801C199S4E56C73  PANT.MOD.P4768            8 501.00049 BRAVI CALZATURE S.R.L.                 |   5042   2   2656 21/12/22 651.00016 LINA                    
+  569   P4768--T801C280S4E1CC25  PANT.MOD.P4768            4 501.00072 BERTELLO OSVALDO                       |   5042   2   2656 21/12/22 651.00016 LINA                    
+  570   P4768--T801C199S4E71C9G  PANT.MOD.P4768            7 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5042   2   2656 21/12/22 651.00016 LINA                    
+  570   P4768--T801C300S4E71C9G  PANT.MOD.P4768            4 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5042   2   2656 21/12/22 651.00016 LINA                    
+  570   P4768--T801C280S4E71C9G  PANT.MOD.P4768            5 501.00075 PORTICI S.A.S. DI CONTI SIMONA         |   5042   2   2656 21/12/22 651.00016 LINA                    
+  605   P4768--T801C300S4E1CC25  PANT.MOD.P4768            4 501.00069 BI.VI SNC di Benda e Varuzza           |   5042   2   2656 21/12/22 651.00016 LINA                    
+Modello P4768--T801 . . . . . . . . . . . .tot. ..........55                                                  |                                                                   
+  608   P4779B-T559C299S4E3UC2N  PANT.P4779B AR            7 501.00068 DONNE DA SOGNO S.R.L.                  |   5100   2   2619 19/12/22 651.00002 MARIA LIU               
+  608   P4779B-T559C199S4E3UC2N  PANT.P4779B AR            7 501.00068 DONNE DA SOGNO S.R.L.                  |   5100   2   2619 19/12/22 651.00002 MARIA LIU               
+  609   P4779B-T559C199S4E9HC36  PANT.P4779B AR           20 501.00068 DONNE DA SOGNO S.R.L.                  |   5100   2   2619 19/12/22 651.00002 MARIA LIU               
+  609   P4779B-T559C299S4E9HC36  PANT.P4779B AR           11 501.00068 DONNE DA SOGNO S.R.L.                  |   5100   2   2619 19/12/22 651.00002 MARIA LIU               
+Modello P4779B-T559 . . . . . . . . . . . .tot. ..........45                                                  |                                                                   
+  562   P4798C-T588C300S4E3AC9U  PANT.P4798C AR            6 501.00065 PERUSELLI BRUNO S.R.L.                 |   5111   1   2731 30/12/22 651.00001 JOHN                    
+  562   P4798C-T588C299S4E3AC9U  PANT.P4798C AR           12 501.00065 PERUSELLI BRUNO S.R.L.                 |   5111   1   2731 30/12/22 651.00001 JOHN                    
+  562   P4798C-T588C199S4E3AC9U  PANT.P4798C AR           12 501.00065 PERUSELLI BRUNO S.R.L.                 |   5111   1   2731 30/12/22 651.00001 JOHN                    
+Modello P4798C-T588 . . . . . . . . . . . .tot. ..........30                                                  |                                                                   
+  577   P4801--T535C300S4E15C71  PANT.MOD.P4801           49 501.00002 GOLDEN SEASON S.R.L.                   |   5323   1   2676 23/12/22 651.00001 JOHN                    
+  577   P4801--T535C199S4E15C71  PANT.MOD.P4801           14 501.00002 GOLDEN SEASON S.R.L.                   |   5323   1   2676 23/12/22 651.00001 JOHN                    
+  577   P4801--T535C120S4E15C71  PANT.MOD.P4801           41 501.00002 GOLDEN SEASON S.R.L.                   |   5323   1   2676 23/12/22 651.00001 JOHN                    
+Modello P4801--T535 . . . . . . . . . . . .tot. .........104                                                  |                                                                   
+  576   R1030--T593C699S4E15C71  TOP MOD.R1030           154 501.00002 GOLDEN SEASON S.R.L.                   |   5331   1   2704 29/12/22 651.00001 JOHN                    
+  576   R1030--T593C199S4E15C71  TOP MOD.R1030            35 501.00002 GOLDEN SEASON S.R.L.                   |   5331   1   2704 29/12/22 651.00001 JOHN                    
+  576   R1030--T593C495S4E15C71  TOP MOD.R1030            65 501.00002 GOLDEN SEASON S.R.L.                   |   5331   1   2704 29/12/22 651.00001 JOHN                    
+  576   R1030--T593C110S4E15C71  TOP MOD.R1030            23 501.00002 GOLDEN SEASON S.R.L.                   |   5331   1   2704 29/12/22 651.00001 JOHN                    
+Modello R1030--T593 . . . . . . . . . . . .tot. .........277                                                  |                                                                   
+  547   Z1112--T559C299S4E1AC1V  ABITO Z1112 AR            6 501.00120 ROMEO S.R.L.                           |   5101   2   2618 16/12/22 651.00010 LINDA                   
+  549   Z1112--T559C405S4E56C73  ABITO Z1112 AR            6 501.00026 SORELLE RAMONDA S.P.A.                 |   5101   2   2618 16/12/22 651.00010 LINDA                   
+  549   Z1112--T559C299S4E56C73  ABITO Z1112 AR            7 501.00026 SORELLE RAMONDA S.P.A.                 |   5101   2   2618 16/12/22 651.00010 LINDA                   
+  553   Z1112--T559C405S4E56C73  ABITO Z1112 AR            6 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5101   2   2618 16/12/22 651.00010 LINDA                   
+  553   Z1112--T559C299S4E56C73  ABITO Z1112 AR            7 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5101   2   2618 16/12/22 651.00010 LINDA                   
+  558   Z1112--T559C299S4E56C73  ABITO Z1112 AR           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5101   2   2618 16/12/22 651.00010 LINDA                   
+  558   Z1112--T559C405S4E56C73  ABITO Z1112 AR           10 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5101   2   2618 16/12/22 651.00010 LINDA                   
+  560   Z1112--T559C299S4E56C73  ABITO Z1112 AR            5 501.00026 SORELLE RAMONDA S.P.A.                 |   5101   2   2618 16/12/22 651.00010 LINDA                   
+Modello Z1112--T559 . . . . . . . . . . . .tot. ..........57                                                  |                                                                   
+  562   Z2041--T559C299S4E3AC9U  ABITO Z2041 AR           15 501.00065 PERUSELLI BRUNO S.R.L.                 |   5102   2   2616 16/12/22 651.00010 LINDA                   
+  562   Z2041--T559C405S4E3AC9U  ABITO Z2041 AR            9 501.00065 PERUSELLI BRUNO S.R.L.                 |   5102   2   2616 16/12/22 651.00010 LINDA                   
+  562   Z2041--T559C199S4E3AC9U  ABITO Z2041 AR            9 501.00065 PERUSELLI BRUNO S.R.L.                 |   5102   2   2616 16/12/22 651.00010 LINDA                   
+Modello Z2041--T559 . . . . . . . . . . . .tot. ..........33                                                  |                                                                   
+  504   Z2196--T801C300S4E1CC25  ABITO MOD.Z219            4 501.00010 GONG di Carolina C. Rollier e          |   5043   2   2617 16/12/22 651.00010 LINDA                   
+  527   Z2196--T801C299S4E56C73  ABITO MOD.Z219            6 501.00034 RAMONDA TESSILE S.P.A.                 |   5043   2   2617 16/12/22 651.00010 LINDA                   
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  15
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+  537   Z2196--T801C199S4E71C9G  ABITO MOD.Z219            1 501.00088 MAGAZZINI LIVIO S.R.L.                 |   5043   2   2617 16/12/22 651.00010 LINDA                   
+  537   Z2196--T801C120S4E71C9G  ABITO MOD.Z219            1 501.00088 MAGAZZINI LIVIO S.R.L.                 |   5043   2   2617 16/12/22 651.00010 LINDA                   
+  544   Z2196--T801C120S4E63C68  ABITO MOD.Z219            5 501.00055 LIVRIERI DONATO                        |   5043   2   2617 16/12/22 651.00010 LINDA                   
+  544   Z2196--T801C299S4E63C68  ABITO MOD.Z219            5 501.00055 LIVRIERI DONATO                        |   5043   2   2617 16/12/22 651.00010 LINDA                   
+  555   Z2196--T801C280S4E22C2D  ABITO MOD.Z219            2 501.00042 BONIZZI GERMANO ABB.TO di Boni         |   5043   2   2617 16/12/22 651.00010 LINDA                   
+  559   Z2196--T801C199S4E56C73  ABITO MOD.Z219            5 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5043   2   2617 16/12/22 651.00010 LINDA                   
+  559   Z2196--T801C280S4E56C73  ABITO MOD.Z219            5 501.00028 CENTRO COMMERCIALE RAMONDA S.P         |   5043   2   2617 16/12/22 651.00010 LINDA                   
+Modello Z2196--T801 . . . . . . . . . . . .tot. ..........34                                                  |                                                                   
+  583   Z2207--T560C299S4E1CC25  ABITO Z2207 AR           12 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  583   Z2207--T560C240S4E1CC25  ABITO Z2207 AR           13 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  584   Z2207--T560C240S4E1CC25  ABITO Z2207 AR            4 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  585   Z2207--T560C299S4E1CC25  ABITO Z2207 AR           14 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  585   Z2207--T560C240S4E1CC25  ABITO Z2207 AR           13 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  586   Z2207--T560C240S4E1CC25  ABITO Z2207 AR            8 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  587   Z2207--T560C240S4E1CC25  ABITO Z2207 AR            9 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  588   Z2207--T560C240S4E1CC25  ABITO Z2207 AR            7 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  590   Z2207--T560C240S4E1CC25  ABITO Z2207 AR            9 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  591   Z2207--T560C299S4E1CC25  ABITO Z2207 AR           12 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+  591   Z2207--T560C240S4E1CC25  ABITO Z2207 AR           13 501.00020 NICO S.P.A.                            |   5081   1   2609 16/12/22 651.00001 JOHN                    
+Modello Z2207--T560 . . . . . . . . . . . .tot. .........114                                                  |                                                                   
+Totale                                                11.251                                                  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  16
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+Totale suddiviso per capi:
+C      Coordinato | CORD156 CORD160 CORD161 CORD162 CORD165 CORD166 CORD167 CORD168 CORD169                  9|     721
+                  |                                                                                           |
+                  |                                                                                           |
+G      Gonna      | G009N-- G009N-- G009SF- G009SF- G009SF- G009SF- G068C-- G068CSF G1627-- G2511N- G2511N- 13|     756
+                  | G2511N- G2511N-                                                                           |
+                  |                                                                                           |
+H      Giacca     | H1150-- H2282-- H2292-- H2554-- H2555-- H2555-- H2639-- H2640-- H2641-- H2642-- H2644-- 20|   2.109
+                  | H2651-- H2651-- H2651A- H2652-- H2664-- H2672-- H2675-- H2676-- H2741--                   |
+                  |                                                                                           |
+P      Pantalone  | P1475N- P1475N- P1475N- P2045-- P2087-- P2087P- P2523-- P2801N- P2801N- P3301-- P3301-- 57|   7.150
+                  | P3531-- P3531-- P3535N- P3535N- P3535N- P3713-- P3749P- P3888-- P3926-- P3941-- P4020--   |
+                  | P4020-- P4222N- P4222N- P4222N- P4227-- P4227-- P4227-- P4227SA P4236-- P4236-- P4476--   |
+R      Camicia    | R1030--                                                                                  1|     277
+                  |                                                                                           |
+                  |                                                                                           |
+Z      Abito      | Z1112-- Z2041-- Z2196-- Z2207--                                                          4|     238
+                  |                                                                                           |
+                  |                                                                                           |
+Modelli per cliente
+CORD159T531       12
+CORD160T531       48
+CORD161T593       50
+CORD162T593       28
+CORD165T535      138
+CORD166T535       93
+CORD167T592       39
+CORD168T532       68
+CORD169T532      103
+H2639--T535      170
+H2640--T593       65
+H2641--T532      260
+H2642--T531      125
+H2644--T532      122
+H2672--T535      150
+H2675--T592      131
+H2676--T593       84
+P4726--T532      265
+P4727--T532      178
+P4728--T535      216
+P4749--T592      112
+P4753--T593      120
+P4754--T535      103
+P4755--T531        2
+P4759--T592      138
+P4760--T593      127
+P4761--T593       48
+P4801--T535      104
+R1030--T593      277
+Totale         3.376 501.00002 GOLDEN SEASON S.R.L.                                        
+-------------------------------------------------------------------------------------------
+G1627--T559       21
+G2511N-T589       35
+H1150--T813       40
+H2554--T559       21
+H2555--T806       39
+P1475N-T813      120
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  17
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+P2045--T813       97
+P2523--T813       60
+P2801N-T589       36
+P4020--T806       92
+P4477--T806       64
+Totale           625 501.00007 VARDAS A.E.V.E.E.                                           
+-------------------------------------------------------------------------------------------
+H2664--T801        4
+P1475N-T813        4
+P4227--T588       17
+Totale            25 501.00008 MODE SPITALER S.A.S C. & CO. KG                             
+-------------------------------------------------------------------------------------------
+Z2196--T801        4
+Totale             4 501.00010 GONG di Carolina C. Rollier e Mark A. Schwaebe SNC          
+-------------------------------------------------------------------------------------------
+P2801N-T589        5
+P4227--T806        4
+Totale             9 501.00011 PEPORINI LUCA                                               
+-------------------------------------------------------------------------------------------
+H2555--T563       11
+H2555--T806       22
+P2801N-T588       28
+P2801N-T589       56
+Totale           117 501.00012 NEW DAVID SCOTT S.R.L.                                      
+-------------------------------------------------------------------------------------------
+H2664--T801        9
+P3713--T864        5
+P4768--T801        9
+Totale            23 501.00014 BERNARDI BASSANO di Bernardi Nicolai & C. s.n.c.            
+-------------------------------------------------------------------------------------------
+P3926--T801        7
+Totale             7 501.00015 M.A. SRL                                                    
+-------------------------------------------------------------------------------------------
+H2664--T801       10
+P3535N-T568       14
+P3713--T864       10
+P4236--T589        6
+P4768--T801        6
+Totale            46 501.00016 VESTIRE RAMONDA S.R.L.                                      
+-------------------------------------------------------------------------------------------
+P1475N-T813       17
+P2087P-T813       28
+Totale            45 501.00017 YONI S.R.L.                                                 
+-------------------------------------------------------------------------------------------
+P4768--T560        7
+Totale             7 501.00018 CIERRE 8 S.R.L.                                             
+-------------------------------------------------------------------------------------------
+H2651--T560        6
+H2664--T801       14
+Totale            20 501.00019 TONIN MANUELA                                               
+-------------------------------------------------------------------------------------------
+H2282--T560      188
+H2292--T560      143
+P3301--T560      310
+Z2207--T560      114
+Totale           755 501.00020 NICO S.P.A.                                                 
+-------------------------------------------------------------------------------------------
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  18
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+H2652--T559        4
+Totale             4 501.00021 PERO' S.R.L.                                                
+-------------------------------------------------------------------------------------------
+P4730--T559       32
+Totale            32 501.00023 MONTICELLO s.n.c. di Monticello Giannantonia & C.           
+-------------------------------------------------------------------------------------------
+P3941--T813       31
+P4020--T560       20
+Totale            51 501.00024 LE TABLEAU SERVICE S.R.L.S.                                 
+-------------------------------------------------------------------------------------------
+P3749P-T559       27
+P3926--T801       21
+Totale            48 501.00025 MODA COUNTRY CLUB S.R.L.                                    
+-------------------------------------------------------------------------------------------
+G009N--T559       17
+G009N--T813       12
+G1627--T559       17
+G2511N-T806       12
+H2554--T559       18
+P2045--T813       10
+P3531--T559       30
+P3535N-T864       22
+P3713--T864       12
+P3888--T563        5
+P4476--T559       28
+Z1112--T559       18
+Totale           201 501.00026 SORELLE RAMONDA S.P.A.                                      
+-------------------------------------------------------------------------------------------
+P3713--T864        7
+P3926--T801       12
+P4222N-T588        6
+P4222N-T806       14
+P4236--T589        7
+Totale            46 501.00027 RAMONDA ABBIGLIAMENTO S.R.L.                                
+-------------------------------------------------------------------------------------------
+G009N--T559       18
+G009N--T813       36
+G009SF-T588       14
+G009SF-T589       63
+G1627--T559       62
+G2511N-T806       20
+H2554--T559       32
+P1475N-T559       98
+P2045--T813       70
+P3531--T559       54
+P3535N-T864       20
+P3713--T864       48
+P3749P-T559       42
+P3888--T563       55
+P4222N-T588       20
+P4227--T806       30
+P4236--T588       24
+P4236--T589       94
+P4476--T559       54
+Z1112--T559       33
+Z2196--T801       10
+Totale           897 501.00028 CENTRO COMMERCIALE RAMONDA S.P.A.                           
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  19
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+-------------------------------------------------------------------------------------------
+G009N--T813       24
+G068C--T813       28
+Totale            52 501.00029 FORM S.P.A.                                                 
+-------------------------------------------------------------------------------------------
+G009N--T813        7
+G009SF-T563        7
+G009SF-T568        7
+G1627--T559       14
+Z2196--T801        6
+Totale            41 501.00034 RAMONDA TESSILE S.P.A.                                      
+-------------------------------------------------------------------------------------------
+P4222N-T568        6
+P4222N-T588       12
+P4227--T806       14
+Totale            32 501.00036 COSA MI METTO S.R.L.S.                                      
+-------------------------------------------------------------------------------------------
+H2652--T559        4
+P4736--T559        4
+Totale             8 501.00039 IL CEDRO S.R.L.S.                                           
+-------------------------------------------------------------------------------------------
+H2651A-T560       16
+P4613--T559        8
+Totale            24 501.00041 MAX TIES S.R.L.                                             
+-------------------------------------------------------------------------------------------
+P3713--T864        8
+P4222N-T806        8
+P4236--T589        3
+Z2196--T801        2
+Totale            21 501.00042 BONIZZI GERMANO ABB.TO di Bonizzi C. & C. snc               
+-------------------------------------------------------------------------------------------
+P4021--T196       10
+Totale            10 501.00044 G.D. GROUP S.R.L.                                           
+-------------------------------------------------------------------------------------------
+G1627--T559       10
+P1475N-T559       10
+P2045--T813       28
+P4222N-T588       26
+P4227--T806       31
+Totale           105 501.00048 BRULA SHOP S.R.L.                                           
+-------------------------------------------------------------------------------------------
+H2554--T559        9
+H2664--T801       13
+P3713--T864       16
+P3888--T563        7
+P3926--T801        6
+P4222N-T588       14
+P4227SAT806       24
+P4236--T589       14
+P4768--T801       16
+Totale           119 501.00049 BRAVI CALZATURE S.R.L.                                      
+-------------------------------------------------------------------------------------------
+P3535N-T864       12
+P4236--T589        6
+Totale            18 501.00050 MARCUZZI MODA S.n.c. Di Zucchet S. & A.                     
+-------------------------------------------------------------------------------------------
+H2554--T559       16
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  20
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+H2651--T560       12
+Totale            28 501.00052 TESSIL MODA S.R.L.                                          
+-------------------------------------------------------------------------------------------
+G1627--T559       29
+P1475N-T022       21
+P2045--T813       30
+P3926--T801       12
+Z2196--T801       10
+Totale           102 501.00055 LIVRIERI DONATO                                             
+-------------------------------------------------------------------------------------------
+G009N--T813       30
+P2087P-T813       23
+P3531--T559       45
+P3713--T864       26
+P4227--T589       16
+Totale           140 501.00056 CIENNE S.R.L.                                               
+-------------------------------------------------------------------------------------------
+P4227--T806       24
+Totale            24 501.00058 MAX 26 S.R.L.                                               
+-------------------------------------------------------------------------------------------
+P3926--T801       20
+Totale            20 501.00059 OLD ENGLAND S.R.L.                                          
+-------------------------------------------------------------------------------------------
+P4227SAT806       60
+Totale            60 501.00060 LIFE KIT - S.R.L.S.                                         
+-------------------------------------------------------------------------------------------
+P4613--T559       23
+P4736--T559       12
+Totale            35 501.00061 CID S.R.L.                                                  
+-------------------------------------------------------------------------------------------
+G2511N-T806       10
+Totale            10 501.00063 EL BOTTEGON S.N.C. di Galdino Martignon & C.                
+-------------------------------------------------------------------------------------------
+G068CSFT588       30
+H2554--T559       12
+H2652--T559       27
+P4236--T588       24
+P4730--T559       12
+P4736--T559       27
+P4751--T560       25
+P4798C-T588       30
+Z2041--T559       33
+Totale           220 501.00065 PERUSELLI BRUNO S.R.L.                                      
+-------------------------------------------------------------------------------------------
+G009N--T813       41
+G2511N-T589       12
+G2511N-T806       27
+H2554--T559       40
+P3301--T801       17
+P3531--T864       20
+P4476--T559       16
+Totale           173 501.00066 GRASSI CONFEZIONI S.N.C. di Grassi Sergio e C. Pellicceria e
+-------------------------------------------------------------------------------------------
+G1627--T559      102
+H2664--T801       42
+P3749P-T559      174
+P4476--T559      172
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  21
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+Totale           490 501.00067 SMART S.P.A.                                                
+-------------------------------------------------------------------------------------------
+P4476B-T559       84
+P4779B-T559       45
+Totale           129 501.00068 DONNE DA SOGNO S.R.L.                                       
+-------------------------------------------------------------------------------------------
+G1627--T559        3
+H2554--T559        3
+H2555--T806        4
+H2664--T801        2
+P3713--T864       10
+P4222N-T588        4
+P4222N-T806        3
+P4227--T589        4
+P4227SAT806       15
+P4768--T801        4
+Totale            52 501.00069 BI.VI SNC di Benda e Varuzza                                
+-------------------------------------------------------------------------------------------
+CORD156T607      154
+Totale           154 501.00070 FAST 2 S.R.L.                                               
+-------------------------------------------------------------------------------------------
+P4762Z-T591      322
+P4765Z-T590      133
+P4766Z-T611      186
+P4767Z-T611       20
+Totale           661 501.00071 ZANETTI MODA S.R.L.                                         
+-------------------------------------------------------------------------------------------
+H2554--T559        8
+H2664--T801        4
+P3713--T864       10
+P4768--T801        4
+Totale            26 501.00072 BERTELLO OSVALDO                                            
+-------------------------------------------------------------------------------------------
+P3535N-T568       27
+P4476--T559       52
+Totale            79 501.00073 DONNAEFFE s.r.l.                                            
+-------------------------------------------------------------------------------------------
+H2554--T559        6
+H2555--T563        3
+H2651--T801        2
+P3713--T864       21
+P3888--T563        4
+P4222N-T588        6
+P4768--T801       16
+Totale            58 501.00075 PORTICI S.A.S. DI CONTI SIMONA                              
+-------------------------------------------------------------------------------------------
+P1475N-T022       19
+P2087P-T813       16
+Totale            35 501.00077 ALLEGRO CLAUDIO                                             
+-------------------------------------------------------------------------------------------
+P3713--T864       16
+Totale            16 501.00079 BERGAMASCO ERICA                                            
+-------------------------------------------------------------------------------------------
+H2555--T563        2
+H2555--T806        6
+H2651--T560        2
+P2045--T813        6
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  22
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+P3535N-T568        5
+P3749P-T559        9
+P3926--T801        3
+Totale            33 501.00081 COSTA NEVIA                                                 
+-------------------------------------------------------------------------------------------
+H2554--T559        1
+Totale             1 501.00087 M&S S.R.L.                                                  
+-------------------------------------------------------------------------------------------
+Z2196--T801        2
+Totale             2 501.00088 MAGAZZINI LIVIO S.R.L.                                      
+-------------------------------------------------------------------------------------------
+H2282--T560       31
+P3301--T560       56
+Totale            87 501.00092 NICO POLSKA SP. Z O.O.                                      
+-------------------------------------------------------------------------------------------
+H2741--T806      100
+P3535N-T568      125
+P3535N-T589      125
+P4222N-T588      250
+P4222N-T806      670
+Totale         1.270 501.00093 LFC OUTLETS S.R.L.                                          
+-------------------------------------------------------------------------------------------
+G2511N-T568        6
+G2511N-T588        6
+G2511N-T806       12
+H2555--T563        1
+P3535N-T568        5
+P4222N-T588        4
+P4222N-T806       12
+Totale            46 501.00114 ARTEMISIA di Farolfi V. Casanova S. e Biagetti T. SNC       
+-------------------------------------------------------------------------------------------
+H2555--T563        1
+P2045--T813       56
+P3713--T864       33
+P4236--T589       28
+Totale           118 501.00116 LA FURLANA S.R.L.                                           
+-------------------------------------------------------------------------------------------
+G009N--T813       21
+H2554--T559        6
+H2664--T801        9
+P1475N-T559       26
+P2045--T813       34
+P4236--T589        6
+Z1112--T559        6
+Totale           108 501.00120 ROMEO S.R.L.                                                
+-------------------------------------------------------------------------------------------
+H2651A-T560        9
+P4613--T559        5
+Totale            14 501.00124 RIMA SRL SEMPLIFICATA                                       
+-------------------------------------------------------------------------------------------
+P1475N-T022       70
+P2087--T022       39
+P4236--T589       15
+Totale           124 501.00125 MARIA GLENSTER P. PAPAGEORGIOU A. VLAHAKIS O.E.             
+-------------------------------------------------------------------------------------------
+H2554--T559       16
+Totale            16 501.00131 MAGAZZINI M.C. SRL                                          
+
+
+
+
+M&S S.R.L.                                                                                  04/01/23
+Dettaglio capi in ordine con riga L Art. in lavorazione                                                                  Pagina  23
+                   parametri di scelta: cliente                          Stagione S4  Articolo                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ordine   Articolo                                        Capi Cliente                               Componente|  Note  Fase   n.DL     Data Terzista 
+-------------------------------------------------------------------------------------------
+H2652--T559        5
+P4736--T559        5
+Totale            10 501.00132 ALMA VENEZIA S.R.L.S. Unipersonale                          
+-------------------------------------------------------------------------------------------
+G009SF-T588        3
+P1475N-T559        6
+P3926--T801        5
+P4236--T588        5
+P4236--T589        5
+Totale            24 501.00133 BAGAGLINI FRANCESCA                                         
+-------------------------------------------------------------------------------------------
+H2652--T559        8
+P1475N-T559        4
+P4227--T806       24
+Totale            36 501.00135 CALABRESE ANNA MARIA                                        
+-------------------------------------------------------------------------------------------
+H2555--T563        3
+P4227--T806       11
+Totale            14 501.00137 DE TOMASSI TIZIANA                                          
+-------------------------------------------------------------------------------------------
+H2652--T559        6
+P3926--T801       22
+P4222N-T588       13
+P4736--T559        6
+Totale            47 501.00140 MARTINI SPORT SRL                                           
+-------------------------------------------------------------------------------------------
+P2045--T813       15
+Totale            15 501.00142 RU.VI.MI. SRL                                               
+-------------------------------------------------------------------------------------------
+P3926--T801        8
+Totale             8 501.00143 COQUETTE S.R.L.S.                                           
+-------------------------------------------------------------------------------------------
+H2555--T563       12
+P3888--T563       10
+Totale            22 501.00145 FRANKO PLUS d.o.o.                                          
+-------------------------------------------------------------------------------------------
+
+Lavorante                      Modelli in lavorazione                                                                                                                                                                   Mod.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+651.00006 BERTOLI              CORD156 CORD168 CORD169 H2641-- P3531-- P3535N- P3713-- P4726-- P4727--                                                                                                                     9
+651.00009 LUCA                 CORD160 H2642--                                                                                                                                                                             2
+651.00001 JOHN                 CORD161 CORD162 CORD165 CORD166 G009N-- G009SF- G068C-- G068CSF G2511N- H1150-- H2292-- H2555-- H2639-- H2640-- H2651-- H2651A- H2672--  H2676-- P1475N- P2045-- P2087P- P2523-- P2801N-   44
+                               P3301-- P3535N- P3888-- P3941-- P4020-- P4222N- P4227-- P4236-- P4613-- P4728-- P4730-- P4736-- P4751-- P4753-- P4754-- P4760-- P4761--  P4798C- P4801-- R1030-- Z2207--                
+651.00034 ROMANO               CORD167 P4749-- P4759--                                                                                                                                                                     3
+651.00004 MARIO                G009N-- G1627-- G2511N- P4762Z- P4766Z- P4767Z-                                                                                                                                             6
+651.00003 CARLO                H2282-- H2554-- H2555-- H2652-- H2664-- H2741--                                                                                                                                             6
+651.00032 LUCA GHEDI           H2644-- H2675--                                                                                                                                                                             2
+651.00002 MARIA LIU            P1475N- P2087-- P3531-- P3749P- P4222N- P4227-- P4227SA P4476-- P4476B- P4477-- P4765Z- P4779B-                                                                                            12
+651.00016 LINA                 P1475N- P3926-- P4020-- P4768--                                                                                                                                                             4
+651.00010 LINDA                Z1112-- Z2041-- Z2196--                                                                                                                                                                     3
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ultima pagina
+
+
+
+
+
+
+
+
+

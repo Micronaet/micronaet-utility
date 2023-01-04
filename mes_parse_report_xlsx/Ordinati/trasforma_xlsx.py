@@ -20,6 +20,7 @@
 #
 ###############################################################################
 import os
+import pdb
 import sys
 try:
     import ConfigParser
@@ -236,7 +237,7 @@ for line in open(csv_file, 'r'):
     # -------------------------------------------------------------------------
     # [Block 0] Read title block once:
     # -------------------------------------------------------------------------
-    if block == 0: # Title line:
+    if block == 0:  # Title line:
         if line.startswith('Ordine  '):  # Start block 1
             block = 1
             blocks[block][0] = line
@@ -250,7 +251,7 @@ for line in open(csv_file, 'r'):
     # -------------------------------------------------------------------------
     elif block == 1:
         if line.startswith(start_text['page_jump']):
-            jump = 3 # Jump next 3 line
+            jump = 3  # Jump next 3 line
             print('%s. [%s] Page header' % (i, block))
             continue
         # elif line.startswith('Ordine  '): # Start block 1
@@ -280,14 +281,14 @@ for line in open(csv_file, 'r'):
     # -------------------------------------------------------------------------
     elif block == 3:
         if line.startswith(start_text['page_jump']):
-            jump = 3 # Jump next 3 line
+            jump = 3  # Jump next 3 line
             print('%s. [%s] Page header' % (i, block))
             continue
-        elif line.startswith(start_text['b3']): # Title line
-            blocks[block][0] = line # Title
+        elif line.startswith(start_text['b3']):  # Title line
+            blocks[block][0] = line  # Title
             print('%s. [%s] Start block (header line)' % (i, block))
             continue
-        elif line.startswith(start_text['b4']): # End block
+        elif line.startswith(start_text['b4']):  # End block
             block = 4
             blocks[block][0] = line
             print('%s. [%s] Start block (header line)' % (i, block))
@@ -305,10 +306,10 @@ for line in open(csv_file, 'r'):
     # -------------------------------------------------------------------------
     elif block == 4:
         if line.startswith(start_text['page_jump']):
-            jump = 3 # Jump next 3 line
+            jump = 3  # Jump next 3 line
             print('%s. [%s] Page header' % (i, block))
             continue
-        elif line.startswith(start_text['b5']): # End block
+        elif line.startswith(start_text['b5']):  # End block
             block = 5
             blocks[block][0] = line
             print('%s. [%s] Start block (header line)' % (i, block))
@@ -322,7 +323,7 @@ for line in open(csv_file, 'r'):
     # -------------------------------------------------------------------------
     elif block == 5:
         if line.startswith(start_text['page_jump']):
-            jump = 3 # Jump next 3 line
+            jump = 3  # Jump next 3 line
             print('%s. [%s] Page header' % (i, block))
             continue
         else:
@@ -650,11 +651,12 @@ for line in blocks[block][1]:
     # -------------------------------------------------------------------------
     # Data row:
     # -------------------------------------------------------------------------
-    else: # state = 'data'
+    else:  # state = 'data'
         row += 1
         line_part = split_block(block, line)
         if line_part[0] == 'Totale':
             f_select = f_bold
+            pdb.set_trace()
         else:
             f_select = f_text
         Excel.write_xls_line(page, row, line_part, f_select)
