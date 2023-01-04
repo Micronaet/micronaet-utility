@@ -660,6 +660,7 @@ for line in blocks[block][1]:
             f_select = f_bold
         else:
             f_select = f_text
+            line_part = line_part[:2]  # remove partner code and name
         Excel.write_xls_line(page, row, line_part, f_select)
 
 
