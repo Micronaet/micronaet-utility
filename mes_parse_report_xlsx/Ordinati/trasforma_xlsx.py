@@ -600,7 +600,7 @@ Excel.write_xls_line(page, row, total, col=2, default_format=f_bold_white)
 block = 4
 page = 'Dettaglio cliente'
 Excel.create_worksheet(page)
-Excel.column_width(page, (15, 10, ))
+Excel.column_width(page, (15, 10, 15, 40))
 
 # Title:
 row = 0
