@@ -681,7 +681,12 @@ for line in blocks[block][1]:
         if line_part[0] == 'Totale':
             f_select = f_bold
             # Write in header partner reference:
-            Excel.write_xls_line(page, partner_row, line_part[2:], f_title)
+            Excel.write_xls_line(
+                page, partner_row,
+                ['%s [%s]' % (
+                    line_part[3],
+                    line_part[2],
+                )], f_title)
 
         else:
             f_select = f_text
