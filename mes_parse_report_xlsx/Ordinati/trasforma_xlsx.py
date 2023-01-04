@@ -610,11 +610,13 @@ Excel.write_xls_line(page, row, (
 
 # Details:
 state = False
+pdb.set_trace()
 for line in blocks[block][1]:
     # -------------------------------------------------------------------------
     # New block (next write partner and header):
     # -------------------------------------------------------------------------
     if line.startswith('-----------------'):
+        pdb.set_trace()
         state = 'partner'
 
     # -------------------------------------------------------------------------
