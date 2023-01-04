@@ -207,7 +207,7 @@ class ExcelWriter(models.Model):
         """ Save binary data passed as file temp (returned)
         """
         b64_file = base64.decodestring(binary)
-        fields.Datetime.now()
+        now = str(fields.Datetime.now())
         filename = \
             '/tmp/file_%s.xlsx' % now.replace(':', '_').replace('-', '_')
         f = open(filename, 'wb')
@@ -226,7 +226,7 @@ class ExcelWriter(models.Model):
         now = fields.Datetime.now()
         now = now.replace('-', '_').replace(':', '_')
         if not name_of_file:
-            #name_of_file = '/tmp/report_%s.xlsx' % now
+            # name_of_file = '/tmp/report_%s.xlsx' % now
             name_of_file = 'report_%s.xlsx' % now
 
         try:
@@ -234,7 +234,7 @@ class ExcelWriter(models.Model):
         except:
             filename = '/tmp/wb_%s.xlsx' % now
         _logger.info('Return XLSX file: %s' % filename)
-        self._close_workbook() # if not closed maually
+        self._close_workbook()  # if not closed maually
 
         # TODO is necessary?
         temp_id = self.create({
@@ -242,7 +242,7 @@ class ExcelWriter(models.Model):
             }).id
 
         return {
-            'type' : 'ir.actions.act_url',
+            'type': 'ir.actions.act_url',
             'name': name,
             'url': '/web/content/excel.writer/%s/b64_file/%s?download=true' % (
                 temp_id,
