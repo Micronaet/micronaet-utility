@@ -610,7 +610,7 @@ Excel.write_xls_line(page, row, (
 
 # Details:
 state = False
-row += 1
+row += 2
 partner_row = row  # Leave empty first line (for partner name)
 
 row += 1
