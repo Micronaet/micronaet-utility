@@ -142,7 +142,7 @@ def split_block(block, line):
     elif block == 4:
         return (
             line[:15].strip(),  # Model
-            line[15:20].strip(),  # Qty
+            int(line[15:20].strip()),  # Qty
             line[20:30].strip(),  # Partner code
             line[30:].strip(),  # Partner name
             )
