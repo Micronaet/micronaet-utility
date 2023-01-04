@@ -155,14 +155,14 @@ def split_block(block, line):
             )
 
 
-def clean4sheet(supplier):
+def clean4sheet(supplier_name):
     """ Remove char non valid for sheet name
     """
-    page = supplier
+    page_name = supplier_name
     invalid = '[]:*?/\\'
     for char in invalid:
-        page = page.replace(char, '')
-    return page
+        page_name = page_name.replace(char, '')
+    return page_name
 
 
 cfg_file = os.path.expanduser('./setup.cfg')
