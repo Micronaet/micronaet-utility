@@ -492,6 +492,14 @@ class ExcelWriter(orm.Model):
         return self._WS[ws_name].write_formula(
             row, col, formula, default_format, value='')
 
+    def preset_filter_column(ws_name, column, filter_text):
+        """ Preset filter on column: 
+        Sheet name,
+        Letter of column, 
+        Filter formula with x syntax x == 'Test*' 
+        """
+        return self._WS[ws_name].filter_column(column, filter_text)
+        
     def column_width(self, ws_name, columns_w, col=0, default_format=False):
         """ WS: Worksheet passed
             columns_w: list of dimension for the columns
