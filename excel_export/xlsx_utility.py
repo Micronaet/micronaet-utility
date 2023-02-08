@@ -223,7 +223,8 @@ class ExcelWriter(orm.Model):
             partner_ids.append(user.partner_id.id)
 
         thread_pool = self.pool.get('mail.thread')
-        thread_pool.message_post(cr, uid, False,
+        thread_pool.message_post(
+            cr, uid, False,
             type='email',
             body=body,
             subject=subject,
@@ -231,7 +232,11 @@ class ExcelWriter(orm.Model):
             attachments=attachments,
             context=context,
             )
-        self._close_workbook() # if not closed maually
+        try:
+            self._close_workbook()  # if not closed manually
+        except:
+            _logger.error('Error closing WB\n%s' % (sys.exc_info(), ))
+            return False
 
     def save_file_as(self, destination):
         """ Close workbook and save in another place (passed)
