@@ -208,10 +208,10 @@ class ExcelWriter(orm.Model):
         model_pool = self.pool.get('ir.model.data')
         thread_pool = self.pool.get('mail.thread')
 
-        self._close_workbook() # Close before read file
+        self._close_workbook()  # Close before read file
         attachments = [(
             filename,
-            open(self._filename, 'rb').read(), # Raw data
+            open(self._filename, 'rb').read(),  # Raw data
             )]
 
         group = group_name.split('.')
@@ -222,7 +222,6 @@ class ExcelWriter(orm.Model):
                 cr, uid, group_id, context=context).users:
             partner_ids.append(user.partner_id.id)
 
-        thread_pool = self.pool.get('mail.thread')
         thread_pool.message_post(
             cr, uid, False,
             type='email',
