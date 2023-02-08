@@ -190,9 +190,10 @@ class ExcelWriter(orm.Model):
             top=top,
             bottom=bottom)
 
-    def send_mail_to_group(self, cr, uid,
+    def send_mail_to_group(
+            self, cr, uid,
             group_name,
-            subject, body, filename, # Mail data
+            subject, body, filename,  # Mail data
             context=None):
         """ Send mail of current workbook to all partner present in group
             passed
