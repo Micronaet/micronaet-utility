@@ -459,7 +459,7 @@ class ExcelWriter(orm.Model):
                 # x_offset, y_offset
                 }
         if comment:
-            comment = u'{}'.comment(comment)
+            comment = u'{}'.format(comment)
             self._WS[ws_name].write_comment(cell, comment, parameters)
 
     def write_comment_line(self, ws_name, row, line, col=0, parameters=None):
