@@ -47,11 +47,11 @@ class ExcelWriter():
         """ Log operation for the class
         """
         if self._verbose:
-            print '%s. [%s] %s' % (
+            print('%s. [%s] %s' % (
                 datetime.now(),
                 mode.upper(),
                 message,
-                )
+                ))
 
     def _create_workbook(self):
         """ Create workbook in a temp file

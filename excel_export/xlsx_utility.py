@@ -259,7 +259,8 @@ class ExcelWriter(orm.Model):
         f.close()
         return filename
 
-    def return_attachment(self, cr, uid, name, name_of_file=False,
+    def return_attachment(
+            self, cr, uid, name, name_of_file=False,
             version='8.0', php=False, context=None):
         """ Return attachment passed
             name: Name for the attachment
@@ -281,7 +282,7 @@ class ExcelWriter(orm.Model):
         attachment_pool = self.pool.get('ir.attachment')
 
         origin = self._filename
-        self._close_workbook() # if not closed manually
+        self._close_workbook()  # if not closed manually
         try:
             b64 = open(origin, 'rb').read().encode('base64')
         except:
@@ -409,7 +410,7 @@ class ExcelWriter(orm.Model):
                         self._WS[ws_name].write(
                             row, col, u'ERRORE!!!!')
                         import pdb; pdb.set_trace()
-                else: # (value, format) case or rich text format
+                else:  # (value, format) case or rich text format
                     import pdb; pdb.set_trace()
                     self._WS[ws_name].write(row, col, *record)
             else: # type(record) in (unicode, str, float, int): # Normal text
@@ -417,8 +418,8 @@ class ExcelWriter(orm.Model):
             col += 1
         return True
 
-
-    def write_xls_line(self, ws_name, row, line, default_format=False, col=0,
+    def write_xls_line(
+            self, ws_name, row, line, default_format=False, col=0,
             verbose=False, debug=False):
         """ Write line in excel file:
             WS: Worksheet where find
@@ -567,12 +568,12 @@ class ExcelWriter(orm.Model):
             key: mode of format
             if not passed load database only
         """
-        try: # Used when load format before WS creation?!?!
-            WB = self._WB # Create with start method
+        try:  # Used when load format before WS creation?!?!
+            WB = self._WB  # Create with start method
         except:
             _logger.warning('Load / Re-Load WB')
             self._create_workbook('xlsx')
-            WB = self._WB # Create with start method
+            WB = self._WB  # Create with start method
             # XXX Worksheet
 
         F = self._default_format # readability
@@ -599,7 +600,7 @@ class ExcelWriter(orm.Model):
              pass
 
         WB = self._WB
-        F = self._default_format # readability
+        F = self._default_format  # readability
         # ---------------------------------------------------------------------
         # Create not the DB list:
         # ---------------------------------------------------------------------
