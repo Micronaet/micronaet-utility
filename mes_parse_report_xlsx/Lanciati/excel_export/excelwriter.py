@@ -173,6 +173,9 @@ class ExcelWriter():
 
             @return: nothing
         """
+        if type(data) == str:
+            data = u'{}'.format(data)
+
         if default_format:
             self._WS[WS_name].write(row, col, data, default_format)
         else:
@@ -659,4 +662,3 @@ class ExcelWriter():
                 )
         else:
             return True
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
