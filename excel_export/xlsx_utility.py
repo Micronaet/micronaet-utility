@@ -454,11 +454,12 @@ class ExcelWriter(orm.Model):
         cell = self.rowcol_to_cell(row, col)
         if parameters is None:
             parameters = {
-                #author, visible, x_scale, width, y_scale, height, color
-                #font_name, font_size, start_cell, start_row, start_col
-                #x_offset, y_offset
+                # author, visible, x_scale, width, y_scale, height, color
+                # font_name, font_size, start_cell, start_row, start_col
+                # x_offset, y_offset
                 }
         if comment:
+            comment = u'{}'.comment(comment)
             self._WS[ws_name].write_comment(cell, comment, parameters)
 
     def write_comment_line(self, ws_name, row, line, col=0, parameters=None):
