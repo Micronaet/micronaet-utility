@@ -160,6 +160,8 @@ class ExcelWriter():
                 else:
                     self._WS[WS_name].write(row, col, record)
             elif len(record) == 2: # Normal text, format
+                if type(record[0]) == str:
+                    record = u'{}'.format(record[0]), record[1]
                 self._WS[WS_name].write(row, col, *record)
             else: # Rich format todo
                 self._WS[WS_name].write_rich_string(row, col, *record)
