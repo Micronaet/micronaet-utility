@@ -33,6 +33,7 @@ def host_is_on(hostname, hop=5):
     else:
         return False
 
+
 def log_message(log_f, message, mode='info', verbose=True):
     """ Log on file
     """
