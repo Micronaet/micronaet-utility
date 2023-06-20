@@ -57,7 +57,7 @@ log_f = open(log_file, 'a')
 if host_is_on:
     if not os.path.isfile(mount_file):
         # Check mount file
-        while max_try > 0 or :
+        while max_try > 0:
             message = 'Host is on and not mounted, try to mount #%s...' % \
                 max_try
             log_message(log_f, message, mode='warning')
