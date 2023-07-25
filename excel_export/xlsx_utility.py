@@ -891,6 +891,7 @@ class ExcelWriter(orm.Model):
                 'border': F['border'],
                 'bg_color': '#ffc6af',
                 'align': 'right',
+                'num_format': F['number'],
                 'valign': 'top',
                 }),
             'bg_green_number': WB.add_format({
@@ -901,6 +902,7 @@ class ExcelWriter(orm.Model):
                 'border': F['border'],
                 'bg_color': '#b1f9c1',
                 'align': 'right',
+                'num_format': F['number'],
                 'valign': 'top',
                 }),
             'bg_grey_number': WB.add_format({
@@ -911,6 +913,7 @@ class ExcelWriter(orm.Model):
                 'font_color': 'black',
                 'bg_color': '#c5c5c5',
                 'align': 'right',
+                'num_format': F['number'],
                 'valign': 'top',
             }),
             'bg_yellow_number': WB.add_format({
@@ -921,6 +924,7 @@ class ExcelWriter(orm.Model):
                 'font_color': 'black',
                 'bg_color': '#fffec1',# #ffff99',
                 'align': 'right',
+                'num_format': F['number'],
                 'valign': 'top',
                 }),
             'bg_orange_number': WB.add_format({
@@ -931,6 +935,7 @@ class ExcelWriter(orm.Model):
                 'font_color': 'black',
                 'bg_color': '#fcdebd',
                 'align': 'right',
+                'num_format': F['number'],
                 'valign': 'top',
                 }),
             'bg_white_number': WB.add_format({
@@ -941,6 +946,7 @@ class ExcelWriter(orm.Model):
                 'font_color': 'black',
                 'bg_color': '#FFFFFF',
                 'align': 'right',
+                'num_format': F['number'],
                 'valign': 'top',
                 }),
             'bg_blue_number': WB.add_format({
