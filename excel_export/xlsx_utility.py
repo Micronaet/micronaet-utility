@@ -499,6 +499,14 @@ class ExcelWriter(orm.Model):
         return self._WS[ws_name].write_formula(
             row, col, formula, default_format, value='')
 
+    def write_url(self, WS_name, row, col, link, string, tip=''):
+        """ WS: Worksheet passed
+            columns_w: list of dimension for the columns
+        """
+        cell = xl_rowcol_to_cell(row, col)
+        self._WS[WS_name].write_url(cell, link, string=string, tip=tip)
+        return True
+
     def preset_filter_column(self, ws_name, column, filter_text):
         """ Preset filter on column:
         Sheet name,
