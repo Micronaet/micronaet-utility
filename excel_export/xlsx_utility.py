@@ -257,7 +257,7 @@ class ExcelWriter(orm.Model):
                 ))    
             return origin, destination
         '''
-        return True    
+        return origin, destination    
 
     def save_binary_xlsx(self, binary):
         """ Save binary data passed as file temp (returned)
