@@ -243,7 +243,11 @@ class ExcelWriter(orm.Model):
         """
         _logger.warning('Save file as: %s' % destination)
         origin = self._filename
+        _logger.info('Filename saving: %s >> %s' % (
+            origin, destination))
         self._close_workbook() # if not closed manually
+        shutil.move(origin, destination)
+        '''
         try:
             shutil.move(origin, destination)
         except:
@@ -252,6 +256,7 @@ class ExcelWriter(orm.Model):
                 destination,
                 ))    
             return origin, destination
+        '''
         return True    
 
     def save_binary_xlsx(self, binary):
