@@ -247,7 +247,7 @@ class ExcelWriter(orm.Model):
         try:
             shutil.move(origin, destination)
         except:
-            _logger.info('Error copy %s in destination' % (
+            _logger.info('Error copy %s in destination %s' % (
                 origin, 
                 destination,
                 ))    
