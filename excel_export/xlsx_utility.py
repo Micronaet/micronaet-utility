@@ -246,10 +246,10 @@ class ExcelWriter(orm.Model):
         _logger.info('Filename saving: %s >> %s' % (
             origin, destination))
         self._close_workbook() # if not closed manually
-        if os.path.isfile(origin):
-            shutil.move(origin, destination)
-        else:
-            _logger.info('File not present %s' % origin)    
+        # if os.path.isfile(origin):
+        shutil.move(origin, destination)
+        # else:
+        #    _logger.info('File not present %s' % origin)    
         '''
         try:
             shutil.move(origin, destination)
