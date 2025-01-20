@@ -65,7 +65,7 @@ try:
 except:
     log_message('OpenERP {} watchdog started!'.format(dbname), mode='error')
 
-bot.sendMessage(telegram_group, 'OpenERP {} start checking...!'.format(dbbname)
+bot.sendMessage(telegram_group, 'OpenERP {} start checking...!'.format(dbname))
 
 try:
     while True:
@@ -97,14 +97,16 @@ try:
                     except:
                         log_message(
                             'OpenERP {} spento! (attesa: {} sec.)'.format(
-                                dbname, telegram_alert_loop), 
+                                dbname, telegram_alert_loop),
                             mode='error')
 
                 # Wait seconds before next alarm:
                 time.sleep(telegram_alert_loop)
 
         except:
-            log_message('OpenERP {} generic error!'.format(dbname), mode='error')
+            log_message(
+                'OpenERP {} generic error!'.format(dbname),
+                mode='error')
             # Break if CTRL + C or CTRL + C
             break
 finally:
