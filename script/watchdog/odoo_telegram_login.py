@@ -60,11 +60,12 @@ def log_message(message, mode='info', verbose=True):
 log_message('Start procedure')
 bot = telepot.Bot(telegram_token)
 try:
-    bot.sendMessage(telegram_group, 'OpenERP General Food watchdog started')
+    bot.sendMessage(telegram_group, 'OpenERP {} watchdog started'.format(
+        dbname))
 except:
-    log_message('OpenERP General Food watchdog started!', mode='error')
+    log_message('OpenERP {} watchdog started!'.format(dbname), mode='error')
 
-bot.sendMessage(telegram_group, 'OpenERP General Food start checking...!')
+bot.sendMessage(telegram_group, 'OpenERP {} start checking...!'.format(dbbname)
 
 try:
     while True:
@@ -88,21 +89,22 @@ try:
                     try:
                         bot.sendMessage(
                             telegram_group,
-                            'OpenERP General Food spento! (attesa: %s sec.)' %
-                            telegram_alert_loop,
-                        )
+                            'OpenERP {} spento! (attesa: {} sec.)'.format(
+                                dbname,
+                                telegram_alert_loop,
+                                ))
                         break  # Sent correctly
                     except:
                         log_message(
-                            'OpenERP General Food spento! (attesa: %s sec.)' %
-                            telegram_alert_loop,
+                            'OpenERP {} spento! (attesa: {} sec.)'.format(
+                                dbname, telegram_alert_loop), 
                             mode='error')
 
                 # Wait seconds before next alarm:
                 time.sleep(telegram_alert_loop)
 
         except:
-            log_message('OpenERP General Food generic error!', mode='error')
+            log_message('OpenERP {} generic error!'.format(dbname), mode='error')
             # Break if CTRL + C or CTRL + C
             break
 finally:
