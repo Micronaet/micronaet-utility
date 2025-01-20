@@ -1,13 +1,10 @@
 # Copyright 2019  Micronaet SRL (<https://micronaet.com>).
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-# import os
-# import sys
-# import erppeek
-import pdb
 import telepot
 import socket
 import time
+import pdb
 from datetime import datetime, timedelta
 try:
     import ConfigParser
@@ -111,4 +108,4 @@ try:
             break
 finally:
     log_message('End procedure')
-log_message('End procedure')
+log_message('End script')
