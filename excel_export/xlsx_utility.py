@@ -337,6 +337,11 @@ class ExcelWriter(models.Model):
         """
         return self._WS[ws_name].autofilter(r1, c1, r2, c2)
 
+    def freeze_panes(self, ws_name, row, col):
+        """ Lock row or column
+        """
+        self._WS[ws_name].freeze_panes(row, col)
+
     @api.model
     def set_format(
             self,
