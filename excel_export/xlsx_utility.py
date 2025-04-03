@@ -430,6 +430,15 @@ class ExcelWriter(models.Model):
                     'valign': 'top',
                     'text_wrap': True,
                     }),
+                'text_top_center': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'align': 'center',
+                    'valign': 'top',
+                    'text_wrap': True,
+                    }),
                 'text': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
