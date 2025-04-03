@@ -332,6 +332,11 @@ class ExcelWriter(models.Model):
             self._WS[WS_name].set_row(row_list, height)
         return True
 
+    def autofilter(self, ws_name, r1, c1, r2, c2):
+        """ Set auto filter
+        """
+        return self._WS[ws_name].autofilter(r1, c1, r2, c2)
+
     @api.model
     def set_format(
             self,
