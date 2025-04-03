@@ -738,12 +738,12 @@ class ExcelWriter(models.Model):
                     'align': 'right',
                     #'valign': 'vcenter',
                     }),
-                'number': WB.add_format({
+                'number_top': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
                     'border': F['border'],
                     'num_format': F['number'],
-                    'align': 'right',
+                    'align': 'center',
                     'valign': 'top',
                     # 'text_wrap': True,
                     }),
