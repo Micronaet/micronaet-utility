@@ -421,6 +421,15 @@ class ExcelWriter(models.Model):
                 # -------------------------------------------------------------
                 #                       TEXT:
                 # -------------------------------------------------------------
+                'text_top': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'font_color': F['text'][2],
+                    'border': F['border'],
+                    'align': 'left',
+                    'valign': 'top',
+                    'text_wrap': True,
+                    }),
                 'text': WB.add_format({
                     'font_name': F['text'][0],
                     'font_size': F['text'][1],
@@ -728,6 +737,15 @@ class ExcelWriter(models.Model):
                     'num_format': F['number'],
                     'align': 'right',
                     #'valign': 'vcenter',
+                    }),
+                'number': WB.add_format({
+                    'font_name': F['text'][0],
+                    'font_size': F['text'][1],
+                    'border': F['border'],
+                    'num_format': F['number'],
+                    'align': 'right',
+                    'valign': 'top',
+                    # 'text_wrap': True,
                     }),
 
                 # ----------------
