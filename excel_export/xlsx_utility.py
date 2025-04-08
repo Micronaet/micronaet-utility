@@ -98,7 +98,7 @@ class ExcelWriter(orm.Model):
     def _create_workbook(self, extension='xlsx'):
         """ Create workbook in a temp file
         """
-        now = datetime.now().strftime(DEFAULT_SERVER_DATETIME_FORMAT)
+        now = str(datetime.now())
         now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
         filename = '/tmp/wb_%s.%s' % (now, extension)
 
