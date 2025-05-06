@@ -248,7 +248,10 @@ class ExcelWriter(orm.Model):
         
         if os.path.isfile(destination):
             _logger.warning('Remove destination yet present')
-            os.path.remove(destination)
+            try:
+	        os.remove(destination)
+	    except:
+	        _logger.error('Error removing file')       
 
         self._close_workbook() # if not closed manually
         
