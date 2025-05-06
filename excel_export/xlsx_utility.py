@@ -240,15 +240,21 @@ class ExcelWriter(orm.Model):
 
     def save_file_as(self, destination):
         """ Close workbook and save in another place (passed)
+            (copy not move)
         """
         _logger.warning('Save file as: %s' % destination)
-        origin = self._filename
+        origin = self._filename        
         _logger.info('Filename saving: %s >> %s' % (origin, destination))
+        
+        if os.path.isfile(destination):
+            _logger.warning('Remove destination yet present')
+            os.path.remove(destination)
+
         self._close_workbook() # if not closed manually
         
-        # if os.path.isfile(origin):
-        shutil.move(origin, destination)
-        
+        # shutil.move(origin, destination)
+        shutil.copy(origin, destination)
+                
         # else:
         #    _logger.info('File not present %s' % origin)    
         
