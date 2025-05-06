@@ -99,7 +99,7 @@ class ExcelWriter(orm.Model):
         """ Create workbook in a temp file
         """
         now = str(datetime.now())
-        now = now.replace(':', '_').replace('-', '_').replace(' ', '_')
+        now = now.replace(':', '').replace('-', '').replace(' ', '_').replace('.', '_')
         filename = '/tmp/wb_%s.%s' % (now, extension)
 
         _logger.info('Start create file %s' % filename)
@@ -243,13 +243,15 @@ class ExcelWriter(orm.Model):
         """
         _logger.warning('Save file as: %s' % destination)
         origin = self._filename
-        _logger.info('Filename saving: %s >> %s' % (
-            origin, destination))
+        _logger.info('Filename saving: %s >> %s' % (origin, destination))
         self._close_workbook() # if not closed manually
+        
         # if os.path.isfile(origin):
         shutil.move(origin, destination)
+        
         # else:
         #    _logger.info('File not present %s' % origin)    
+        
         '''
         try:
             shutil.move(origin, destination)
