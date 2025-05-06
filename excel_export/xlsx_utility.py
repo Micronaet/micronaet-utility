@@ -243,6 +243,7 @@ class ExcelWriter(orm.Model):
             (copy not move)
         """
         _logger.warning('Save file as: %s' % destination)
+        self._close_workbook() # if not closed manually
         origin = self._filename        
         _logger.info('Filename saving: %s >> %s' % (origin, destination))
         
@@ -253,7 +254,6 @@ class ExcelWriter(orm.Model):
 	    except:
 	        _logger.error('Error removing file')       
 
-        self._close_workbook() # if not closed manually
         
         # shutil.move(origin, destination)
         shutil.copy(origin, destination)
