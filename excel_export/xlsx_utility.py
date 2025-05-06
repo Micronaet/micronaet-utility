@@ -238,6 +238,11 @@ class ExcelWriter(orm.Model):
             _logger.error('Error closing WB\n%s' % (sys.exc_info(), ))
             return False
 
+    def get_filename(self):
+        """ Return filename
+        """
+        return self._filename
+
     def save_file_as(self, destination):
         """ Close workbook and save in another place (passed)
             (copy not move)
